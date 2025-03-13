@@ -3,7 +3,7 @@ import SocialIcons from '../../assets/Social Icon.svg';
 import ProfileIcon from '../../assets/User.svg'; // Add your profile icon here
 import LikedIcon from '../../assets/Heart.svg'; // Add your liked items icon here
 import CartIcon from '../../assets/Cart.svg'; // Add your cart icon here
-import Logo from '../../assets/Logo.png'; // Add your logo here
+import Logo from '../../assets/Logo.svg'; // Add your logo here
 
 const Header = () => {
   const [languageOpen, setLanguageOpen] = useState(false);
