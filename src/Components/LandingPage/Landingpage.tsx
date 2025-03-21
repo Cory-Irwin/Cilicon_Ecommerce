@@ -5,7 +5,7 @@ import Airpods from '../../assets/airpods.webp';
 
 const Landingpage = () => {
     return (
-        <div className='relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 min-h-screen mt-30 flex items-center'>
+        <div className='relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center'>
             <div className='grid grid-cols-3 grid-rows-[auto,auto] gap-6 w-full'>
 
                 {/* Xbox Section (2x2) */}

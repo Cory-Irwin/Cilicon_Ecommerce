@@ -10,7 +10,7 @@ const Header = () => {
   const [currencyOpen, setCurrencyOpen] = useState(false);
 
   return (
-    <header className='w-full bg-blue-500 h-auto fixed top-[40px] left-0 z-40'>
+    <header className='w-full bg-blue-500 h-auto  top-[40px] left-0 z-40'>
       <div className='max-w-screen-xl mx-auto px-4 py-6 flex flex-col text-white'>
         {/* Top Section: Welcome Text and Social Icons */}
         <div className="flex justify-between items-center mb-4">

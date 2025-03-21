@@ -2,7 +2,7 @@ import React from 'react';
 
 const Categories = () => {
   return (
-    <section className='w-full bg-white fixed top-[200px] left-0 z-40 shadow-md'>
+    <section className='w-full bg-white  top-[200px] left-0 z-40 shadow-md'>
       <div className='max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center'>
         
         {/* Categories Section */}

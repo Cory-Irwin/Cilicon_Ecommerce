@@ -16,7 +16,7 @@ import { Flashsale } from './Components/FlashSale/Flashsale'
 import { News } from './Components/News/News'
 import Newsletter from './Components/Newsletter/Newsletter'
 import LandingpageCopy from './Components/LandingPage/Landingpage copy'
-
+import ProductCards from './Components/ProductCards/ProductCards'
 function App() {
   
 
@@ -25,8 +25,9 @@ function App() {
   <BlackFriday/>
     <Header/>
     <Categories/>
-    {/* <Landingpage/> */}
-    <LandingpageCopy/>
+    <Landingpage/> 
+    {/* <LandingpageCopy/>*/}
+   
     <Guarantee/>
      <Bestdeals/>
     <Shopwithcat/>

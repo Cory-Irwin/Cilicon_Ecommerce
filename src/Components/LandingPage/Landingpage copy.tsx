@@ -5,7 +5,7 @@ import Airpods from '../../assets/airpods.webp';
 
 const LandingpageCopy = () => {
     return (
-        <div className='relative mx-auto max-w-screen-xl my-auto p-70 h-100 px-4'>
+        <div className=' mx-auto max-w-screen-xl my-auto p-70 h-100 px-4'>
           <div className=''>
             <div className="grid grid-cols-3 h-100 bg-blue-500 grid-rows-2 gap-4">
                 <div className="col-span-2 row-span-2 bg-blue-500 ">1</div>
