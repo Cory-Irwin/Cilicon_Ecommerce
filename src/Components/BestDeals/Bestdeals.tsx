@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCards from '../ProductCards/ProductCards'
+import ProductCards from '../ProductCards/CatProductCards'
 import Controller from '../../assets/controller.png'
 import MousePad from '../../assets/Mousepad.png'
 import Headphones from '../../assets/headphones.png'

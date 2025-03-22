@@ -4,7 +4,7 @@
 
 
 
-type ProductCards = {
+type BestProductCards = {
     imageurl: string
     price: number
     title: string
@@ -17,11 +17,11 @@ type ProductCards = {
 
 
 
-const ProductCards = (props: any) => {
+const BestProductCards = (props: any) => {
   return (
-    <div className='items-center border-gray-200 border-2 flex justify-center '>
+    <div className='items-center flex justify-center '>
         <div className="">
-          <img src={props.imageurl} alt="" className="h-30 w-auto" />  
+          <img src={props.imageurl} alt="" className="h-30 w-30" />  
         <h1>{props.name}</h1>
         <h2>{props.description}</h2>
         <h3>{props.price}</h3>
@@ -31,4 +31,4 @@ const ProductCards = (props: any) => {
   )
 }
 
-export default ProductCards
+export default BestProductCards
