@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from "react";
+
 import Imac from '../../assets/macbookpro.png';
 import Heart from '../../assets/heartlove.svg'
 import Arrow from '../../assets/ArrowsClockwise.svg'
@@ -11,52 +12,69 @@ import grey2 from '../../assets/grey02.svg'
 import payment from '../../assets/Payment Method.svg'
 import airpod from '../../assets/airpods.webp'
 
+const mainProduct = {
+    name: "2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray",
+    image: Imac,
+    price: 1600,
+    originalPrice: 1999,
+    discount: "21% Off",
+    Availability: "In stock",
+    brand: "Apple",
+    Category: "Electronic Devices",
+    rating: "⭐⭐⭐⭐⭐ 4.7 Star Rating (21,000 User feedback)",
+    sku: "A264671"
+};
+
 
 const InduvidualProductCard = () => {
+    const [product] = useState(mainProduct);
     return (
         <div className='mx-auto max-w-screen-xl my-10 px-4'>
             <div className="grid grid-cols-10 grid-rows-2 gap-4">
 
                 {/* Left Side - Image */}
                 <div className="col-span-5 h-75 flex justify-center items-center shadow-md">
-                    <img src={Imac} className='h-150 w-150' alt="MacBook Pro" />
+                    <img src={product.image} className='h-150 w-150' alt={product.name} />
                 </div>
 
                 {/* Right Side - Product Info */}
                 <div className="col-span-5 h-175 col-start-6 row-span-2 shadow-md  p-4">
-                    <h1>⭐⭐⭐⭐⭐ 4.7 Star Rating (21000 User feedback)</h1>
-                    <h2 className='text-2xl'>
-                        2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage)
-                        - Space Gray
-                    </h2>
+                    <h1>
+                        {typeof product.rating === "string" ? product.rating : " 4.7 Star Rating (21,000 User feedback)"}
+                    </h1>
+
+                    <h1 className='text-2xl text-black '>
+                        {product.name}
+                    </h1>
+
 
                     {/* SKU & Availability on the same row */}
                     <div className="flex justify-between items-center my-1">
                         <div className="flex gap-2">
                             <p className="text-gray-500">Sku:</p>
-                            <p className="text-black">A264671</p>
+                            <p className="text-black">{product.sku}</p>
                         </div>
                         <div className="flex gap-2">
                             <p className="text-gray-500">Availability:</p>
-                            <p className="text-green-300">In Stock</p>
+                            <p className="text-green-300">{product.Availability}</p>
                         </div>
                     </div>
 
                     <div className="flex justify-between items-center my-1">
                         <div className="flex gap-2">
                             <p className="text-gray-500">Brand:</p>
-                            <p className="text-black">Apple</p>
+                            <p className="text-black">{product.brand}</p>
                         </div>
                         <div className="flex gap-2">
                             <p className="text-gray-500">Category:</p>
-                            <p className="text-black">Electronics Devices</p>
+                            <p className="text-black"><p>{product.Category}</p></p>
                         </div>
                     </div>
 
                     <div className=' flex gap-2 items-center my-4'>
-                        <h1 className='text-green-600 text-2xl'>$1699</h1>
-                        <h1>$1999.00</h1>
-                        <div className='bg-yellow-500 p-1'>21% Off</div>
+                        <h1 className='text-green-600 text-2xl'>${product.price}</h1>
+                        <h1>${product.originalPrice}</h1>
+                        <div className='bg-yellow-500 p-1'>{product.discount}</div>
                     </div>
 
                     <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
@@ -75,15 +93,15 @@ const InduvidualProductCard = () => {
                             <img src={grey2} alt="" />
                         </div>
 
-                       
+
                         <div className="shadow-md p-4 ml-55">
                             <p>Product size</p>
                         </div>
-                   </div>
+                    </div>
 
 
 
-                   
+
                     <div className='bg-gray-100'></div>
 
                     <div className='flex justify-between items-center my-12'>
@@ -128,18 +146,18 @@ const InduvidualProductCard = () => {
 
                     <div className=''>
                         <p>100% Guarantee Safe Checkout</p>
-                        <img src={payment} alt=""  className='my-4'/>
+                        <img src={payment} alt="" className='my-4' />
                     </div>
                 </div>
 
                 {/* Additional Boxes in Row 2 */}
-                <div className="col-start-5 h-25 row-start-2 ">  <img src={Imac} className='h-50 w-50' alt="MacBook Pro" /></div>
-                <div className="col-start-4 h-25 row-start-2 ">  <img src={Imac} className='h-50 w-50' alt="MacBook Pro" /></div>
-                <div className="col-start-3 h-25 row-start-2 ">  <img src={Imac} className='h-50 w-50' alt="MacBook Pro" /></div>
-                <div className="col-start-2 h-25 row-start-2 ">  <img src={Imac} className='h-50 w-50' alt="MacBook Pro" /></div>
-                <div className="col-start-1 h-25 row-start-2 ">  <img src={Imac} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-5 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-4 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-3 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-2 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-1 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
             </div>
-                
+
             <div className="grid grid-cols-3 shadow-md gap-4">
                 <div className="col-span-3 flex justify-center gap-10 items-center py-10">
                     <button>Description</button>
@@ -284,9 +302,9 @@ const InduvidualProductCard = () => {
                         <p>1500</p>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                </div>
+        </div>
 
 
     );
