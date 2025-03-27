@@ -18,7 +18,7 @@ const InduvidualProductCard = () => {
             <div className="grid grid-cols-10 grid-rows-2 gap-4">
 
                 {/* Left Side - Image */}
-                <div className="col-span-5 h-105 flex justify-center items-center shadow-md">
+                <div className="col-span-5 h-75 flex justify-center items-center shadow-md">
                     <img src={Imac} className='h-150 w-150' alt="MacBook Pro" />
                 </div>
 
@@ -141,7 +141,7 @@ const InduvidualProductCard = () => {
             </div>
                 
             <div className="grid grid-cols-3 shadow-md gap-4">
-                <div className="col-span-3 flex justify-center gap-10 items-center my-10">
+                <div className="col-span-3 flex justify-center gap-10 items-center py-10">
                     <button>Description</button>
                     <button>Additional Information</button>
                     <button>Specification</button>
