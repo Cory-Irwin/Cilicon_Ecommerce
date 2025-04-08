@@ -1,81 +1,165 @@
-import React from 'react'
-import Imac from '../../assets/macbookpro.png'
+import { useState } from "react";
+
+import Imac from '../../assets/macbookpro.png';
+import Heart from '../../assets/heartlove.svg'
+import Arrow from '../../assets/ArrowsClockwise.svg'
+import CopyCat from '../../assets/copycat.svg'
+import Facebook from '../../assets/Facebook.svg'
+import twitter from '../../assets/Twitter.svg'
+import pintrest from '../../assets/Pinterest.svg'
+import grey1 from '../../assets/grey01.svg'
+import grey2 from '../../assets/grey02.svg'
+import payment from '../../assets/Payment Method.svg'
 import airpod from '../../assets/airpods.webp'
+
+const mainProduct = {
+    name: "2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray",
+    image: Imac,
+    price: 1600,
+    originalPrice: 1999,
+    discount: "21% Off",
+    Availability: "In stock",
+    brand: "Apple",
+    Category: "Electronic Devices",
+    rating: "⭐⭐⭐⭐⭐ 4.7 Star Rating (21,000 User feedback)",
+    sku: "A264671"
+};
+
+
 const InduvidualProductCard = () => {
+    const [product] = useState(mainProduct);
     return (
-        <div className='mx-auto max-w-screen-xl px-4'>
-            <div className="grid grid-cols-2 h-200 grid-rows-1 gap-4">
-                <div className=''><div className="row-span-4 shadow-md"><img src={Imac} alt="" />
+        <div className='mx-auto max-w-screen-xl my-10 px-4'>
+            <div className="grid grid-cols-10 grid-rows-2 gap-4">
+
+                {/* Left Side - Image */}
+                <div className="col-span-5 h-75 flex justify-center items-center shadow-md">
+                    <img src={product.image} className='h-150 w-150' alt={product.name} />
                 </div>
 
-                    <div className="grid grid-cols-5 *:shadow-md grid-rows-1 h-45 gap-4">
-                        <div className='' >1</div>
-                        <div className=''>2</div>
-                        <div className=''>3</div>
-                        <div className=''>4</div>
-                        <div className=''>5</div>
-                    </div>
-
-                </div>
-                <div className='shadow-md my-2' >
-                    <div className=''>
-                        <h1>⭐⭐⭐⭐⭐ 4.7 Star Rating (21000 User feedback)</h1>
-                        <h2 className='text-2xl'>2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray</h2>
-
-                    </div>
+                {/* Right Side - Product Info */}
+                <div className="col-span-5 h-175 col-start-6 row-span-2 shadow-md  p-4">
+                  
+                    <h1>{product.rating}</h1>
                     
 
+                    <h1 className='text-2xl text-black '>
+                        {product.name}
+                    </h1>
+
+
+                    {/* SKU & Availability on the same row */}
+                    <div className="flex justify-between items-center my-1">
+                        <div className="flex gap-2">
+                            <p className="text-gray-500">Sku:</p>
+                            <p className="text-black">{product.sku}</p>
+                        </div>
+                        <div className="flex gap-2">
+                            <p className="text-gray-500">Availability:</p>
+                            <p className="text-green-300">{product.Availability}</p>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between items-center my-1">
+                        <div className="flex gap-2">
+                            <p className="text-gray-500">Brand:</p>
+                            <p className="text-black">{product.brand}</p>
+                        </div>
+                        <div className="flex gap-2">
+                            <p className="text-gray-500">Category:</p>
+                            <p className="text-black"><p>{product.Category}</p></p>
+                        </div>
+                    </div>
+
+                    <div className=' flex gap-2 items-center my-4'>
+                        <h1 className='text-green-600 text-2xl'>${product.price}</h1>
+                        <h1>${product.originalPrice}</h1>
+                        <div className='bg-yellow-500 p-1'>{product.discount}</div>
+                    </div>
+
+                    <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
+                    <div className='flex  justify-between items-center my-1'>
+                        <p>Color</p>
+
+                        <p>Size</p>
+
+                        <div className='bg-gray-400'></div>
+                    </div>
+                    <div className="flex items-center my-5">
+                        {/* Wrap images together to keep their spacing tight */}
+                        <div className="flex gap-2">
+                            <img src={grey1} alt="" />
+                            <img src={grey2} alt="" />
+                        </div>
+
+
+                        <div className="shadow-md p-4 ml-55">
+                            <p>Product size</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div className='bg-gray-100'></div>
+
+                    <div className='flex justify-between items-center my-12'>
+                        <p>Memory</p>
+                        <p>Storage</p>
+                        <div className='bg-gray-400'></div>
+                    </div>
+
+                    <div className="flex justify-between items-center my-12 gap-4">
+                        {/* Quantity Selector */}
+                        <div className="border-2 flex items-center gap-2 p-2">
+                            <button className="px-2">-</button>
+                            <p>01</p>
+                            <button className="px-2">+</button>
+                        </div>
+
+
+
+                        {/* Add to Cart Button (Takes up the most space) */}
+                        <div className="bg-blue-500 p-3 items-center justify-center flex-1 text-center">
+                            <a href="#" className="font-medium  hover:underline">Add to Cart</a>
+
+                        </div>
+
+                        {/* Buy Now Button */}
+                        <div className="border-2 bg-blue-500 p-2">
+                            <a href="#" className="font-medium justify-items-center  hover:underline">Buy Now</a>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div className='flex justify-center my-4 gap-4'>
+                        <button><img src={Heart} alt="" /></button><p>Add to Wishlist</p>
+                        <button><img src={Arrow} alt="" /></button><p>Add to Compare</p>
+                        <p>Share product:</p>
+
+                        <button><img src={CopyCat} alt="" /></button>
+                        <button> <img src={Facebook} alt="" /></button>
+                        <button>  <img src={twitter} alt="" /></button>
+                        <button> <img src={pintrest} alt="" /></button>
+
+                    </div>
+
                     <div className=''>
-                        <div className='flex  flex-start'>
-                                <p className='text-gray-500'>Sku:</p>
-                                <p className='text-black'>A264671</p>
-                        </div>
-                        <div>
-                         <div className=' flex flex-end '>
-                                <p className='text-gray-500'>Availability: </p>
-                                <p className='text-green-300'>In Stock</p>
-                        </div>
-                    </div> 
-                     
-
-
-                        <div className='flex  justify-between flex-wrap'>
-                              <p>Brand: Apple</p>
-                               <p>Category: Electronics Devices</p>
-                       </div>
-
-                        <div className='justify-between flex my-4'>
-                            <h1 className='text-green-600 text-2xl'>$1699</h1>
-                            <h1>$1999.00</h1>
-                            <div className='bg-yellow-200'>21% Off</div>
-                        </div>
-
-                        <div className='flex justify-between  my-4'>
-                            <p>Color</p>
-                            <p>Size</p>
-                            <div className='bg-gray-400'></div>
-                        </div>
-
-                        <div className='flex justify-between my-20'>
-                            <p>Memory</p>
-                            <p>Storage</p>
-                        </div>
-                        <div className='justify-between flex gap-6 my-4'>
-                            <div><button>Quantity</button></div>
-                            <div><button>Add to Cart</button></div>
-                            <div><button>Buy Now</button></div>
-
-                            <div><button>Add to Wishlist</button> <button>Add to Compare</button> <p>Share Product</p></div>
-                            <div><h1>100% Garentee safe checkout</h1></div>
-                        </div>
+                        <p>100% Guarantee Safe Checkout</p>
+                        <img src={payment} alt="" className='my-4' />
                     </div>
                 </div>
 
-
-
+                {/* Additional Boxes in Row 2 */}
+                <div className="col-start-5 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-4 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-3 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-2 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
+                <div className="col-start-1 h-25 row-start-2 ">  <img src={product.image} className='h-50 w-50' alt="MacBook Pro" /></div>
             </div>
+
             <div className="grid grid-cols-3 shadow-md gap-4">
-                <div className="col-span-3 flex justify-center gap-10 items-center my-10">
+                <div className="col-span-3 flex justify-center gap-10 items-center py-10">
                     <button>Description</button>
                     <button>Additional Information</button>
                     <button>Specification</button>
@@ -218,13 +302,12 @@ const InduvidualProductCard = () => {
                         <p>1500</p>
                     </div>
                 </div>
-
-
-
             </div>
 
         </div>
-    )
-}
 
-export default InduvidualProductCard
+
+    );
+};
+
+export default InduvidualProductCard;

@@ -1,16 +1,32 @@
-import React from 'react'
-import HalfProductCards from '../ProductCards/HalfProductCard'
-import ipodmini from '../../assets/podmini.svg'
-import Xaomi from '../../assets/xaomiphone.svg'
+import React from 'react';
+import HalfProductCard from '../../Components/ProductCards/HalfProductCard'; // ✅ Correct import
+import ipodmini from '../../assets/podmini.svg';
+import xaomi from '../../assets/xaomiphone.svg';
+
 const TwoPartAdvert = () => {
   return (
-    <div className='mx-auto max-w-screen-xl my-20 px-4'>
- <div className="grid grid-cols-2 grid-rows-1 gap-4">
-    <div className="row-span-3 bg-gray-100"><HalfProductCards imageurl={ipodmini} name='IpodMini' description='no' price={99}/></div>
-    <div className="row-span-3 text-white bg-gray-900"><HalfProductCards imageurl={Xaomi} name='Xaomi' description='no' price={99}/></div>
-</div>
-</div>
-  )
-}
+    <div className="mx-auto max-w-screen-xl my-20 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* iPod Mini Ad */}
+      
+          <HalfProductCard
+            imageurl={ipodmini}
+            name="New Apple HomePod Mini"
+            description="Jam-packed with innovation, HomePod mini delivers unexpectedly powerful sound."
+          />
+       
 
-export default TwoPartAdvert
+        {/* Xiaomi Ad */}
+        <div className='bg-black text-white'>
+          <HalfProductCard
+            imageurl={xaomi}
+            name="Xiaomi Smartphone"
+            description="Powerful performance and sleek design at an unbeatable price."
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TwoPartAdvert;

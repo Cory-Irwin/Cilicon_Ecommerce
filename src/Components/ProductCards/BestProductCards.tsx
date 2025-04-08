@@ -19,7 +19,7 @@ type BestProductCards = {
 
 const BestProductCards = (props: any) => {
   return (
-    <div className='items-center flex justify-center '>
+    <div className='items-center shadow-md flex justify-center '>
         <div className="">
           <img src={props.imageurl} alt="" className="h-30 w-30" />  
         <h1>{props.name}</h1>
