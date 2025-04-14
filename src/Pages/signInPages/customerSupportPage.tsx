@@ -11,6 +11,8 @@ import Penguin5 from '../../assets/PenguinCrew/penguin4.jpg'
 import Penguin6 from '../../assets/PenguinCrew/penguin5.png'
 import Penguin7 from '../../assets/PenguinCrew/penguin6.jpg'
 import Penguin8 from '../../assets/PenguinCrew/penguin7.webp'
+import icon1 from '../../assets/CustomerSupport/icon1.svg'
+import icon2 from '../../assets/CustomerSupport/icon2.svg'
 
 const customerSupport = () => {
   return (<>
@@ -154,11 +156,15 @@ const customerSupport = () => {
           </div>
           <div className="grid grid-cols-2 grid-rows-1 gap-24">
             <div className='bg-white'>
+              <div><img src={icon1} alt="" /></div>
               <div ><h1>Call Us now</h1></div>
               <div><p>we are available online from 9:00 AM to 5:00 PM (GMT95:45) Talk with use now</p></div>
               <div><p>+1-202-555-0126</p></div>
+              <div><button className='bg-blue-500 p-2'>Call Now</button></div>
             </div>
-            <div className='bg-white ' ><h1>Chat with Us</h1></div>
+            <div className='bg-white ' >
+              <div><img src={icon1} alt="" /></div>
+              <div><h1>Chat with Us</h1></div></div>
           </div>
         </div>
       </div>  </div>

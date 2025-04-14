@@ -18,7 +18,13 @@ import EmailVerifyPage from './Pages/signInPages/emailVerifyPage';
 import FaqPage from './Pages/signInPages/faqPage';
 import ErrorPage from './Pages/signInPages/errorPage';
 import AboutUsPage from './Pages/signInPages/aboutUsPage';
-import CustomerSupport from './Pages/signInPages/customerSupport';
+import CustomerSupportPage from './Pages/signInPages/customerSupportPage';
+import BlogPost from './Pages/signInPages/blogPost'
+import BlogDetail from './Pages/signInPages/blogDetail'
+import DashboardPage from './Pages/dashboardPages/dashboardPage'
+
+
+
 
 function App() {
   return (
@@ -43,7 +49,11 @@ function App() {
         <Route path='/faqPage' element={<FaqPage/>}/>
         <Route path='/errorPage' element={<ErrorPage/>}/>
         <Route path='/aboutUsPage' element={<AboutUsPage/>}/>
-        <Route path='/customerSupportPage' element={<CustomerSupport/>}/>
+        <Route path='/customerSupportPage' element={<CustomerSupportPage/>}/>
+        <Route path='/blogPost' element={<BlogPost/>}/>
+        <Route path='/blogDetail' element={<BlogDetail/>}/>
+        <Route path='/dashboardPage' element={<DashboardPage/>}/>
+        <Route path=' ' element={<ErrorPage/>}/>
         
       </Routes>
     </Router>
