@@ -17,8 +17,8 @@ const Categories = () => {
         <nav className="flex gap-x-8 text-gray-500 text-sm uppercase">
           <NavLink to={"/TrackOrderPage"}> <a href="#" className="hover:text-gray-400">Track Order ▾</a></NavLink>
           <NavLink to={"/ComparePage"}>  <a href="#" className="hover:text-gray-400">Compare</a></NavLink>
-          <NavLink to={"/CustomerSupportPage"}>  <a href="#" className="hover:text-gray-400">Customer Support</a></NavLink>
-          <NavLink to={"/HelpPage"}>  <a href="#" className="hover:text-gray-400">Need Help?</a></NavLink>
+          <NavLink to={"/FaqPage"}>  <a href="#" className="hover:text-gray-400">FAQ</a></NavLink>
+          <NavLink to={"CustomerSupportPage"}>  <a href="#" className="hover:text-gray-400">Need Help?</a></NavLink>
         </nav>
       </div>
   

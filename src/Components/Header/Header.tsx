@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import SocialIcons from '../../assets/Social Icon.svg';
-import ProfileIcon from '../../assets/User.svg'; // Add your profile icon here
-import LikedIcon from '../../assets/Heart.svg'; // Add your liked items icon here
-import CartIcon from '../../assets/Cart.svg'; // Add your cart icon here
-import Logo from '../../assets/Logo.svg'; // Add your logo here
+import React, { useState } from "react";
+import SocialIcons from "../../assets/Social Icon.svg";
+import ProfileIcon from "../../assets/User.svg";
+import LikedIcon from "../../assets/Heart.svg";
+import CartIcon from "../../assets/Cart.svg";
+import Logo from "../../assets/Logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [languageOpen, setLanguageOpen] = useState(false);
   const [currencyOpen, setCurrencyOpen] = useState(false);
 
   return (
-    <header className='w-full bg-blue-500 h-auto  top-[40px] left-0 z-40'>
-      <div className='max-w-screen-xl mx-auto px-4 py-6 flex flex-col text-white'>
+    <header className="w-full bg-blue-500 h-auto  top-[40px] left-0 z-40">
+      <div className="max-w-screen-xl mx-auto px-4 py-6 flex flex-col text-white">
         {/* Top Section: Welcome Text and Social Icons */}
         <div className="flex justify-between items-center mb-4">
           {/* Left Section: Welcome Text */}
@@ -20,20 +21,19 @@ const Header = () => {
           </div>
 
           {/* Right Section: Social Icons, Language and Currency Dropdowns */}
-          <div className='flex items-center gap-4'>
+          <div className="flex items-center gap-4">
             {/* Social Icons */}
-            <p className='flex-shrink-0'>Follow Us:</p>
-            <img src={SocialIcons} alt='Social icons' className="w-48" />
+            <p className="flex-shrink-0">Follow Us:</p>
+            <img src={SocialIcons} alt="Social icons" className="w-48" />
 
             {/* Divider */}
             <span className="text-white text-2xl mx-2">|</span>
 
             {/* Language Dropdown (ENG) */}
             <div className="relative">
-              <button 
-                onClick={() => setLanguageOpen(!languageOpen)} 
-                className="flex items-center gap-2 text-white cursor-pointer"
-              >
+              <button
+                onClick={() => setLanguageOpen(!languageOpen)}
+                className="flex items-center gap-2 text-white cursor-pointer">
                 ENG <span>&#9660;</span>
               </button>
               {languageOpen && (
@@ -47,8 +47,8 @@ const Header = () => {
 
             {/* Currency Dropdown (USD) */}
             <div className="relative">
-              <button 
-                onClick={() => setCurrencyOpen(!currencyOpen)} 
+              <button
+                onClick={() => setCurrencyOpen(!currencyOpen)}
                 className="flex items-center gap-2 text-white cursor-pointer"
               >
                 USD <span>&#9660;</span>
@@ -67,13 +67,16 @@ const Header = () => {
         {/* Below the Top Section: Logo and Search Bar */}
         <div className="flex gap-40  my-auto">
           {/* Logo */}
-          <img src={Logo} alt="Appys Logo" className="w-48 mb-4 flex-start" /> {/* Adjust the size of the logo */}
+          {/* Adjust the size of the logo */}
+          
+         
+            <NavLink to={"/"} className="home-button"><a href="" className="logo"><img src={Logo} srcSet="logo" alt="" className="h-auto w-auto"/></a></NavLink>
 
           {/* Search Bar */}
           <div className="max-w-2xl items-center  text-black bg-white flex mb-2">
-           <input 
-              type="text" 
-              placeholder="Search..." 
+            <input
+              type="text"
+              placeholder="Search..."
               className="w-150 p-2 items-center  space-evenly rounded-lg shadow-lg focus:outline-none"
             />
           </div>
@@ -88,12 +91,19 @@ const Header = () => {
             {/* Liked Items Icon */}
             <button className="relative">
               <img src={LikedIcon} alt="Liked Items" className="w-8 h-8" />
-              <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">5</span> {/* Example count */}
+              <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">
+                5
+              </span>{" "}
+              {/* Example count */}
             </button>
 
             {/* Profile Icon */}
             <button>
-              <img src={ProfileIcon} alt="Profile Icon" className="w-8 h-8 rounded-full" />
+              <img
+                src={ProfileIcon}
+                alt="Profile Icon"
+                className="w-8 h-8 rounded-full"
+              />
             </button>
           </div>
         </div>

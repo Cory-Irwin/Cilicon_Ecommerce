@@ -9,6 +9,7 @@ import Icon1 from "../../assets/DashboardPage/icon1.svg";
 import Icon2 from "../../assets/DashboardPage/icon2.svg";
 import Icon3 from "../../assets/DashboardPage/icon3.svg";
 import BestProductCards from "../../Components/ProductCards/BestProductCards";
+import DashboardList from "../../Components/DashboardList/dashboardList";
 
 const dashboardPage = () => {
   return (
@@ -18,40 +19,8 @@ const dashboardPage = () => {
       <Categories />
       <div className="mx-auto max-w-screen-xl my-10 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-20">
-          <div className="">
-            <div className="grid grid-cols-1 grid-rows-10 gap-4 shadow-lg ">
-              <div>
-                <h1>Dashboard</h1>
-              </div>
-              <div>
-                <h1>Order History</h1>
-              </div>
-              <div>
-                <h1>Track Order</h1>
-              </div>
-              <div>
-                <h1>Shopping cart</h1>
-              </div>
-              <div>
-                <h1>Wishlist</h1>
-              </div>
-              <div>
-                <h1>Compare</h1>
-              </div>
-              <div>
-                <h1>Cards & Address</h1>
-              </div>
-              <div>
-                <h1>Browsing History</h1>
-              </div>
-              <div>
-                <h1>Settings</h1>
-              </div>
-              <div>
-                <h1>Log Out</h1>
-              </div>
-            </div>
-          </div>
+        <DashboardList/>
+
           <div className="">
             <div>
               <h1>Hello Kevin</h1>
@@ -61,10 +30,11 @@ const dashboardPage = () => {
                 edit your Password and Account Details.
               </p>
             </div>
-            <div>
-              <div className="grid grid-cols-3 grid-rows-1 gap-4 ">
-                <div>
-                  <div className="border-2 h border-gray-200 p-2 text-2xl">
+
+            <div className="">
+              <div className="grid grid-cols-3 grid-rows-1  gap-4 ">
+                <div className="">
+                  <div className="border-2 h-13 border-gray-200 p-2 text-2xl">
                     <h1>Account Info</h1>
                   </div>
                   <div className="border-2 border-gray-200">
@@ -93,11 +63,11 @@ const dashboardPage = () => {
                   </div>
                 </div>
 
-                <div>
-                  <div className="border-2 p-2  text-2xl border-gray-200">
+                <div className="">
+                  <div className="border-2 p-2 text-2xl  border-gray-200">
                     <h1>Billing Address</h1>
                   </div>
-                  <div className="border-2 pt-2 border-gray-200">
+                  <div className="border-2 pt-2 h-60 border-gray-200">
                     <h1 className="pt-2">Appy Store</h1>
                     <p className="pt-2">
                       East Tejturi Bazar, Word No. 04, Road No. 13/x, House no.
@@ -105,7 +75,7 @@ const dashboardPage = () => {
                     </p>
                     <p className="pt-2">Email: </p>
                     <p className="pt-2">Phone: </p>
-                    <div className="pt-14">
+                    <div className="pt-2">
                       <button className="border-2 border-blue-200 p-2 text-blue-400">
                         Edit Address
                       </button>
@@ -138,7 +108,7 @@ const dashboardPage = () => {
               </div>
             </div>
 
-            <div className="flex  justify-between border-1  pt-2 pb-2 mt-10 border-gray-200 ">
+            <div className="flex  justify-between border-1  mt-10 pt-2 pb-2 border-gray-200 ">
               <h1>Payment Option</h1>
               <button>Add Card</button>
             </div>

@@ -22,10 +22,11 @@ import CustomerSupportPage from './Pages/signInPages/customerSupportPage';
 import BlogPost from './Pages/signInPages/blogPost'
 import BlogDetail from './Pages/signInPages/blogDetail'
 import DashboardPage from './Pages/dashboardPages/dashboardPage'
-
-
-
-
+import DashboardOrderHistoryPage from './Pages/dashboardPages/dashboardOrderHistoryPage'
+import DashboardOrderDetailPage from './Pages/dashboardPages/dashboardOrderDetailPage'
+import BrowsingHistoryPage from './Pages/dashboardPages/browsingHistoryPage'
+import DashboardSettingsPage from './Pages/dashboardPages/dashboardSettingsPage'
+import 'rsuite/dist/rsuite-no-reset.min.css';
 function App() {
   return (
     <>
@@ -53,6 +54,11 @@ function App() {
         <Route path='/blogPost' element={<BlogPost/>}/>
         <Route path='/blogDetail' element={<BlogDetail/>}/>
         <Route path='/dashboardPage' element={<DashboardPage/>}/>
+        <Route path='/dashboardOrderHistoryPage' element={<DashboardOrderHistoryPage/>}/>
+        <Route path='/dashboardOrderDetailPage' element={<DashboardOrderDetailPage/>}/>
+        <Route path='/browsingHistoryPage' element={<BrowsingHistoryPage/>}/>
+        <Route path='/browsingHistorySettingsPage' element={<DashboardSettingsPage/>}/>
+        
         <Route path=' ' element={<ErrorPage/>}/>
         
       </Routes>
