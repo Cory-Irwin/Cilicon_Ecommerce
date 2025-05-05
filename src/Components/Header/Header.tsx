@@ -4,6 +4,12 @@ import ProfileIcon from "../../assets/User.svg";
 import LikedIcon from "../../assets/Heart.svg";
 import CartIcon from "../../assets/Cart.svg";
 import Logo from "../../assets/Logo.svg";
+import Twitter from "../../assets/Header/Twitter.svg";
+import Facebook from "../../assets/Header/Facebook.svg";
+import Pintrest from "../../assets/Header/Pinterest.svg";
+import Reddit from "../../assets/Header/Reddit.svg";
+import Youtube from "../../assets/Header/Youtube.svg";
+import Instagram from "../../assets/Header/Instagram.svg";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -11,7 +17,7 @@ const Header = () => {
   const [currencyOpen, setCurrencyOpen] = useState(false);
 
   return (
-    <header className="w-full bg-blue-500 h-auto  top-[40px] left-0 z-40">
+    <header className="w-full bg-teal-900 h-auto top-[40px] left-0 z-40">
       <div className="max-w-screen-xl mx-auto px-4 py-6 flex flex-col text-white">
         {/* Top Section: Welcome Text and Social Icons */}
         <div className="flex justify-between items-center mb-4">
@@ -24,7 +30,12 @@ const Header = () => {
           <div className="flex items-center gap-4">
             {/* Social Icons */}
             <p className="flex-shrink-0">Follow Us:</p>
-            <img src={SocialIcons} alt="Social icons" className="w-48" />
+            <img src={Twitter} alt="Social icons" className="w-6" />
+            <img src={Facebook} alt="Social icons" className="w-6" />
+            <img src={Pintrest} alt="Social icons" className="w-6" />
+            <img src={Reddit} alt="Social icons" className="w-6" />
+            <img src={Youtube} alt="Social icons" className="w-6" />
+            <img src={Instagram} alt="Social icons" className="w-6" />
 
             {/* Divider */}
             <span className="text-white text-2xl mx-2">|</span>
@@ -33,7 +44,8 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setLanguageOpen(!languageOpen)}
-                className="flex items-center gap-2 text-white cursor-pointer">
+                className="flex items-center gap-2 text-white cursor-pointer"
+              >
                 ENG <span>&#9660;</span>
               </button>
               {languageOpen && (
@@ -68,16 +80,15 @@ const Header = () => {
         <div className="flex gap-40  my-auto">
           {/* Logo */}
           {/* Adjust the size of the logo */}
-          
-         
-            <NavLink to={"/"} className="home-button"><a href="" className="logo"><img src={Logo} srcSet="logo" alt="" className="h-auto w-auto"/></a></NavLink>
+
+          <img src={Logo} alt="" className=" w-50" />
 
           {/* Search Bar */}
           <div className="max-w-2xl items-center  text-black bg-white flex mb-2">
             <input
               type="text"
               placeholder="Search..."
-              className="w-150 p-2 items-center  space-evenly rounded-lg shadow-lg focus:outline-none"
+              className="w-150 p-3 items-center  space-evenly rounded-lg shadow-lg focus:outline-none"
             />
           </div>
 

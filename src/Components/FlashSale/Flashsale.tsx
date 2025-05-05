@@ -1,32 +1,131 @@
-import React from 'react'
-
+import React from "react";
+import ProductCards from "../ProductCards/CatProductCards";
+import BigBestDealProductCard from "../ProductCards/bigBestDealProductCard";
+import Controller from "../../assets/controller.png";
+import MousePad from "../../assets/Mousepad.png";
+import Headphones from "../../assets/headphones.png";
+import Smartphone from "../../assets/iphone.png";
+import Mice from "../../assets/Mice.png";
+import Ultrawide from "../../assets/ultrawide.png";
+import Keyboard from "../../assets/keyboard.png";
+import Charger from "../../assets/charger.png";
+import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
+import Flashcard from "../ProductCards/flashcard";
 export const Flashsale = () => {
   return (
-    <div className='mx-auto max-w-screen-xl  my-20 px-4'>
+    <div className="mx-auto max-w-screen-xl  my-20 px-4">
+      <div className="flex flex-row gap-6 ">
+        <div className="flex-col gap-6 py-5 flex">
+          <h1>FLASH SALE TODAY</h1>
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+        </div>
 
-
-<div className="grid grid-cols-4 grid-rows-4 gap-4">
-    <div ><h1>FLASH SALE TODAY</h1></div>
-    <div ><h1>BEST SELLARS</h1></div>
-    <div ><h1>TOP RATED</h1></div>
-    <div ><h1>NEW ARRIVAL</h1></div>
-    <div className="col-start-4 row-start-2">5</div>
-    <div className="col-start-3 row-start-2">6</div>
-    <div className="col-start-2 row-start-2">7</div>
-    <div className="col-start-1 row-start-2">8</div>
-    <div >9</div>
-    <div >10</div>
-    <div className="col-start-2 row-start-4">11</div>
-    <div className="col-start-1 row-start-4">12</div>
-    <div className="col-start-3 row-start-3">13</div>
-    <div className="col-start-4 row-start-3">14</div>
-    <div className="col-start-4 row-start-4">15</div>
-    <div className="col-start-3 row-start-4">16</div>
-</div>
-    
-
+        <div className="flex-col gap-6 py-5 flex">
+          <h1>FLASH SALE TODAY</h1>
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+        </div>
+        <div className="flex-col gap-6 py-5 flex">
+          <h1>FLASH SALE TODAY</h1>
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+        </div>
+        <div className="flex-col gap-6 py-5 flex">
+          <h1>FLASH SALE TODAY</h1>
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+          <Flashcard
+            imageurl={Ultrawide}
+            name="Odyssey G9"
+            description="no"
+            price={500}
+          />
+        </div>
+      </div>
     </div>
-
-  )
-}
+  );
+};
 export default Flashsale;

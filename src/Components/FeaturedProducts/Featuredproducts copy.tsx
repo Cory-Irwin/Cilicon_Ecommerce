@@ -4,6 +4,7 @@ import Controller from "../../assets/IMAC.png";
 import ComputerAccessories from "../../assets/computeraccessories.png";
 import ProductCards from "../ProductCards/CatProductCards";
 
+
 import BigBestDealProductCard from "../ProductCards/bigBestDealProductCard";
 
 import MousePad from "../../assets/Mousepad.png";
@@ -21,7 +22,7 @@ const Featuredproducts = () => {
     <>
       <div className="mx-auto max-w-screen-xl my-20 px-4">
         <div className="grid grid-cols-5 grid-rows-1 gap-4">
-          <div className="row-span-3 bg-teal-700 col-span-1 ">
+          <div className="row-span-3 bg-blue-200 col-span-1 ">
             <div className=" row-span-3  p-4">
               <div className="flex flex-col  justify-center items-start">
                 <h1 className="text-2xl">Computers & Accessories</h1>

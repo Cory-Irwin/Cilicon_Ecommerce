@@ -5,7 +5,7 @@ import Header from '../../Components/Header/Header'
 import BlackFriday from '../../Components/BlackFriday/BlackFriday'
 const errorPage = () => {
   return (
-    <div className="mx-auto max-w-screen-xl  p-20my-20 px-4 ">
+    <div className="mx-auto max-w-screen-xl  p-20 my-20 px-4 ">
       <BlackFriday />
       <Header />
       <Categories />
