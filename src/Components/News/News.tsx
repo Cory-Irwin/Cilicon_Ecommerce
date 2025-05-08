@@ -2,7 +2,7 @@ import React from "react";
 import News1 from '../../assets/news/newsss.svg'
 import News2 from '../../assets/news/unsplash_6MNmDi1hc_Y.svg'
 import News3 from '../../assets/news/unsplash_FO7JIlwjOtU.svg'
-import NewsComponent from "../News/newsComponent"
+import NewsComponent from "../News/NewsComponent"
 export const News = () => {
   return (
     <div className="mx-auto max-w-screen-xl my-20 px-4">

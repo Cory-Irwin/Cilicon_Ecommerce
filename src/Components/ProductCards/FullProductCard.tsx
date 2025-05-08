@@ -14,23 +14,23 @@ const FullProductCards = (props: any) => {
   return (
     <div className="flex justify-between p-2 px-20 items-center">
       <div className="">
-        <div className="bg-red-400 p-2 w-60 text-center">
+        <div className="bg-yellow-400 p-2 w-60 text-center">
           <h1 className="text-2xl">{props.savings}</h1>
         </div>
-        <h1 className="font-bold text-6xl text-white  mt-5">{props.name}</h1>
+        <h1 className="text-6xl text-white font-extrabold  mt-5">{props.name}</h1>
         <h2 className="font-bold text-2xl text-white mt-5">
           {props.description}
         </h2>
-        <div className="flex relative left-145 bottom-40 bg-red-400 p-4 text-center justify-center w-28 h-28 border-4 border-white items-center rounded-full">
+        <div className="flex relative left-145 bottom-40 bg-yellow-400 p-4 text-center justify-center w-28 h-28 border-4 border-white items-center rounded-full">
           <h3 className="font-bold text-3xl text-center text-black">
             ${props.price}
           </h3>
         </div>
-        <div className="p-6 bg-red-400 w-120 gap-6  justify-center items-center flex flex-row text-6xl  text-white ">
+        <div className="p-6 bg-yellow-400 w-135 gap-6  justify-center items-center flex flex-row text-6xl  text-white ">
           <div className="">
           {" "}
           <a href="">
-            <h1 className="text-center">SHOP NOW</h1>
+            <h1 className="text-center font-extrabold">SHOP NOW</h1>
           </a>
         </div>
         <div>

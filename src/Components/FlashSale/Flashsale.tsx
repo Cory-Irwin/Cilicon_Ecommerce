@@ -1,6 +1,5 @@
 import React from "react";
-import ProductCards from "../ProductCards/CatProductCards";
-import BigBestDealProductCard from "../ProductCards/bigBestDealProductCard";
+import Flashcard from "../ProductCards/flashcard";
 import Controller from "../../assets/controller.png";
 import MousePad from "../../assets/Mousepad.png";
 import Headphones from "../../assets/headphones.png";
@@ -9,123 +8,106 @@ import Mice from "../../assets/Mice.png";
 import Ultrawide from "../../assets/ultrawide.png";
 import Keyboard from "../../assets/keyboard.png";
 import Charger from "../../assets/charger.png";
-import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
-import Flashcard from "../ProductCards/flashcard";
+
 export const Flashsale = () => {
   return (
-    <div className="mx-auto max-w-screen-xl  my-20 px-4">
-      <div className="flex flex-row gap-6 ">
-        <div className="flex-col gap-6 py-5 flex">
+    <div className="mx-auto max-w-screen-xl my-20 px-4">
+      <div className="flex flex-row gap-6">
+        {/* Column 1 */}
+        <div className="flex flex-col gap-6 py-5">
           <h1>FLASH SALE TODAY</h1>
           <Flashcard
             imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            name='Samsung Odyssey G9 49" Curved Monitor'
+            description="Dual QHD with 240Hz refresh rate."
+            price={1099}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Headphones}
+            name="Sony WH-1000XM5 Headphones"
+            description="Industry-leading noise cancellation."
+            price={349}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
-          />
-          <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Mice}
+            name="Logitech G Pro X Superlight"
+            description="Ultra-lightweight wireless gaming mouse."
+            price={129}
           />
         </div>
 
-        <div className="flex-col gap-6 py-5 flex">
-          <h1>FLASH SALE TODAY</h1>
+        {/* Column 2 */}
+        <div className="flex flex-col gap-6 py-5">
+          <h1>BEST SELLERS</h1>
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Smartphone}
+            name="Samsung Galaxy S21 5G"
+            description="8K video, 120Hz AMOLED, 64MP camera."
+            price={799}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Keyboard}
+            name="Razer Huntsman V2"
+            description="Optical switches, ultra-fast response."
+            price={149}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
-          />
-          <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={MousePad}
+            name="SteelSeries QcK Prism XL"
+            description="RGB-illuminated extra-large mousepad."
+            price={59}
           />
         </div>
-        <div className="flex-col gap-6 py-5 flex">
-          <h1>FLASH SALE TODAY</h1>
+
+        {/* Column 3 */}
+        <div className="flex flex-col gap-6 py-5">
+          <h1>TOP RATED</h1>
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Controller}
+            name="Xbox Series X Wireless Controller"
+           
+            description="Responsive triggers and textured grip."
+            price={69}
+          />
+          <Flashcard
+            imageurl={Charger}
+            name="Anker 737 GaN Prime Charger"
+            description="100W fast charging for multiple devices."
+            price={89}
           />
           <Flashcard
             imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
-          />
-          <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
-          />
-          <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            name='LG 34" UltraGear QHD Monitor'
+            description="Curved 160Hz display for immersive gaming."
+            price={499}
           />
         </div>
-        <div className="flex-col gap-6 py-5 flex">
-          <h1>FLASH SALE TODAY</h1>
+
+        {/* Column 4 */}
+        <div className="flex flex-col gap-6 py-5">
+          <h1>NEW</h1>
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Smartphone}
+            name="iPhone 14 Pro"
+            description="A16 Bionic, ProMotion, Dynamic Island."
+            price={999}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Headphones}
+            name="Bose QuietComfort 45"
+            description="High-fidelity audio with ANC."
+            price={329}
           />
           <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
-          />
-          <Flashcard
-            imageurl={Ultrawide}
-            name="Odyssey G9"
-            description="no"
-            price={500}
+            imageurl={Keyboard}
+            name="Keychron K6 Wireless Keyboard"
+            description="Hot-swappable switches, Bluetooth 5.1."
+            price={85}
           />
         </div>
       </div>
     </div>
   );
 };
+
 export default Flashsale;
