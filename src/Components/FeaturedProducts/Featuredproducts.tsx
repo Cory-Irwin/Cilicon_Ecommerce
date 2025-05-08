@@ -71,7 +71,7 @@ const Featuredproducts = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4  h-190 row-span-2 col-start-2 row-start-2">
+          <div className="col-span-4  h-200 row-span-2 col-start-2 row-start-2">
             <div className="flex flex-col   h-full">
               <div className="flex h-auto border-2  border-gray-200 ">
                 <div className="border-r-2 border-gray-200 w-1/4  ">
@@ -79,7 +79,7 @@ const Featuredproducts = () => {
                     imageurl={MousePad}
                     name="Logitech G Powerplay Wireless Charging Mouse Pad"
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
                 <div className="border-r-2 border-gray-200 w-1/4">
@@ -87,23 +87,23 @@ const Featuredproducts = () => {
                     imageurl={Controller}
                     name="Microsoft Xbox One Wireless Controller – Carbon Black "
                     description="no"
-                    price={99}
+                    price={99.99}
                   />
                 </div>
                 <div className="border-r-2 border-gray-200 w-1/4">
                   <ProductCards reviewStars="⭐⭐⭐⭐⭐" reviewCount={52}
                     imageurl={Headphones}
-                    name="Sony WH-1000XM5 Wireless  Leading Noise Canceling Headphones "
+                    name="Sony WH-1000XM5 Wireless  Leading Noise Canceling  "
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
                 <div className="w-1/4">
                   <ProductCards reviewStars="⭐⭐⭐" reviewCount={672}
                     imageurl={Smartphone}
-                    name="Samsung Electronics Samsung Galaxy S21 5G Smartphone – Phantom Gray"
+                    name="Samsung Electronics Samsung Galaxy S21 5G Smartphone "
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
               </div>
@@ -114,23 +114,23 @@ const Featuredproducts = () => {
                     imageurl={Charger}
                     name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
                 <div className="border-r-2 border-gray-200 w-1/4">
                   <ProductCards reviewStars="⭐⭐⭐⭐" reviewCount={982}
                     imageurl={Keyboard}
-                    name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
+                    name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard –  "
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
                 <div className="border-r-2 border-gray-200 w-1/4">
                   <ProductCards reviewStars="⭐⭐⭐⭐⭐" reviewCount={426}
                     imageurl={Mice}
-                    name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
+                    name="Logitech G902 Lightspeed Wireless Gaming Mouse –"
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
                 <div className="w-1/4">
@@ -138,7 +138,7 @@ const Featuredproducts = () => {
                     imageurl={Ultrawide}
                     name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
                     description="no"
-                    price={500}
+                    price={500.99}
                   />
                 </div>
               </div>

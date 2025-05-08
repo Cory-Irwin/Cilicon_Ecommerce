@@ -2,6 +2,8 @@ import React from "react";
 import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
 import Star from "../../assets/bigBestDealProductCard/Star.svg";
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";
+import Eyes from '../../assets/bestdeals/Eye.svg'
+
 
 type CatProductCards = {
   imageurl: string;
@@ -56,7 +58,7 @@ const bigBestDealProductCard = (props: any) => {
         </p>
       </div>
 
-      <div className="flex flex-row justify-center mt-5  w-full gap-6 ">
+      <div className="flex flex-row justify-center mt-5  w-full gap-3 ">
         <div className="bg-yellow-400   p-4">
           <img src={Heart} alt="" />
         </div>
@@ -65,8 +67,8 @@ const bigBestDealProductCard = (props: any) => {
             <a href="">Add to Cart</a>
           </button>
         </div>
-        <div className="bg-yellow-400 justify-center flex p-2">
-          <img src={Heart} alt="" />
+        <div className="bg-yellow-400   p-4">
+          <img src={Eyes} alt="" />
         </div>
       </div>
     </div>

@@ -36,14 +36,14 @@ const ComputerAccessories = () => {
           </div>
         </div>
         <div className="  col-span-4 h-auto w-auto row-span-2  col-start-1 row-start-2">
-          <div className="flex flex-col   h-full">
+          <div className="flex flex-col   h-200">
             <div className="flex h-auto border-2  border-gray-200 ">
               <div className="border-r-2 border-gray-200 w-1/4  ">
                 <ProductCards
                   imageurl={MousePad} reviewStars="⭐⭐⭐" reviewCount={426}
                   name="Logitech G Powerplay Wireless Charging Mouse Pad"
                   description="no"
-                  price={500}
+                  price={499.99}
                 />
               </div>
               <div className="border-r-2 border-gray-200 w-1/4">
@@ -51,23 +51,23 @@ const ComputerAccessories = () => {
                   imageurl={Controller} reviewStars="⭐⭐⭐⭐⭐" reviewCount={672}
                   name="Microsoft Xbox One Wireless Controller – Carbon Black "
                   description="no"
-                  price={99}
+                  price={99.99}
                 />
               </div>
               <div className="border-r-2 border-gray-200 w-1/4">
                 <ProductCards
                   imageurl={Headphones} reviewStars="⭐⭐⭐⭐⭐" reviewCount={876}
-                  name="Sony WH-1000XM5 Wireless  Leading Noise Canceling Headphones "
+                  name="Sony WH-1000XM5 Wireless  Leading Noise Canceling  "
                   description="no"
-                  price={500}
+                  price={488.99}
                 />
               </div>
               <div className="w-1/4">
                 <ProductCards
                   imageurl={Smartphone} reviewStars="⭐⭐⭐" reviewCount={126}
-                  name="Samsung Electronics Samsung Galaxy S21 5G Smartphone – Phantom Gray"
+                  name="Samsung Electronics Samsung Galaxy S21 5G Smartphone "
                   description="no"
-                  price={500}
+                  price={399.99}
                 />
               </div>
             </div>
@@ -79,23 +79,23 @@ const ComputerAccessories = () => {
        
                   name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
                   description="no"
-                  price={500} 
+                  price={500.99} 
                 />
               </div>
               <div className="border-r-2 border-gray-200 w-1/4">
                 <ProductCards reviewStars="⭐⭐⭐⭐" reviewCount={767}
                   imageurl={Keyboard}
-                  name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
+                  name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard –  "
                   description="no"
-                  price={500}
+                  price={500.99}
                 />
               </div>
               <div className="border-r-2 border-gray-200 w-1/4">
                 <ProductCards reviewStars="⭐⭐⭐" reviewCount={112}
                   imageurl={Mice}
-                  name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
+                  name="Logitech G902 Lightspeed Wireless Gaming Mouse –s"
                   description="no"
-                  price={500}
+                  price={500.99}
                 />
               </div>
               <div className="w-1/4">
@@ -103,32 +103,32 @@ const ComputerAccessories = () => {
                   imageurl={Ultrawide}
                   name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
                   description="no"
-                  price={500}
+                  price={500.99}
                 />
               </div>
             </div>
           </div>
         </div>
         <div className="row-span-3 col-start-5 row-start-1">
-          <div className="flex flex-col gap-6">
-            <div className="h-100 bg-gradient-to-r from-green-600 to-stone-900">
-              <div className="flex justify-center flex-col p-4 items-center ">
+          <div className="flex flex-col gap-6 my-2">
+            <div className="h-120 bg-gradient-to-r from-green-600 to-stone-900">
+              <div className="flex justify-center flex-col p-4 items-center  ">
                 <img src={Mice} alt="" className="w-30 h-30" />
-                <h1 className="text-center font-semibold text-white text-2xl">
+                <h1 className="text-center font-semibold text-white text-3xl">
                   Logitech G502 Gaming Mices
                 </h1>{" "}
-                <p className="text-center text-sm text-gray-200">
+                <p className="text-center text-xl text-gray-200">
                   Experience gaming responsiveness like never before.
                 </p>{" "}
               </div>
               <div className="flex items-center my-2 gap-2 justify-center ">
-                <h1 className="text-white   ">Only For</h1>
-                <div className="bg-black border-2 border-gray-400 text-white p-2 my-1">$129 AUD</div>
+                <h1 className="text-white text-xl  ">Only For</h1>
+                <div className="bg-black border-2 text-xl border-gray-400 text-white p-2 my-1">$129</div>
               </div>
               <div className="my-5 flex items-center gap-2 justify-center ">
                 <div className="bg-black border-2 border-gradient-to-r from-neutral-900 to-orange-600 border-teal-400 w-50 gap-8 p-2 h-12 flex flex-row items-center">
                   <div>
-                    <h1 className="text-xl  text-white text-center font-extrabold">
+                    <h1 className="text-xl  text-white text-center py-2 font-extrabold">
                       SHOP NOW
                     </h1>
                   </div>
@@ -138,7 +138,7 @@ const ComputerAccessories = () => {
                 </div>
               </div>
             </div>
-            <div className="h-65  justify-center text-center bg-gradient-to-r from-neutral-900 to-orange-600">
+            <div className="h-78  justify-center text-center bg-gradient-to-r from-neutral-900 to-orange-600">
               <div className="flex flex-col items-center my-5">
               <div className="bg-yellow-300 border-red-500 border-4 p-2  w-40  ">
                 <h1 className="font-bold ">SUMMER SALES</h1>
@@ -146,13 +146,14 @@ const ComputerAccessories = () => {
               <div className="text-white">
                 <h1 className="text-3xl text-white font-bold my-4">40% Discount</h1>
 
-                <p className="my-2">
+                <p className="my-2 text-lg">
                   Only for smartphone products selected retailers.
                 </p>
               </div>
-              <div className="flex justify-center text-center my-2">
-              <div className="bg-black border-2 border-red-400 w-50 gap-8 p-2 h-12  flex flex-row items-center">
-                  <div>
+              <div className="flex justify-center text-center my-10">
+              <div className="bg-black border-2 border-red-400 w-50 gap-8 p-2 h-12
+                flex flex-row items-center">
+                  <div className=" my-5">
                     <h1 className="text-xl  text-white text-center font-extrabold">
                       SHOP NOW
                     </h1>

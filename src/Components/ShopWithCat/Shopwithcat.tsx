@@ -19,7 +19,7 @@ const Shopwithcat = () => {
       <div className=" flex-cols-6 grid-rows-1 items-center flex justify-between gap-17">
         <div className="border-2 w-50 h-50 border-gray-200">
           <img src={Phone} alt="" />
-          <div className="flex relative bottom-30 right-6">
+          <div className="flex relative bottom-30 right-8">
           <div className="bg-green-900 rounded-4xl h-15 w-15 flex items-center justify-center">
             
             <img src={ArrowBigLeft} alt="" className="w-10 h-10"/>

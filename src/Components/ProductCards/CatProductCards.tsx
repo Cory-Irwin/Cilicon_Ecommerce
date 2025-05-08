@@ -30,7 +30,7 @@ const CatProductCards = (props: any) => {
         <p className="text-gray-400">({props.reviewCount})</p>
       </div>
 <div className="p-2">
-      <p className="overflow-hidden text-ellipsis text-sm ">{props.name}</p>
+      <p className="overflow-hidden text-ellipsis text- ">{props.name}</p>
       </div>
       <div className="flex flex-start bottom-2 p-2 ">
         <h1 className="text-xl text-green-400  font-extrabold">${props.price}</h1>

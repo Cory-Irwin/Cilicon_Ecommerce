@@ -13,26 +13,26 @@ import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
 import { NavLink } from "react-router-dom";
 const Bestdeals = () => {
   return (
-    <>
+    <> <div className="mx-auto max-w-screen-xl my-20 px-4">
       <section className="w-full bg-white left-0 z-40 ">
         <div className="max-w-screen-xl mx-auto  px-4 py-2 flex justify-between items-center">
           {/* Categories Section */}
           <div className=" p-2 ">
-            <h1 className="text-xl font-semibold">Best Deals</h1>
+            <h1 className="text-4xl font-semibold">Best Deals</h1>
             <h1>Deals end in 10 Days</h1>
           </div>
           {/* Contact Info */}
           <div>
             <NavLink to={"/ComparePage"}>
-              <a href="#" className="hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400 font-blue-400 text-2xl">
                 See more...
               </a>
             </NavLink>{" "}
           </div>
         </div>
 
-        <div className="mx-auto flex-row flex  flex-1 w-full  h-190 border-2 border-gray-200 max-w-screen-xl  ">
-          <div className=" max-w-70 ">
+        <div className="mx-auto flex-row flex  flex-1 w-full  h-190 max-w-screen-xl  ">
+          <div className=" max-w-70  border-l-2 border-b-2 border-t-2 border-gray-200 ">
             {" "}
             <BigBestDealProductCard  reviewStars="⭐⭐⭐" discount="549.99" reviewCount={426} 
               imageurl={PS5}
@@ -80,7 +80,7 @@ const Bestdeals = () => {
       reviewStars="⭐⭐⭐⭐⭐"
       reviewCount={3201}
       imageurl={Smartphone}
-      name="iPhone 14 Pro – 128GB Deep Purple"
+      name="iPhone 14 Pro – 128GB Deep Purple Edition"
       description="Latest Apple smartphone with A16 Bionic chip and dynamic island display design."
       price={999.99}
     />
@@ -91,7 +91,7 @@ const Bestdeals = () => {
       reviewStars="⭐⭐⭐"
       reviewCount={341}
       imageurl={Charger}
-      name="Anker 737 GaNPrime 120W Charger"
+      name="Anker 737 GaNPrime 120W Charger Version"
       description="High-speed USB-C wall charger for laptops, phones, and tablets with triple port output."
       price={89.99}
     />
@@ -104,7 +104,7 @@ const Bestdeals = () => {
       imageurl={Keyboard}
       name="Keychron K6 Wireless Mechanical Keyboard"
       description="Compact 65% layout with hot-swappable keys and RGB backlighting."
-      price={89.00}
+      price={89.99}
     />
   </div>
 
@@ -132,7 +132,9 @@ const Bestdeals = () => {
 </div>
 
         </div>
+        
       </section>
+      </div>
     </>
   );
 };

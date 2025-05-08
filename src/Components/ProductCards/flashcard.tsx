@@ -14,7 +14,7 @@ const Flashcard = (props: FlashcardProps) => {
     <div className="flex justify-between p-6 border-2 w-72 h-30 border-gray-200 items-center">
       <div className="text-left max-w-[10rem]">
         <h1
-          className="text-base font-semibold truncate overflow-hidden whitespace-nowrap"
+          className="text-base font-semibold truncate overflow-hidden  whitespace-nowrap"
           title={props.name}
         >
           {props.name}
@@ -28,7 +28,7 @@ const Flashcard = (props: FlashcardProps) => {
         >
           {props.description}
         </h2>
-        <h3 className="text-lg font-bold">${props.price}</h3>
+        <h3 className="text-lg font-bold text-green-500">${props.price}</h3>
       </div>
       <div className="flex-end">
         <img src={props.imageurl} alt="" className="h-20 w-20 object-contain" />
