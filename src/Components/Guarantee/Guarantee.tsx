@@ -6,7 +6,7 @@ import Headphone from '../../assets/Guarentee/Headphones.svg'
 const Guarantee = () => {
   return (
     <div className='relative z-10 bg-white my-5 p-4 text-black max-w-screen-xl mx-auto px-4  flex'>
-      <div className='flex flex-row gap-16 border-2 border-solid  border-gray-200 h-20 w-full items-center justify-center'>
+      <div className='flex flex-row gap-16 border-2 border-solid  border-gray-200 h-30 w-full items-center justify-center'>
         <div className='bg-white p-1 gap-5 flex justify-between'>
           <div>
               <img src={Package} alt="" />

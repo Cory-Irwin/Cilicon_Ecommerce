@@ -24,7 +24,7 @@ const Bestdeals = () => {
           {/* Contact Info */}
           <div>
             <NavLink to={"/ComparePage"}>
-              <a href="#" className="hover:text-gray-400 font-blue-400 text-2xl">
+              <a href="#" className="hover:text-gray-400">
                 See more...
               </a>
             </NavLink>{" "}
@@ -32,7 +32,7 @@ const Bestdeals = () => {
         </div>
 
         <div className="mx-auto flex-row flex  flex-1 w-full  h-190 max-w-screen-xl  ">
-          <div className=" max-w-70  border-l-2 border-b-2 border-t-2 border-gray-200 ">
+          <div className=" max-w-80  border-l-2 border-b-2 border-t-2 border-gray-200 ">
             {" "}
             <BigBestDealProductCard  reviewStars="⭐⭐⭐" discount="549.99" reviewCount={426} 
               imageurl={PS5}
