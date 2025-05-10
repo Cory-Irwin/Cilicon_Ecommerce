@@ -1,7 +1,9 @@
 import React from 'react';
-import HalfProductCard from '../../Components/ProductCards/HalfProductCard'; // ✅ Correct import
+import HalfProductCard from '../../Components/ProductCards/HalfProductCard'; 
+import HalfProductCardBlack from '../../Components/ProductCards/HalfProductCardBlack'; 
+
 import ipodmini from '../../assets/podmini.svg';
-import xaomi from '../../assets/xaomiphone.svg';
+import Iphone from '../../assets/iphone.png';
 
 const TwoPartAdvert = () => {
   return (
@@ -18,9 +20,9 @@ const TwoPartAdvert = () => {
 
         {/* Xiaomi Ad */}
         <div className='bg-black text-white'>
-          <HalfProductCard
-            imageurl={xaomi}
-            name="Xiaomi Smartphone"
+          <HalfProductCardBlack
+            imageurl={Iphone}
+            name="Iphone 16 12GB+256GB"
             description="Powerful performance and sleek design at an unbeatable price."
           />
         </div>

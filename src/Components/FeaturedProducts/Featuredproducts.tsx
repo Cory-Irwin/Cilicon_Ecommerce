@@ -1,7 +1,7 @@
 import React from "react";
 import BestProductCards from "../ProductCards/BestProductCards";
 import Controller from "../../assets/IMAC.png";
-import ComputerAccessories from "../../assets/computeraccessories.png";
+import ComputerAccessories from "../../assets/Featured Products/computeracceosires.png";
 import ProductCards from "../ProductCards/FeaturedProductCard";
 import arrow from "../../assets/shopwithcat/ArrowRight.svg";
 import BigBestDealProductCard from "../ProductCards/bigBestDealProductCard";
@@ -21,19 +21,19 @@ const Featuredproducts = () => {
     <>
       <div className="mx-auto max-w-screen-xl my-20 px-4">
         <div className="grid grid-cols-5 grid-rows-1 gap-2">
-          <div className="row-span-3 bg-gradient-to-r w-80 from-yellow-100 to-yellow-300 col-span-1 ">
+          <div className="row-span-3 bg-gray-800 w-80  col-span-1 ">
             <div className=" row-span-3  p-4">
               <div className="flex flex-col items-center text-center justify-center ">
-                <h1 className="text-1xl">Computers & Accessories</h1>
-                <h2 className="text-3xl font-bold py- text-black">
+                <h1 className="text-1xl text-white">Computers & Accessories</h1>
+                <h2 className="text-3xl font-bold py- text-white">
                   32% Discount
                 </h2>
-                <p className="py-2">For all electronic products</p>{" "}
+                <p className="py-2 text-white">For all electronic products</p>{" "}
                 <div className="flex flex-row gap-2 my-2">
-                  <div className="">
+                  <div className="text-white flex justify-center items-center">
                     <h1>OFFER ENDS IN:</h1>
                   </div>
-                  <div className="bg-white p-4  text-sm black-white ">
+                  <div className="bg-white p-4  text-sm text-black ">
                     <p>ENDS CHRISTMAS</p>
                   </div>
                 </div>{" "}
@@ -45,7 +45,7 @@ const Featuredproducts = () => {
                 
                   <h1>SHOP NOW</h1>
                   <img src={arrow} alt="" className="w-10" />
-                </div>{" "}  <img src={ComputerAccessories} alt="" />
+                </div>{" "}  <img src={ComputerAccessories} className="h-90" alt="" />
                 <div className="flex ">
                   <div className="from-yellow-800 to-yellow-500 p-4 font-extrabold">
                     <div></div>

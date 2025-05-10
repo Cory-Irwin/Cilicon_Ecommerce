@@ -67,7 +67,7 @@ const dashboardOrderDetailPage = () => {
               <div className="mt-6 border-2 border-gray-200 p-2">
                 <h3 className="text-lg font-semibold mb-2">Order Progress</h3>
                 <div className="flex justify-between items-center m-10 text-gray-500 text-sm">
-                  <div className="text-green-500">Order Placed</div>
+                  <div className="text-green-900">Order Placed</div>
                   <div className="text-orange-500">Packaging</div>
                   <div>On The Road</div>
                   <div>Delivered</div>

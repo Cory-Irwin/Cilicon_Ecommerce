@@ -47,7 +47,7 @@ const bigBestDealProductCard = (props: any) => {
       </div>
 
       <div className="flex p-2 gap-2 flex-row">
-        <h1 className="text-green-500 text-2xl font-bold">${props.price}</h1>
+        <h1 className="text-green-900 text-2xl font-bold">${props.price}</h1>
         <h1 className="text-gray-300 line-through text-2xl font-bold">${props.discount}</h1>
       </div>
 
