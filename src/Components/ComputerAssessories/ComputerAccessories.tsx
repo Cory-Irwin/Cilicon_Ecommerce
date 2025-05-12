@@ -1,4 +1,4 @@
-import arrow from "../../assets/shopwithcat/ArrowRight.svg";
+import arrow from "../../assets/computer accessories/ArrowRight.svg";
 import MousePad from "../../assets/Mousepad.png";
 import Headphones from "../../assets/headphones.png";
 import Controller from "../../assets/IMAC.png";
@@ -11,21 +11,23 @@ import ProductCards from "../ProductCards/FeaturedProductCard";
 
 const ComputerAccessories = () => {
   return (
-    <div className="mx-auto max-w-screen-xl my-20 px-4">
-      <div className="grid grid-cols-4">
+    <div className="mx-auto max-w-screen-xl my-20  px-4">
+      <div className="grid  grid-cols-4">
         {/* Header and Category Tabs */}
-        <div className="col-span-4 w-235">
-          <div className="flex items-center justify-between px-4 shadow-md py-4 bg-white">
+        <div className="col-span-4 w-255 ">
+          <div className="flex items-center gap-12 shadow-md py-4 bg-white">
             <h1 className="text-3xl font-bold">Computer Accessories</h1>
-            <div className="flex items-center gap-6 text-sm">
+            <div className="flex   text-center justify-center items-center gap-4 text-sm">
               <h1>All Products</h1>
               <h1>Smart Phone</h1>
               <h1>Laptop</h1>
               <h1>Headphones</h1>
               <h1>TV</h1>
-              <h1 className="font-semibold text-blue-600">
+              <div className="flex justify-between gap-2"><h1 className="font-semibold text-blue-600">
                 Browse All Products
               </h1>
+                 <img src={arrow} alt="" />
+                 </div>
             </div>
           </div>
         </div>
@@ -116,7 +118,7 @@ const ComputerAccessories = () => {
                 <div className="flex items-center gap-2 mt-4">
                   <h1 className="text-white">Only For</h1>
                   <div className="bg-white font-bold text-xl  text-black px-4 py-1">
-                    $129
+                    $129 AUD
                   </div>
                 </div>
                 <div className="mt-5 flex items-center gap-2">
@@ -129,7 +131,7 @@ const ComputerAccessories = () => {
             </div>
 
             <div className="bg-red-900 p-4 rounded text-white text-center">
-              <div className="bg-red-300 border-4 border-red-500 py-1 px-3 w-fit mx-auto font-bold mb-4">
+              <div className="bg-yellow-400  text-black  py-1 px-3 w-fit mx-auto font-bold mb-4">
                 SUMMER SALES
               </div>
               <h1 className="text-3xl font-bold mb-2">40% Discount</h1>

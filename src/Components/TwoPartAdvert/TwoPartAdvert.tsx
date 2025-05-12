@@ -22,7 +22,7 @@ const TwoPartAdvert = () => {
         <div className='bg-black text-white'>
           <HalfProductCardBlack
             imageurl={Iphone}
-            name="Iphone 16 12GB+256GB"
+            name="iPhone 16 12GB+256GB"
             description="Powerful performance and sleek design at an unbeatable price."
           />
         </div>

@@ -15,7 +15,7 @@ const Flashcard = (props: FlashcardProps) => {
         <div className="flex-end">
         <img src={props.imageurl} alt="" className="h-20 w-20 object-contain" />
       </div><div className="text-left max-w-[10rem]">
-        text-white{" "}
+       {" "}
         <h1
           className="text-base font-semibold truncate overflow-hidden  whitespace-nowrap"
           title={props.name}
@@ -30,7 +30,7 @@ const Flashcard = (props: FlashcardProps) => {
         >
           {props.description}
         </h2>
-        <h3 className="text-lg font-bold text-green-900">${props.price}</h3>
+        <h3 className="text-lg font-semibold py-2 text-green-900">${props.price}</h3>
       </div>
     
     </div>

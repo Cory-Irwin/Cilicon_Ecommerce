@@ -1,9 +1,11 @@
+
 import React from "react";
 import BestProductCards from "../ProductCards/BestProductCards";
 import Controller from "../../assets/IMAC.png";
 import ComputerAccessories from "../../assets/Featured Products/computeracceosires.png";
 import ProductCards from "../ProductCards/FeaturedProductCard";
 import arrow from "../../assets/shopwithcat/ArrowRight.svg";
+import arrow2 from "../../assets/computer accessories/ArrowRight.svg";
 import BigBestDealProductCard from "../ProductCards/bigBestDealProductCard";
 import bigphoto from "../../assets/Featured Products/newsss.svg";
 import MousePad from "../../assets/Mousepad.png";
@@ -25,7 +27,7 @@ const Featuredproducts = () => {
             <div className=" row-span-3  p-4">
               <div className="flex flex-col items-center text-center justify-center ">
                 <h1 className="text-1xl text-white">Computers & Accessories</h1>
-                <h2 className="text-3xl font-bold py- text-white">
+                <h2 className="text-3xl font-bold  text-white">
                   32% Discount
                 </h2>
                 <p className="py-2 text-white">For all electronic products</p>{" "}
@@ -33,7 +35,7 @@ const Featuredproducts = () => {
                   <div className="text-white flex justify-center items-center">
                     <h1>OFFER ENDS IN:</h1>
                   </div>
-                  <div className="bg-white p-4  text-sm text-black ">
+                  <div className="bg-white   text-1xl p-1 py-2 font-semibold text-black ">
                     <p>ENDS CHRISTMAS</p>
                   </div>
                 </div>{" "}
@@ -45,7 +47,7 @@ const Featuredproducts = () => {
                 
                   <h1>SHOP NOW</h1>
                   <img src={arrow} alt="" className="w-10" />
-                </div>{" "}  <img src={ComputerAccessories} className="h-90" alt="" />
+                </div>{" "}  <img src={ComputerAccessories} className="h-90 my-10" alt="" />
                 <div className="flex ">
                   <div className="from-yellow-800 to-yellow-500 p-4 font-extrabold">
                     <div></div>
@@ -55,23 +57,26 @@ const Featuredproducts = () => {
             </div>
           </div>
           <div className="col-span-4 h-10 ">
-            <div className="col-span-4 row-span-1 flex items-center justify-between  ">
+            <div className="col-span-4 row-span-1 flex w-253 h-18 shadow-md items-center   ">
               <h1 className="text-3xl font-bold mx-20">Featured Products</h1>
 
               {/* Product Categories */}
-              <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-5 text-sm">
                 <h1>All Products</h1>
                 <h1>Smart Phone</h1>
                 <h1>Laptop</h1>
                 <h1>Headphones</h1>
                 <h1>TV</h1>
-                <h1 className="font-semibold text-blue-600">
-                  Browse All Products
-                </h1>
+                  <div className="flex justify-between gap-2">
+                    <h1 className="font-semibold text-blue-600">
+                Browse All Products 
+              </h1>
+                 <img src={arrow2} alt="" />
+                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-4   h-175 row-span-2 col-start-2 row-start-2">
+          <div className="col-span-4  py-6 h-175 row-span-2 col-start-2 row-start-2">
             <div className="flex flex-col  mx-20 ">
               <div className="flex h-75 gap-3 ">
                 <div className="   ">

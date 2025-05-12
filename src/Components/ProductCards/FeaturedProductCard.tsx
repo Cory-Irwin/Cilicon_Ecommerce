@@ -33,7 +33,7 @@ const FeaturedProductCards = (props: any) => {
           <p className="line-clamp-3">{props.name}</p>
         </div>
         <div className="  p-1 px-2">
-  <h1 className="absolute bottom-2 left-2 text-xl text-green-900 font-extrabold">
+  <h1 className="absolute bottom-2 left-2 text-xl text-green-900 font-semibold">
     ${props.price}
   </h1>
 </div>

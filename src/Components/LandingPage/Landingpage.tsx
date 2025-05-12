@@ -51,7 +51,7 @@ const Landingpage = () => {
           <div className="flex justify-center items-center">
             <div>
               <h1 className="text-4xl font-bold">Summer Sales</h1>
-              <h1 className="text-3xl  underline"> iPhone 16</h1>
+              <h1 className="text-3xl  "> iPhone 16</h1>
               <button className="mt-3 bg-blue-600 text-white p-5 rounded-lg text-2xl font-boldshadow-md hover:bg-blue-700">
               Buy Now
             </button>
@@ -81,7 +81,7 @@ const Landingpage = () => {
           <div className="flex justify-center items-center">
             <div>
               <h1 className="text-4xl font-bold">Summer Sales</h1>
-              <h1 className=" text-3xl  underline">Airpod Pro</h1>
+              <h1 className=" text-3xl  ">Airpod Pro</h1>
               <button className="mt-3 bg-blue-600 text-white p-5 rounded-lg text-2xl shadow-md hover:bg-blue-700">
               Buy Now
             </button>
