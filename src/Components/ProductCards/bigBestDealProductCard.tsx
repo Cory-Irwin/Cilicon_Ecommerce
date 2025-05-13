@@ -3,6 +3,7 @@ import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
 import Star from "../../assets/bigBestDealProductCard/Star.svg";
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";
 import Eyes from '../../assets/bestdeals/Eye.svg'
+import Shopping from '../../assets/bestdeals/ShoppingCartSimple.svg'
 
 
 type CatProductCards = {
@@ -58,19 +59,26 @@ const bigBestDealProductCard = (props: any) => {
         </p>
       </div>
 
-      <div className="flex flex-row justify-center mt-5  w-full gap-3 ">
-        <div className="bg-yellow-400   p-4">
-          <img src={Heart} alt="" />
+       <div className="my-10 ">
+          <div className=" flex items-center   gap-4  justify-center">
+            <div className="bg-yellow-400 p-4  ">
+              <img src={Heart} alt="" />
+            </div>
+            <div className="bg-gray-200 p-4 h-14  ">
+              <button>
+                <div className="flex flex-row gap-1">
+              
+              <img src={Shopping} alt="" />
+              <h1>ADD TO CART</h1>
+              </div>
+              </button>
+            </div>
+            <div className="bg-yellow-400 p-4 flex ">
+              <img src={Eyes} alt="" />
+            </div>
+           {" "}
+          </div>{" "}
         </div>
-        <div className="bg-blue-500  text-white font-bold justify-center items-center p-4 ">
-          <button>
-            <a href="">Add to Cart</a>
-          </button>
-        </div>
-        <div className="bg-yellow-400   p-4">
-          <img src={Eyes} alt="" />
-        </div>
-      </div>
     </div>
   );
 };

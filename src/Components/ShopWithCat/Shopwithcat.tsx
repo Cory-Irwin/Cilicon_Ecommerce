@@ -14,10 +14,10 @@ const Shopwithcat = () => {
   return (
     <div className="mx-auto max-w-screen-xl my-10 flex items-center justify-between flex-col">
       <div>
-        <h1 className="text-4xl font-bold pb-10">Shop with Categories</h1>
+        <h1 className="text-4xl font-semibold pb-10">Shop with Categories</h1>
       </div>
     
-      <div className=" flex-cols-6 text-2xl font-extrabold grid-rows-1 items-center flex justify-between  gap-8">
+      <div className=" flex-cols-6 text-2xl f  grid-rows-1 items-center flex justify-between  gap-8">
         <div className="border-2 w-60 h-70 flex items-center flex-col border-gray-200">
           <img src={Phone} alt="" className=" h-55 w-auto" />
           <h1>SmartPhones</h1>

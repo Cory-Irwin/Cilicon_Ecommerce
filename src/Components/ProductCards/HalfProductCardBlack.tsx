@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ArrowRight from "../../assets/shopwithcat/ArrowRight.svg";
 type HalfProductCardProps = {
   imageurl: string;
   name: string;
@@ -16,8 +16,9 @@ const HalfProductCard: React.FC<HalfProductCardProps> = ({ imageurl, name, descr
         </div>
         <h1 className="text-4xl mt-3">{name}</h1>
         <p className=" text-white mt-2">{description}</p>
-        <button className="mt-4 bg-yellow-500  px-5 w-50 h-15 py-2 rounded-lg font-extrabold hover:bg-orange-600">
-         SHOP NOW
+        <button className="mt-4 bg-gray-500  px-5 w-50 h-15 py-2 rounded-lg font-extrabold hover:bg-gray-300">
+         <div className='flex flex-row gap-8'><h1>SHOP NOW</h1>
+         <img src={ArrowRight} alt="" /></div>
         </button>
       </div>
 

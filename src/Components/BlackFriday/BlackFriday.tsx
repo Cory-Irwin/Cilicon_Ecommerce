@@ -1,5 +1,5 @@
 import React from 'react';
-
+import arrow from "../../assets/LandingPage/ArrowRight.svg";
 const BlackFriday = () => {
   return (
     <section className='w-full bg-black  top-0 left-0 z-50'>
@@ -20,8 +20,8 @@ const BlackFriday = () => {
 
         {/* CTA Section */}
         <a href="/shop" className='cursor-pointer ' aria-label="Shop now">
-         <div className='bg-red-400 px-6 p-2'>
-           <h1 className='text-2xl font-bold text-black '>Shop now -{'>'}</h1>
+         <div className='bg-red-400 px-6 p-2 flex gap-2 flex-row'>
+           <h1 className='text-2xl font-bold text-black '>SHOP NOW </h1><img src={arrow} alt="" />
          </div>
         </a>
       </div>
