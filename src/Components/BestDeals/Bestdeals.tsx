@@ -34,7 +34,7 @@ const Bestdeals = () => {
         <div className="mx-auto flex-row flex  flex-1 w-full  h-190 max-w-screen-xl  ">
           <div className=" max-w-80  border-l-2 border-b-2 border-t-2 border-gray-200 ">
             {" "}
-            <BigBestDealProductCard  reviewStars="⭐⭐⭐" discount="549.99" reviewCount={426} 
+            <BigBestDealProductCard  reviewStars="4" discount="549.99" reviewCount={426} 
               imageurl={PS5}
               name="Xbox One Controller"
               description="no"
@@ -44,7 +44,7 @@ const Bestdeals = () => {
           <div className="grid grid-cols-4 grid-rows-2 border-gray-200 border-2 flex-1 h-full">
   <div className="border-b-2 border-r-2 border-gray-200 max-w-65">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐"
+       reviewStars="3"
        reviewCount={234}
       imageurl={MousePad}
       name="Logitech G840 XL Gaming Mouse Pad"
@@ -55,7 +55,7 @@ const Bestdeals = () => {
 
   <div className="border-b-2 border-r-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐⭐"
+       reviewStars="4"
       reviewCount={1183}
       imageurl={Controller}
       name="Xbox Wireless Controller – Carbon Black"
@@ -66,7 +66,7 @@ const Bestdeals = () => {
 
   <div className="border-b-2 border-r-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐"
+       reviewStars="5"
        reviewCount={958}
       imageurl={Headphones}
       name="SteelSeries Arctis 7 Wireless Gaming Headset"
@@ -77,7 +77,7 @@ const Bestdeals = () => {
 
   <div className="border-b-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐⭐"
+       reviewStars="5"
        reviewCount={3201}
       imageurl={Smartphone}
       name="iPhone 14 Pro – 128GB Deep Purple Edition"
@@ -88,7 +88,7 @@ const Bestdeals = () => {
 
   <div className="border-r-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐"
+       reviewStars="4"
        reviewCount={341}
       imageurl={Charger}
       name="Anker 737 GaNPrime 120W Charger Version"
@@ -99,7 +99,7 @@ const Bestdeals = () => {
 
   <div className="border-r-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐"
+       reviewStars="4"
        reviewCount={872}
       imageurl={Keyboard}
       name="Keychron K6 Wireless Mechanical Keyboard"
@@ -110,7 +110,7 @@ const Bestdeals = () => {
 
   <div className="border-r-2 border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐⭐"
+       reviewStars="5"
        reviewCount={1264}
       imageurl={Mice}
       name="Logitech G502 Hero Wired Gaming Mouse"
@@ -121,7 +121,7 @@ const Bestdeals = () => {
 
   <div className="border-gray-200">
     <ProductCards
-       reviewStars="⭐⭐⭐⭐⭐"
+       reviewStars="4"
        reviewCount={413}
       imageurl={Ultrawide}
       name="Samsung Odyssey G9 49” Curved Ultrawide Monitor"

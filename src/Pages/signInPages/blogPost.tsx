@@ -85,7 +85,8 @@ const blogPost = () => {
                   <p className="text-sm text-gray-600">
                     Short summary of the blog post goes here.
                   </p>
-                  <button className="mt-2 text-orange-500 font-semibold">
+                  
+                  <button className="mt-2 bg-yellow-400 w-50 text-orange-500 font-semibold">
                     Read More →
                   </button>
                 </div>

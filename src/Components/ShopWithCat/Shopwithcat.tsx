@@ -40,10 +40,7 @@ const Shopwithcat = () => {
           <img src={Camera} alt=""className="h-55 w-auto" />
           <h1>Cameras</h1>
         </div>
-        <div className="border-2 w-60 h-70 flex items-center flex-col border-gray-200 ">
-          <img src={Headphones} alt="" className="h-55 w-auto"/>
-          <h1>HeadPhones</h1>
-        </div>
+        
         <div className="border-2 w-60 h-70 flex items-center flex-col  border-gray-200 ">
           <img src={Laptop} alt="" className="h-55 w-auto" />
           <h1>Laptops</h1>

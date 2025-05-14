@@ -1,76 +1,61 @@
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";
 import Eyes from "../../assets/bestdeals/Eye.svg";
-import Shopping from '../../assets/bestdeals/ShoppingCartSimple.svg'
+import Shopping from "../../assets/bestdeals/ShoppingCartSimple.svg";
+import StarRating from "../../Components/RatingStars/fiveStarRating";
 
-type CatProductCards = {
+type CatProductCardsProps = {
   imageurl: string;
   price: number;
   title: string;
   linkUrl: string;
   tagText?: string;
-  reviewStars?: string;
+  reviewStars?: number;      
   reviewCount?: number;
 };
 
-const CatProductCards = (props: any) => {
+const CatProductCards = (props: CatProductCardsProps) => {
   return (
-    <>
-      <div className="   relative w-56 h-85">
-        <div className="items-center flex  flex-col p-2  justify-center">
-          <div className="">
-            <img
-              src={props.imageurl}
-              alt=""
-              className="h-40 max-w-50  object-contain"
-            />
-          </div>{" "}
-        </div>
-         <div className="flex p-1  px-2 flex-row gap-2">
-          <p>{props.reviewStars}</p>
-           <p className="text-gray-400">({props.reviewCount})</p>
-        </div> 
-        <div className="p-1  px-2">
-          <p className="line-clamp-3 ">{props.name}</p>
-        </div>
-         <div className="  p-1  px-2">
-              <h1 className="text-xl text-green-900 font-semibold">
-                ${props.price}
-              </h1>
-            </div>
-        <div className="my-2 ">
-          <div className=" flex items-center   gap-4  justify-center">
-            <div className="bg-yellow-400 p-4  ">
-              <img src={Heart} alt="" />
-            </div>
-            <div className="bg-gray-200 p-4 h-14  ">
-              <button>
-              <img src={Shopping} alt="" />
-              </button>
-            </div>
-            <div className="bg-yellow-400 p-4  ">
-              <img src={Eyes} alt="" />
-            </div>
-           {" "}
-          </div>{" "}
+    <div className="relative w-56 h-85">
+      <div className="flex flex-col items-center p-2 justify-center">
+        <img
+          src={props.imageurl}
+          alt={props.title}
+          className="h-40 max-w-50 object-contain"
+        />
+      </div>
+
+      <div className="flex p-1 px-2 flex-row gap-2 items-center">
+        <StarRating rating={props.reviewStars || 0} />
+        <p className="text-gray-400 text-sm">({props.reviewCount || 0})</p>
+      </div>
+
+      <div className="p-1 px-2">
+        <p className="line-clamp-3">{props.title}</p>
+      </div>
+
+      <div className="p-1 px-2">
+        <h1 className="text-xl text-green-900 font-semibold">
+          ${props.price.toFixed(2)}
+        </h1>
+      </div>
+
+      <div className="my-2">
+        <div className="flex items-center gap-4 justify-center">
+          <div className="bg-yellow-400 p-4">
+            <img src={Heart} alt="Favorite" />
+          </div>
+          <div className="bg-gray-200 p-4 h-14">
+            <button>
+              <img src={Shopping} alt="Add to Cart" />
+            </button>
+          </div>
+          <div className="bg-yellow-400 p-4">
+            <img src={Eyes} alt="View" />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default CatProductCards;
-{
-  /* <div className="flex flex-row justify-center mt-5   gap-3 ">
-              <div className="bg-yellow-400   p-4">
-                <img src={Heart} alt="" />
-              </div>
-              <div className="bg-blue-500  text-white font-bold justify-center items-center p-4 ">
-                <button>
-                  <a href="">Add to Cart</a>
-                </button>
-              </div>
-              <div className="bg-yellow-400   p-4">
-                <img src={Eyes} alt="" />
-              </div>
-            </div> */
-}

@@ -19,7 +19,7 @@ const Landingpage = () => {
               immersive visuals, and the best games.
             </p>
             <div className="">
-              <button className="mt-3 bg-yellow-200 text-black py-6 px-20  font-bold text-3xl shadow-md hover:bg-yellow-400">
+              <button className="mt-3 bg-yellow-400 text-black py-6 px-20  font-bold text-3xl shadow-md hover:bg-yellow-200">
                 <div className="flex items-center flex-row justify-between gap-4">
                   <div>BUY NOW </div>
                   <div>
@@ -61,8 +61,8 @@ const Landingpage = () => {
                 Apple iPhone <h1>16 256GB</h1>
               </h1>
              
-              <button className="mt-5 z-20 bg-yellow-200 text-black font-semibold p-3 w-45 items-center
-               justify-center flex   *:shadow-md hover:bg-yellow-400">
+              <button className="mt-5 z-20 bg-yellow-400 text-black font-semibold p-3 w-45 items-center
+               justify-center flex   *:shadow-md hover:bg-yellow-200">
                 <div className="flex text-lg flex-row items-center gap-4">
                   {" "}
                   BUY NOW
@@ -94,8 +94,8 @@ const Landingpage = () => {
                 $399 AUD
               </div>
              
-              <button className="mt-5 z-20 bg-yellow-200 text-black font-semibold p-3 w-45 items-center
-               justify-center flex  font-boldshadow-md hover:bg-yellow-400">
+              <button className="mt-5 z-20 bg-yellow-400 text-black font-semibold p-3 w-45 items-center
+               justify-center flex  font-boldshadow-md hover:bg-yellow-200">
                 <div className="flex text-lg flex-row items-center gap-4">
                   {" "}
                   BUY NOW

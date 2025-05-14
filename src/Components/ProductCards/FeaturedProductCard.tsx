@@ -1,13 +1,16 @@
+
+import StarRating from "../../Components/RatingStars/fiveStarRating";
+
 type FeaturedProductCards = {
+
   imageurl: string;
   price: number;
   title: string;
   linkUrl: string;
   tagText?: string;
-  reviewStars?: string;
+  reviewStars?: number;      
   reviewCount?: number;
 };
-
 const FeaturedProductCards = (props: any) => {
   return (
     <>
@@ -26,7 +29,7 @@ const FeaturedProductCards = (props: any) => {
           </div>{" "}
         </div>
         <div className="flex p-1  px-2 flex-row gap-2">
-          <p>{props.reviewStars}</p>
+          <StarRating rating={props.reviewStars || 0} />
           <p className="text-gray-400">({props.reviewCount})</p>
         </div>
         <div className="p-1 px-2">

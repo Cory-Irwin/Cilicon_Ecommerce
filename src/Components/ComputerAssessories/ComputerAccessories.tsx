@@ -1,4 +1,4 @@
-import arrow from "../../assets/computer accessories/ArrowRight.svg";
+import ArrowRight from "../../assets/shopwithcat/ArrowRight.svg";
 import MousePad from "../../assets/Mousepad.png";
 import Headphones from "../../assets/headphones.png";
 import Controller from "../../assets/IMAC.png";
@@ -17,17 +17,18 @@ const ComputerAccessories = () => {
         <div className="col-span-4 w-255 ">
           <div className="flex items-center gap-12 shadow-md py-4 bg-white">
             <h1 className="text-3xl font-bold">Computer Accessories</h1>
-            <div className="flex   text-center justify-center items-center gap-4 text-sm">
+            <div className="flex text-center justify-center items-center gap-4 text-sm">
               <h1>All Products</h1>
               <h1>Smart Phone</h1>
               <h1>Laptop</h1>
               <h1>Headphones</h1>
               <h1>TV</h1>
-              <div className="flex justify-between gap-2"><h1 className="font-semibold text-blue-600">
-                Browse All Products
-              </h1>
-                 <img src={arrow} alt="" />
-                 </div>
+              <div className="flex justify-between gap-2">
+                <h1 className="font-semibold text-blue-600">
+                  Browse All Products
+                </h1>
+                <img src={ArrowRight} alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -37,7 +38,7 @@ const ComputerAccessories = () => {
           <div className="flex flex-col gap-6">
             <div className="flex gap-4">
               <ProductCards
-                reviewStars="⭐⭐⭐"
+                reviewStars="5"
                 reviewCount={426}
                 imageurl={MousePad}
                 name="Logitech G Powerplay Wireless Charging Mouse Pad"
@@ -45,7 +46,7 @@ const ComputerAccessories = () => {
                 price={89.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐⭐"
+                reviewStars="4"
                 reviewCount={4}
                 imageurl={Controller}
                 name="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch"
@@ -53,7 +54,7 @@ const ComputerAccessories = () => {
                 price={999.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐⭐⭐"
+                reviewStars="5"
                 reviewCount={52}
                 imageurl={Headphones}
                 name="Sony WH-1000XM5 Wireless Noise Canceling Headphones"
@@ -61,7 +62,7 @@ const ComputerAccessories = () => {
                 price={299.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐"
+                reviewStars="4"
                 reviewCount={672}
                 imageurl={Smartphone}
                 name="Samsung Galaxy S21 5G – Phantom Gray"
@@ -72,7 +73,7 @@ const ComputerAccessories = () => {
 
             <div className="flex gap-4">
               <ProductCards
-                reviewStars="⭐⭐⭐⭐"
+                reviewStars="4"
                 reviewCount={733}
                 imageurl={Charger}
                 name="Anker PowerPort III 65W USB-C Fast Charger"
@@ -80,7 +81,7 @@ const ComputerAccessories = () => {
                 price={19.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐⭐"
+                reviewStars="5"
                 reviewCount={982}
                 imageurl={Keyboard}
                 name="Razer Huntsman Elite Gaming Keyboard – RGB"
@@ -88,7 +89,7 @@ const ComputerAccessories = () => {
                 price={199.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐⭐⭐"
+                reviewStars="5"
                 reviewCount={426}
                 imageurl={Mice}
                 name="Logitech G902 Lightspeed Wireless Gaming Mouse"
@@ -96,7 +97,7 @@ const ComputerAccessories = () => {
                 price={249.99}
               />
               <ProductCards
-                reviewStars="⭐⭐⭐⭐"
+                reviewStars="5"
                 reviewCount={16}
                 imageurl={Ultrawide}
                 name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
@@ -110,11 +111,15 @@ const ComputerAccessories = () => {
         {/* Sidebar */}
         <div className="row-span-3 col-start-5 row-start-1 w-80">
           <div className="flex flex-col gap-6">
-            <div className="h-[480px] bg-teal-900 p-4 rounded">
-              <div className="flex flex-col items-center text-black text-center">
+            <div className="h-[480px] bg-linear-to-r from-black to-teal-900 p-4 rounded">
+              <div className="flex flex-col items-center  text-black text-center">
                 <img src={Mice} alt="" className="h-40 w-auto" />
-                <h1 className="text-4xl text-white font-bold">Logitech G502 Gaming Mice</h1>
-                <p className="text-lg mt-2 text-white">Experience gaming responsiveness like never before.</p>
+                <h1 className="text-4xl text-white font-bold">
+                  Logitech G502 Gaming Mice
+                </h1>
+                <p className="text-lg mt-2 text-white">
+                  Experience gaming responsiveness like never before.
+                </p>
                 <div className="flex items-center gap-2 mt-4">
                   <h1 className="text-white">Only For</h1>
                   <div className="bg-white font-bold text-xl  text-black px-4 py-1">
@@ -124,24 +129,26 @@ const ComputerAccessories = () => {
                 <div className="mt-5 flex items-center gap-2">
                   <div className="bg-black   flex w-70 h-15 text-center justify-center items-center px-4 py-2">
                     <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
-                    <img src={arrow} alt="" />
+                    <img src={ArrowRight} alt="" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-red-900 p-4 rounded text-white text-center">
+            <div className="bg-orange-700 p-4 rounded text-white text-center">
               <div className="bg-yellow-400  text-black  py-1 px-3 w-fit mx-auto font-bold mb-4">
                 SUMMER SALES
               </div>
               <h1 className="text-3xl font-bold mb-2">40% Discount</h1>
-              <p className="text-lg">Only for smartphone products at selected retailers.</p>
+              <p className="text-lg">
+                Only for smartphone products at selected retailers.
+              </p>
               <div className="mt-5 flex items-center gap-2">
-                  <div className="bg-black  flex w-70 h-15 text-center justify-center items-center px-4 py-2">
-                    <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
-                    <img src={arrow} alt="" />
-                  </div>
+                <div className="bg-black  flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                  <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
+                  <img src={ArrowRight} alt="" />
                 </div>
+              </div>
             </div>
           </div>
         </div>

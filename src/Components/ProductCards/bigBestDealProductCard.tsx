@@ -4,6 +4,7 @@ import Star from "../../assets/bigBestDealProductCard/Star.svg";
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";
 import Eyes from '../../assets/bestdeals/Eye.svg'
 import Shopping from '../../assets/bestdeals/ShoppingCartSimple.svg'
+import StarRating from '../../Components/RatingStars/fiveStarRating'
 
 
 type CatProductCards = {
@@ -35,7 +36,7 @@ const bigBestDealProductCard = (props: any) => {
 
       <div className="flex flex-row ">
         <div className="flex p-2 flex-row gap-2">
-          <p>{props.reviewStars}</p>
+        <StarRating rating={5}/>
           <p className="text-gray-400">({props.reviewCount})</p>
         </div>
         <div className=""></div>
@@ -59,7 +60,7 @@ const bigBestDealProductCard = (props: any) => {
         </p>
       </div>
 
-       <div className="my-10 ">
+       <div className="my-12 ">
           <div className=" flex items-center   gap-4  justify-center">
             <div className="bg-yellow-400 p-4  ">
               <img src={Heart} alt="" />

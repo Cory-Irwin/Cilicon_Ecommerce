@@ -81,7 +81,7 @@ const Featuredproducts = () => {
               <div className="flex h-75 gap-3 ">
                 <div className="   ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐"
+                    reviewStars="4"
                     reviewCount={426}
                     imageurl={MousePad}
                     name="Logitech G Powerplay Wireless Charging Mouse Pad"
@@ -91,7 +91,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className="   h-60 ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐"
+                    reviewStars="5"
                     reviewCount={4}
                     imageurl={Controller}
                     name="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch "
@@ -101,7 +101,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className="  gap-4 ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐⭐"
+                    reviewStars="4"
                     reviewCount={52}
                     imageurl={Headphones}
                     name="Sony WH-1000XM5 Wireless  Leading Noise Canceling Headphones "
@@ -111,7 +111,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className=" gap-4">
                   <ProductCards
-                    reviewStars="⭐⭐⭐"
+                    reviewStars="3"
                     reviewCount={672}
                     imageurl={Smartphone}
                     name="Samsung Electronics Samsung Galaxy S21 5G Smartphone – Phantom Gray"
@@ -123,7 +123,7 @@ const Featuredproducts = () => {
               <div className="flex h-auto gap-3 my-15">
                 <div className="  gap-4  ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐"
+                    reviewStars="5"
                     reviewCount={733}
                     imageurl={Charger}
                     name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
@@ -133,7 +133,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className="  gap-4  ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐"
+                    reviewStars="5"
                     reviewCount={982}
                     imageurl={Keyboard}
                     name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
@@ -143,7 +143,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className="  gap-4 ">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐⭐"
+                    reviewStars="5"
                     reviewCount={426}
                     imageurl={Mice}
                     name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
@@ -153,7 +153,7 @@ const Featuredproducts = () => {
                 </div>
                 <div className=" gap-4">
                   <ProductCards
-                    reviewStars="⭐⭐⭐⭐"
+                    reviewStars="5"
                     reviewCount={16}
                     imageurl={Ultrawide}
                     name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
@@ -173,7 +173,7 @@ export default Featuredproducts;
 <div className="flex  border-b-2 border-l-2 border-r-2 border-gray-200 h-1/2">
   <div className="border-r-2  border-gray-200 w-1/4">
     <ProductCards
-      reviewStars="⭐⭐⭐⭐"
+      reviewStars="5"
       reviewCount={733}
       imageurl={Charger}
       name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
@@ -183,7 +183,7 @@ export default Featuredproducts;
   </div>
   <div className="border-r-2 border-gray-200 w-1/4">
     <ProductCards
-      reviewStars="⭐⭐⭐⭐"
+      reviewStars="4"
       reviewCount={982}
       imageurl={Keyboard}
       name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
@@ -193,7 +193,7 @@ export default Featuredproducts;
   </div>
   <div className="border-r-2 border-gray-200 w-1/4">
     <ProductCards
-      reviewStars="⭐⭐⭐⭐⭐"
+      reviewStars="5"
       reviewCount={426}
       imageurl={Mice}
       name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
@@ -203,7 +203,7 @@ export default Featuredproducts;
   </div>
   <div className="w-1/4">
     <ProductCards
-      reviewStars="⭐⭐⭐⭐"
+      reviewStars="4"
       reviewCount={16}
       imageurl={Ultrawide}
       name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
