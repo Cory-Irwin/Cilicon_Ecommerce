@@ -1,4 +1,4 @@
-import arrow from "../../assets/shopwithcat/ArrowRight.svg";
+import arrow from "../../assets/LandingPage/ArrowRight.svg";
 type FullProductCards = {
   imageurl: string;
   price: number;
@@ -24,8 +24,8 @@ const FullProductCards = (props: any) => {
           {props.description}
         </h2>
         <div className="flex relative left-135 bottom-35 bg-yellow-400 p-4 text-center justify-center 
-        w-28 h-28 border-4 border-white items-center rounded-full">
-          <h3 className="font-bold text-3xl text-center text-black">
+        w-24 h-24 border-4 border-white items-center rounded-full">
+          <h3 className=" text-2xl text-center text-black">
             ${props.price}
           </h3>
         </div>
@@ -36,11 +36,11 @@ const FullProductCards = (props: any) => {
           <div className="w-30 h-30 relative bottom-15 bg-gray-100 rounded-full"></div>
           <div className="w-30 h-30 relative bottom-15 bg-gray-900 rounded-full"></div>
         </div>
-        <div className="p-6 bg-yellow-400 w-60 gap-4  justify-center h-20 items-center flex flex-row text-xl text-white ">
+        <div className="p-6 bg-yellow-400 hover:bg-yellow-200 w-60 gap-4  justify-center h-20 items-center flex flex-row text-xl text-white ">
           <div className="">
             {" "}
             <a href="">
-              <h1 className="text-center font-extrabold">SHOP NOW</h1>
+              <h1 className="text-center text-black font-extrabold">SHOP NOW</h1>
             </a>
           </div>
           <div>

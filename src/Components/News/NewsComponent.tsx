@@ -17,7 +17,7 @@ const NewsComponent = (props: any) => {
     <div className="bg-gray-100 p-2 w-150  h-175">
       <div className="flex items-center p-4 flex-col ">
         <img src={props.imgurl} alt="" className="" />
-        <div className=" items-center my-4 justify-center flex-row flex gap-8 ">
+        <div className=" my-4 flex-row flex gap-4 ">
           <div className="   flex-row line-clamp-2 gap-2  flex ">
             <img src={Profile} alt="" />
             <h1>{props.name}</h1>

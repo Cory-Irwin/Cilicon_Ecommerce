@@ -15,7 +15,7 @@ const ComputerAccessories = () => {
       <div className="grid  grid-cols-4">
         {/* Header and Category Tabs */}
         <div className="col-span-4 w-255 ">
-          <div className="flex items-center gap-12 shadow-md py-4 bg-white">
+          <div className="flex items-center gap-12 py-15 bg-white">
             <h1 className="text-3xl font-bold">Computer Accessories</h1>
             <div className="flex text-center justify-center items-center gap-4 text-sm">
               <h1>All Products</h1>
@@ -127,8 +127,8 @@ const ComputerAccessories = () => {
                   </div>
                 </div>
                 <div className="mt-5 flex items-center gap-2">
-                  <div className="bg-black   flex w-70 h-15 text-center justify-center items-center px-4 py-2">
-                    <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
+                  <div className="bg-black hover:bg-gray-500   flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                    <h1 className="text-white font-bold   mr-2">SHOP NOW</h1>
                     <img src={ArrowRight} alt="" />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const ComputerAccessories = () => {
                 Only for smartphone products at selected retailers.
               </p>
               <div className="mt-5 flex items-center gap-2">
-                <div className="bg-black  flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                <div className="bg-black hover:bg-gray-500 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
                   <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
                   <img src={ArrowRight} alt="" />
                 </div>

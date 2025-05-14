@@ -62,10 +62,10 @@ const bigBestDealProductCard = (props: any) => {
 
        <div className="my-12 ">
           <div className=" flex items-center   gap-4  justify-center">
-            <div className="bg-yellow-400 p-4  ">
+            <div className="bg-yellow-400 p-4 hover:bg-yellow-200  ">
               <img src={Heart} alt="" />
             </div>
-            <div className="bg-gray-200 p-4 h-14  ">
+            <div className="bg-gray-200 hover:bg-gray-300 p-4 h-14  ">
               <button>
                 <div className="flex flex-row gap-1">
               
@@ -74,7 +74,7 @@ const bigBestDealProductCard = (props: any) => {
               </div>
               </button>
             </div>
-            <div className="bg-yellow-400 p-4 flex ">
+            <div className="bg-yellow-400 hover:bg-yellow-200 p-4 flex ">
               <img src={Eyes} alt="" />
             </div>
            {" "}

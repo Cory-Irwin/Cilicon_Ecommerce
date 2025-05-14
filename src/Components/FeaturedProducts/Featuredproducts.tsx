@@ -27,7 +27,7 @@ const Featuredproducts = () => {
             <div className=" row-span-3  p-4">
               <div className="flex flex-col items-center text-center justify-center ">
                 <h1 className="text-1xl text-white">Computers & Accessories</h1>
-                <h2 className="text-3xl font-bold  text-white">
+                <h2 className="text-3xl font-bold my-2 text-white">
                   32% Discount
                 </h2>
                 <p className="py-2 text-white">For all electronic products</p>{" "}
@@ -36,12 +36,12 @@ const Featuredproducts = () => {
                     <h1>OFFER ENDS IN:</h1>
                   </div>
                   <div className="bg-white   text-1xl p-1 py-2 font-semibold text-black ">
-                    <p>ENDS CHRISTMAS</p>
+                    <p>10:45:12</p>
                   </div>
                 </div>{" "}
                 <div
-                  className="  mt-2 p-4 text-1xl w-50 gap-4 items-center flex flex-row
-                 bg-black text-white text-1xl  justify-between font-extrabold "
+                  className="  mt-2 p-4 text-1xl w-52 gap-4 items-center flex flex-row
+                 bg-black text-white text-1xl hover:bg-gray-500 justify-between font-extrabold "
                 >
                   {" "}
                 
@@ -57,7 +57,7 @@ const Featuredproducts = () => {
             </div>
           </div>
           <div className="col-span-4 h-10 ">
-            <div className="col-span-4 row-span-1 flex w-253 h-18 shadow-md items-center   ">
+            <div className="col-span-4 row-span-1 flex w-253 h-18 items-center   ">
               <h1 className="text-3xl font-bold mx-20">Featured Products</h1>
 
               {/* Product Categories */}

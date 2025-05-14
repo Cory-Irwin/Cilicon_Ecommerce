@@ -26,7 +26,7 @@ const Featuredproducts = () => {
             <div className=" row-span-3  p-4">
               <div className="flex flex-col  justify-center items-start">
                 <h1 className="text-2xl">Computers & Accessories</h1>
-                <h2 className="text-3xl font-bold text-red-600">
+                <h2 className="text-3xl font-bold text-yellow-400">
                   32% Discount
                 </h2>
 
@@ -34,13 +34,13 @@ const Featuredproducts = () => {
                 <p>Offers end in:</p>
 
                 <div className="flex items-center">
-                  <div className="bg-white p-2">
-                    <p>ENDS CHRISTMAS</p>
+                  <div className="bg-white p-4">
+                    <p>10:42:16</p>
                   </div>
                 </div>
                 <div className="bg-blue-500 items-center justify-center">
-                  <h1>Shop Now</h1>
-                  <img src={ComputerAccessories} alt="" />
+                  az<h1>Shop Now</h1>
+        
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={MousePad}
                     name="Logitech Mouspad"
-                    description="no"
+                      reviewStars={5}       reviewCount={464}
                     price={500}
                   />
                 </div>
@@ -77,7 +77,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Controller}
                     name="Xbox One Controller"
-                    description="no"
+                    
                     price={99}
                   />
                 </div>
@@ -85,7 +85,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Headphones}
                     name="Headphones"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>
@@ -93,7 +93,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Smartphone}
                     name="iPhone"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>
@@ -104,7 +104,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Charger}
                     name="Charger"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>
@@ -112,7 +112,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Keyboard}
                     name="Keyboard"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>
@@ -120,7 +120,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Mice}
                     name="G902 Mice"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>
@@ -128,7 +128,7 @@ const Featuredproducts = () => {
                   <ProductCards
                     imageurl={Ultrawide}
                     name="Odyssey G9"
-                    description="no"
+                    
                     price={500}
                   />
                 </div>

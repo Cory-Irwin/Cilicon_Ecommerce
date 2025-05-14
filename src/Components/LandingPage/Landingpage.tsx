@@ -41,7 +41,8 @@ const Landingpage = () => {
             {/* Price Tag */}
             <div
               className="absolute top-2 right-2 w-30 h-30 bg-yellow-400 rounded-full 
-                        flex items-center justify-center text-black font-bold text-4xl shadow-lg"
+                        flex items-center justify-center text-black  border-2 border-white 
+                        text-3xl shadow-lg"
             >
               $299
             </div>
