@@ -14,7 +14,7 @@ const FullProductCards = (props: any) => {
   return (
     <div className="flex justify-between p-2 px-20 items-center">
       <div className="">
-        <div className="bg-yellow-400 p-2 w-60 text-center">
+        <div className="bg-yellow-400 p-2 w-65 border-6 border-teal-900 text-center">
           <h1 className="text-2xl font-semibold text-black">{props.savings}</h1>
         </div>
         <h1 className="text-6xl text-white font-extrabold  mt-5">
@@ -23,9 +23,9 @@ const FullProductCards = (props: any) => {
         <h2 className="font-bold text-2xl text-white mt-4">
           {props.description}
         </h2>
-        <div className="flex relative left-135 bottom-35 bg-yellow-400 p-4 text-center justify-center 
-        w-24 h-24 border-4 border-white items-center rounded-full">
-          <h3 className=" text-2xl text-center text-black">
+        <div className="flex relative left-135 bottom-35 border-6 border-teal-900 bg-yellow-400 p-4 text-center justify-center 
+        w-30 h-30  items-center rounded-full">
+          <h3 className=" text-3xl text-center text-black">
             ${props.price}
           </h3>
         </div>
@@ -36,7 +36,7 @@ const FullProductCards = (props: any) => {
           <div className="w-30 h-30 relative bottom-15 bg-gray-100 rounded-full"></div>
           <div className="w-30 h-30 relative bottom-15 bg-gray-900 rounded-full"></div>
         </div>
-        <div className="p-6 bg-yellow-400 hover:bg-yellow-200 w-60 gap-4  justify-center h-20 items-center flex flex-row text-xl text-white ">
+        <div className="p-6 bg-yellow-400 border-6 border-teal-900 hover:bg-yellow-200 w-60 gap-4  justify-center h-20 items-center flex flex-row text-xl text-white ">
           <div className="">
             {" "}
             <a href="">

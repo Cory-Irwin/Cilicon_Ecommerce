@@ -21,11 +21,11 @@ const Newsletter = () => {
             <input
               type="text"
               placeholder="Email Addresss..."
-              className="w-180 p-4 items-center  rounded-lg  focus:outline-none"
+              className="w-180 p-4 items-center  rounded-lg text-2xl focus:outline-none"
             />
-            <div className="bg-yellow-200 p-4 w-40 h-15 relative right-3  top-3 flex justify-center items-center">
+            <div className="bg-yellow-200 hover:bg-yellow-400 p-4 w-40 h-15 relative right-3  top-3 flex justify-center items-center">
               <a href="">
-                <button className="text-gray-500">SUBSCRIBE</button>
+                <button className="text-gray-500">Subscribe</button>
               </a>
             </div>
           </div>

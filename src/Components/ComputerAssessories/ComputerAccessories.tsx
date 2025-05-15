@@ -1,4 +1,5 @@
 import ArrowRight from "../../assets/shopwithcat/ArrowRight.svg";
+import ArrowRight2 from "../../assets/LandingPage/ArrowRight.svg";
 import MousePad from "../../assets/Mousepad.png";
 import Headphones from "../../assets/headphones.png";
 import Controller from "../../assets/IMAC.png";
@@ -7,7 +8,7 @@ import Mice from "../../assets/Mice.png";
 import Ultrawide from "../../assets/ultrawide.png";
 import Keyboard from "../../assets/keyboard.png";
 import Charger from "../../assets/charger.png";
-import ProductCards from "../ProductCards/FeaturedProductCard";
+import FeaturedProductCards from "../ProductCards/FeaturedProductCard";
 
 const ComputerAccessories = () => {
   return (
@@ -15,7 +16,7 @@ const ComputerAccessories = () => {
       <div className="grid  grid-cols-4">
         {/* Header and Category Tabs */}
         <div className="col-span-4 w-255 ">
-          <div className="flex items-center gap-12 py-15 bg-white">
+          <div className="flex items-center gap-12 py-4 bg-white">
             <h1 className="text-3xl font-bold">Computer Accessories</h1>
             <div className="flex text-center justify-center items-center gap-4 text-sm">
               <h1>All Products</h1>
@@ -34,75 +35,80 @@ const ComputerAccessories = () => {
         </div>
 
         {/* Product Grid */}
+
         <div className="col-span-4 row-span-2 col-start-1 row-start-2">
           <div className="flex flex-col gap-6">
             <div className="flex gap-4">
-              <ProductCards
-                reviewStars="5"
+              <FeaturedProductCards
+                reviewStars={5}
                 reviewCount={426}
                 imageurl={MousePad}
-                name="Logitech G Powerplay Wireless Charging Mouse Pad"
-                description="no"
-                price={89.99}
+                title="Logitech G Powerplay Wireless Charging Mouse Pad"
+                originalPrice={129.99}
+                newPrice={89.99}
+                percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
               />
-              <ProductCards
-                reviewStars="4"
+              <FeaturedProductCards
+                reviewStars={4}
                 reviewCount={4}
                 imageurl={Controller}
-                name="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch"
-                description="no"
-                price={999.99}
+                title="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch"
+                originalPrice={1299.99}
+                newPrice={999.99}
+                percentOff={Math.round(((1299.99 - 999.99) / 1299.99) * 100)} // ~23% off
               />
-              <ProductCards
-                reviewStars="5"
+
+              <FeaturedProductCards
+                reviewStars={5}
                 reviewCount={52}
                 imageurl={Headphones}
-                name="Sony WH-1000XM5 Wireless Noise Canceling Headphones"
-                description="no"
-                price={299.99}
+                title="Sony WH-1000XM5 Wireless Noise Canceling Headphones"
+                originalPrice={349.99}
+                newPrice={299.99}
+                percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
               />
-              <ProductCards
-                reviewStars="4"
+
+              <FeaturedProductCards
+                reviewStars={4}
                 reviewCount={672}
                 imageurl={Smartphone}
-                name="Samsung Galaxy S21 5G – Phantom Gray"
-                description="no"
-                price={1999.99}
+                title="Samsung Galaxy S21 5G – Phantom Gray"
+                newPrice={1999.99}
+                // no originalPrice or discount, so no percentOff
               />
             </div>
 
             <div className="flex gap-4">
-              <ProductCards
-                reviewStars="4"
+              <FeaturedProductCards
+                reviewStars={4}
                 reviewCount={733}
                 imageurl={Charger}
-                name="Anker PowerPort III 65W USB-C Fast Charger"
-                description="no"
-                price={19.99}
+                title="Anker PowerPort III 65W USB-C Fast Charger"
+                newPrice={19.99}
               />
-              <ProductCards
-                reviewStars="5"
+
+              <FeaturedProductCards
+                reviewStars={5}
                 reviewCount={982}
                 imageurl={Keyboard}
-                name="Razer Huntsman Elite Gaming Keyboard – RGB"
-                description="no"
-                price={199.99}
+                title="Razer Huntsman Elite Gaming Keyboard – RGB"
+                newPrice={199.99}
               />
-              <ProductCards
-                reviewStars="5"
+
+              <FeaturedProductCards
+                reviewStars={5}
                 reviewCount={426}
                 imageurl={Mice}
-                name="Logitech G902 Lightspeed Wireless Gaming Mouse"
-                description="no"
-                price={249.99}
+                title="Logitech G902 Lightspeed Wireless Gaming Mouse"
+                newPrice={249.99}
               />
-              <ProductCards
-                reviewStars="5"
+
+              <FeaturedProductCards
+                reviewStars={5}
                 reviewCount={16}
                 imageurl={Ultrawide}
-                name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
-                description="no"
-                price={1799.99}
+                title="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
+                newPrice={1799.99}
               />
             </div>
           </div>
@@ -121,9 +127,8 @@ const ComputerAccessories = () => {
                   Experience gaming responsiveness like never before.
                 </p>
                 <div className="flex items-center gap-2 mt-4">
-                  <h1 className="text-white">Only For</h1>
-                  <div className="bg-white font-bold text-xl  text-black px-4 py-1">
-                    $129 AUD
+                  <div className="bg-black font-extrabold text-4xl  text-yellow-400 px-4 py-1">
+                    $129.99
                   </div>
                 </div>
                 <div className="mt-5 flex items-center gap-2">
@@ -144,9 +149,9 @@ const ComputerAccessories = () => {
                 Only for smartphone products at selected retailers.
               </p>
               <div className="mt-5 flex items-center gap-2">
-                <div className="bg-black hover:bg-gray-500 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
-                  <h1 className="text-white font-bold mr-2">SHOP NOW</h1>
-                  <img src={ArrowRight} alt="" />
+                <div className="bg-white hover:bg-gray-200 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                  <h1 className="text-black font-bold mr-2">SHOP NOW</h1>
+                  <img src={ArrowRight2} alt="" />
                 </div>
               </div>
             </div>

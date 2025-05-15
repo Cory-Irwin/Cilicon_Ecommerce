@@ -38,7 +38,7 @@ const NewsComponent = (props: any) => {
       </div>{" "}
       <div className="px-5">
       <a href="">
-        <div className=" relative border-2 w-40 gap-2 text-teal-800 font-bold justify-center h-15 border-teal-900 items-center flex
+        <div className=" relative border-2 w-40 gap-2 hover:bg-gray-200 text-teal-800 font-bold justify-center h-15 border-teal-900 items-center flex
        ">
           <h1 className="">READ MORE</h1>
           <img src={ArrowRight} alt="" />

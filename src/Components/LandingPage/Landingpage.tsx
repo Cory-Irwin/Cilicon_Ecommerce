@@ -19,7 +19,7 @@ const Landingpage = () => {
               immersive visuals, and the best games.
             </p>
             <div className="">
-              <button className="mt-3 bg-yellow-400 text-black py-6 px-20  font-bold text-3xl shadow-md hover:bg-yellow-200">
+              <button className="mt-3 bg-yellow-400 border-6 border-teal-900 text-black py-6 px-20  font-bold text-3xl shadow-md hover:bg-yellow-200">
                 <div className="flex items-center flex-row justify-between gap-4">
                   <div>BUY NOW </div>
                   <div>
@@ -41,7 +41,7 @@ const Landingpage = () => {
             {/* Price Tag */}
             <div
               className="absolute top-2 right-2 w-30 h-30 bg-yellow-400 rounded-full 
-                        flex items-center justify-center text-black  border-2 border-white 
+                        flex items-center justify-center text-black  border-6 border-teal-900 
                         text-3xl shadow-lg"
             >
               $299
@@ -62,7 +62,7 @@ const Landingpage = () => {
                 Apple iPhone <h1>16 256GB</h1>
               </h1>
              
-              <button className="mt-5 z-20 bg-yellow-400 text-black font-semibold p-3 w-45 items-center
+              <button className="mt-5 z-20 bg-yellow-400 border-6 border-teal-900 text-black font-semibold p-3 w-45 items-center
                justify-center flex   *:shadow-md hover:bg-yellow-200">
                 <div className="flex text-lg flex-row items-center gap-4">
                   {" "}
@@ -79,7 +79,7 @@ const Landingpage = () => {
             {/* Image */}
           </div>
           <div
-            className="absolute top-8 right-4 w-30  p-4 font-semibold text-xl h-10 bg-yellow-400 flex items-center 
+            className="absolute top-8 right-4 w-40   font-extrabold text-xl h-15 border-6 border-teal-900 bg-yellow-400 flex items-center 
               justify-center text-black  z-30 shadow-lg"
           >
             40% OFF
@@ -92,12 +92,12 @@ const Landingpage = () => {
             <div>
               <h1 className=" text-3xl font-bold ">Apple Airpods Pro</h1>
               <div className="text-2xl text-yellow-200 my-2">
-                $399 AUD
+                $399.99
               </div>
              
-              <button className="mt-5 z-20 bg-yellow-400 text-black font-semibold p-3 w-45 items-center
+              <button className="mt-5 z-20 bg-yellow-400 border-6 border-teal-900 text-black font-semibold p-3 w-45 items-center
                justify-center flex  font-boldshadow-md hover:bg-yellow-200">
-                <div className="flex text-lg flex-row items-center gap-4">
+                <div className="flex text-lg flex-row items-center  gap-4">
                   {" "}
                   BUY NOW
                   <img src={arrow} alt="" className="h-5" />

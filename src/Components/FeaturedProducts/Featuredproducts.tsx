@@ -1,4 +1,3 @@
-
 import React from "react";
 import BestProductCards from "../ProductCards/BestProductCards";
 import Controller from "../../assets/IMAC.png";
@@ -44,10 +43,10 @@ const Featuredproducts = () => {
                  bg-black text-white text-1xl hover:bg-gray-500 justify-between font-extrabold "
                 >
                   {" "}
-                
                   <h1>SHOP NOW</h1>
                   <img src={arrow} alt="" className="w-10" />
-                </div>{" "}  <img src={ComputerAccessories} className="h-90 my-10" alt="" />
+                </div>{" "}
+                <img src={ComputerAccessories} className="h-90 my-10" alt="" />
                 <div className="flex ">
                   <div className="from-yellow-800 to-yellow-500 p-4 font-extrabold">
                     <div></div>
@@ -67,12 +66,12 @@ const Featuredproducts = () => {
                 <h1>Laptop</h1>
                 <h1>Headphones</h1>
                 <h1>TV</h1>
-                  <div className="flex justify-between gap-2">
-                    <h1 className="font-semibold text-blue-600">
-                Browse All Products 
-              </h1>
-                 <img src={arrow2} alt="" />
-                 </div>
+                <div className="flex justify-between gap-2">
+                  <h1 className="font-semibold text-blue-600">
+                    Browse All Products
+                  </h1>
+                  <img src={arrow2} alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -81,84 +80,85 @@ const Featuredproducts = () => {
               <div className="flex h-75 gap-3 ">
                 <div className="   ">
                   <ProductCards
-                    reviewStars="4"
+                    reviewStars={5}
                     reviewCount={426}
                     imageurl={MousePad}
-                    name="Logitech G Powerplay Wireless Charging Mouse Pad"
-                    description="no"
-                    price={89.99}
+                    title="Logitech G Powerplay Wireless Charging Mouse Pad"
+                    originalPrice={129.99}
+                    newPrice={89.99}
+                    percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
                   />
                 </div>
                 <div className="   h-60 ">
                   <ProductCards
-                    reviewStars="5"
+                    reviewStars={4}
                     reviewCount={4}
                     imageurl={Controller}
-                    name="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch "
-                    description="no"
-                    price={999.99}
+                    title="Macbook Pro 2024 Edition 1TB SSD i7-7700k CPU 27 inch"
+                    originalPrice={1299.99}
+                    newPrice={999.99}
+                    percentOff={Math.round(
+                      ((1299.99 - 999.99) / 1299.99) * 100
+                    )} // ~23% off
                   />
                 </div>
                 <div className="  gap-4 ">
                   <ProductCards
-                    reviewStars="4"
+                    reviewStars={5}
                     reviewCount={52}
                     imageurl={Headphones}
-                    name="Sony WH-1000XM5 Wireless  Leading Noise Canceling Headphones "
-                    description="no"
-                    price={299.99}
+                    title="Sony WH-1000XM5 Wireless Noise Canceling Headphones"
+                    originalPrice={349.99}
+                    newPrice={299.99}
+                    percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
                   />
                 </div>
                 <div className=" gap-4">
                   <ProductCards
-                    reviewStars="3"
+                    reviewStars={4}
                     reviewCount={672}
                     imageurl={Smartphone}
-                    name="Samsung Electronics Samsung Galaxy S21 5G Smartphone – Phantom Gray"
-                    description="no"
-                    price={1999.99}
+                    title="Samsung Galaxy S21 5G – Phantom Gray"
+                    newPrice={1999.99}
+                    // no originalPrice or discount, so no percentOff
                   />
                 </div>
               </div>
               <div className="flex h-auto gap-3 my-15">
                 <div className="  gap-4  ">
                   <ProductCards
-                    reviewStars="5"
+                    reviewStars={4}
                     reviewCount={733}
                     imageurl={Charger}
-                    name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
-                    description="no"
-                    price={19.99}
+                    title="Anker PowerPort III 65W USB-C Fast Charger"
+                    newPrice={19.99}
                   />
                 </div>
                 <div className="  gap-4  ">
                   <ProductCards
-                    reviewStars="5"
+                    reviewStars={5}
                     reviewCount={982}
                     imageurl={Keyboard}
-                    name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
-                    description="no"
-                    price={199.99}
+                    title="Razer Huntsman Elite Gaming Keyboard – RGB"
+                    newPrice={199.99}
                   />
                 </div>
                 <div className="  gap-4 ">
                   <ProductCards
-                    reviewStars="5"
+                    reviewStars={5}
                     reviewCount={426}
                     imageurl={Mice}
-                    name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
-                    description="no"
-                    price={249.99}
+                    title="Logitech G902 Lightspeed Wireless Gaming Mouse"
+                    newPrice={249.99}
                   />
                 </div>
                 <div className=" gap-4">
                   <ProductCards
-                    reviewStars="5"
+                    reviewStars={5}
                     reviewCount={16}
                     imageurl={Ultrawide}
-                    name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
-                    description="no"
-                    price={1799.99}
+                    title="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
+                    newPrice={1799.99}
                   />
                 </div>
               </div>
@@ -170,187 +170,3 @@ const Featuredproducts = () => {
   );
 };
 export default Featuredproducts;
-<div className="flex  border-b-2 border-l-2 border-r-2 border-gray-200 h-1/2">
-  <div className="border-r-2  border-gray-200 w-1/4">
-    <ProductCards
-      reviewStars="5"
-      reviewCount={733}
-      imageurl={Charger}
-      name="Anker PowerPort III 65W USB-C Fast Charger – GaN Technology"
-      description="no"
-      price={500}
-    />
-  </div>
-  <div className="border-r-2 border-gray-200 w-1/4">
-    <ProductCards
-      reviewStars="4"
-      reviewCount={982}
-      imageurl={Keyboard}
-      name="Razer Huntsman Elite Opto-Mechanical Gaming Keyboard – RGB "
-      description="no"
-      price={500}
-    />
-  </div>
-  <div className="border-r-2 border-gray-200 w-1/4">
-    <ProductCards
-      reviewStars="5"
-      reviewCount={426}
-      imageurl={Mice}
-      name="Logitech G902 Lightspeed Wireless Gaming Mouse – HERO 25K Sensor"
-      description="no"
-      price={500}
-    />
-  </div>
-  <div className="w-1/4">
-    <ProductCards
-      reviewStars="4"
-      reviewCount={16}
-      imageurl={Ultrawide}
-      name="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
-      description="no"
-      price={500}
-    />
-  </div>
-</div>;
-// <div className="mx-auto max-w-screen-xl my-20 px-4">
-//         <div className="grid grid-cols-5 grid-rows-[auto,0.5fr,1fr] gap-x-4 gap-y-4">
-//           {/* Left Side - Discount Section */}
-//           <div className="col-span-1 row-span-3 bg-blue-200 p-4">
-//             <div className="flex flex-col justify-center items-start">
-//               <h1 className="text-2xl">Computers & Accessories</h1>
-//               <h2 className="text-3xl font-bold text-red-600">32% Discount</h2>
-
-//               <p>For all electronic products</p>
-//               <p>Offers end in:</p>
-
-//               <div className="flex items-center">
-//                 <div className="bg-white p-2">
-//                   <p>ENDS CHRISTMAS</p>
-//                 </div>
-//               </div>
-//               <div className="bg-blue-500 items-center justify-center">
-//                 <h1>Shop Now</h1>
-//                 <img src={ComputerAccessories} alt="" />
-//               </div>
-//             </div>
-//           </div>
-
-//           {/* Featured Products Header */}
-//           <div className="col-span-4 row-span-1 flex items-center justify-between  ">
-//             <h1 className="text-xl font-bold">Featured Products</h1>
-
-//             {/* Product Categories */}
-//             <div className="flex items-center gap-6 text-sm">
-//               <h1>All Products</h1>
-//               <h1>Smart Phone</h1>
-//               <h1>Laptop</h1>
-//               <h1>Headphones</h1>
-//               <h1>TV</h1>
-//               <h1 className="font-semibold text-blue-600">
-//                 Browse All Products
-//               </h1>
-//             </div>
-//           </div>
-
-//           <div className="flex-col-2 flex  border-gray-200  border-2 flex-1 h-full ">
-//             <div className="  border-b-2 border-r-2 border-gray-200 max-w-65">
-//               <ProductCards
-//                 imageurl={MousePad}
-//                 name="Logitech Mouspad gaming workplace matt."
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-//             <div className=" border-b-2 border-r-2  border-gray-200 ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Controller}
-//                 name="Xbox One Controller Logitech Mouspad gaming workplace matt."
-//                 description="no"
-//                 price={99}
-//               />
-//             </div>
-//             <div className="border-b-2 border-r-2 border-gray-200 ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Headphones}
-//                 name="HeadPhones Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-//             <div className="border-b-2  border-gray-200 ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Smartphone}
-//                 name="Iphone Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-//             <div className=" border-r-2 border-gray-200  ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Charger}
-//                 name="charger Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-
-//             <div className=" border-r-2 border-gray-200 ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Keyboard}
-//                 name="Keyboard Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-
-//             <div className=" border-r-2 border-gray-200  ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Mice}
-//                 name="G902 Mice Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-
-//             <div className=" border-gray-200  ">
-//               {" "}
-//               <ProductCards
-//                 imageurl={Ultrawide}
-//                 name="G9 Odessy Logitech Mouspad gaming workplace matt. "
-//                 description="no"
-//                 price={500}
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-/* <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div>
-        <div className="col-span-1 border-2 border-gray-200">
-          <ProductCards imageurl={Controller} name="Xbox One Controller Xbox One Controller Xbox One Controller Logitech Mouspad gaming workplace matt." description="no" price={99} />
-        </div> */
