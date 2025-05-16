@@ -3,10 +3,10 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { Eye, EyeOff } from 'lucide-react';
 
-import Footer from '../../Components/Footer/Footer'
-import Categories from '../../Components/Categories/Categories'
-import Header from '../../Components/Header/Header'
-import BlackFriday from '../../Components/BlackFriday/BlackFriday'
+import Footer from '../../Components/HomePage/Footer/Footer'
+import Categories from '../../Components/HomePage/Categories/Categories'
+import Header from '../../Components/HomePage/Header/Header'
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);

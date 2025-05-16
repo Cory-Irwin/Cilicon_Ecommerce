@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
-import BlackFriday from '../../Components/BlackFriday/BlackFriday';
-import Categories from '../../Components/Categories/Categories';
-import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/HomePage/Header/Header';
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+import Categories from '../../Components/HomePage/Categories/Categories';
+import Footer from '../../Components/HomePage/Footer/Footer';
 
 const TrackOrder = () => {
     return (

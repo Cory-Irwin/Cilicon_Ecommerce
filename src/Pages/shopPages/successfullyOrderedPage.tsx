@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../Components/Header/Header';
-import Categories from '../../Components/Categories/Categories';
+import Header from '../../Components/HomePage/Header/Header';
+import Categories from '../../Components/HomePage/Categories/Categories';
 
 const OrderSuccess = () => {
     return (

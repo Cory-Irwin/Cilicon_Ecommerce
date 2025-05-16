@@ -1,10 +1,10 @@
 import React from "react";
-import BlackFriday from "../../Components/BlackFriday/BlackFriday";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 
-import Categories from "../../Components/Categories/Categories";
-import DashboardList from "../../Components/DashboardList/dashboardList";
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
+import Header from "../../Components/HomePage/Header/Header";
+import Footer from "../../Components/HomePage/Footer/Footer";
 import Penguin3 from "../../assets/PenguinCrew/penguin3.jpg";
 
 const dashboardSetting = () => {

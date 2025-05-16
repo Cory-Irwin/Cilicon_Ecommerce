@@ -1,11 +1,11 @@
 import React from 'react'
-import samsung from '../../assets/iphone.png'
-import keyboard from '../../assets/keyboard.png'
-import IMAC from '../../assets/IMAC.png'
-import Footer from '../../Components/Footer/Footer';
-import BlackFriday from '../../Components/BlackFriday/BlackFriday';
-import Header from '../../Components/Header/Header';
-import Categories from '../../Components/Categories/Categories';
+import samsung from '../../assets/misc/iphone.png'
+import keyboard from '../../assets/misc/keyboard.png'
+import IMAC from '../../assets/misc/IMAC.png'
+import Footer from '../../Components/HomePage/Footer/Footer';
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+import Header from '../../Components/HomePage/Header/Header';
+import Categories from '../../Components/HomePage/Categories/Categories';
 
 const products = [
   {

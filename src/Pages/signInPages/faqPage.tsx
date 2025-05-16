@@ -1,7 +1,7 @@
-import Footer from '../../Components/Footer/Footer'
-import Categories from '../../Components/Categories/Categories'
-import Header from '../../Components/Header/Header'
-import BlackFriday from '../../Components/BlackFriday/BlackFriday'
+import Footer from '../../Components/HomePage/Footer/Footer'
+import Categories from '../../Components/HomePage/Categories/Categories'
+import Header from '../../Components/HomePage/Header/Header'
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
 
 const faqPage = () => {
   return (

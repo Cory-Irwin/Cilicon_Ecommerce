@@ -1,12 +1,11 @@
 import React from 'react'
-import Footer from '../../Components/Footer/Footer'
-import BlackFriday from '../../Components/BlackFriday/BlackFriday'
-import Header from '../../Components/Header/Header'
-import Categories from '../../Components/Categories/Categories'
-
-import appleairpods from '../../assets/airpods.webp'
-import xaomiairpods from '../../assets/AIRPHONESXAOMI.svg'
-import IMAC from '../../assets/IMAC.png'
+import Footer from '../../Components/HomePage/Footer/Footer'
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
+import Header from '../../Components/HomePage/Header/Header'
+import Categories from '../../Components/HomePage/Categories/Categories'
+import appleairpods from '../../assets/misc/airpods.webp'
+import xaomiairpods from '../../assets/misc/AIRPHONESXAOMI.svg'
+import IMAC from '../../assets/misc/IMAC.png'
 
 const products = [
   {

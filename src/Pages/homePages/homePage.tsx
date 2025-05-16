@@ -1,20 +1,20 @@
 import React from 'react'
-import BlackFriday from '../../Components/BlackFriday/BlackFriday'
-import Bestdeals from '../../Components/BestDeals/Bestdeals'
-import BigAdvert from '../../Components/BigAdvert/BigAdvert'
-import Categories from '../../Components/Categories/Categories'
-import ComputerAccessories from '../../Components/ComputerAssessories/ComputerAccessories'
-import Featuredproducts from '../../Components/FeaturedProducts/Featuredproducts'
-import { Flashsale } from '../../Components/FlashSale/Flashsale'
-import Footer from '../../Components/Footer/Footer'
-import Guarantee from '../../Components/Guarantee/Guarantee'
-import Header from '../../Components/Header/Header'
-import Landingpage from '../../Components/LandingPage/Landingpage'
-import { News } from '../../Components/News/News'
-import Newsletter from '../../Components/Newsletter/Newsletter'
-import Shopwithcat from '../../Components/ShopWithCat/Shopwithcat'
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
+import Bestdeals from '../../Components/HomePage/BestDeals/Bestdeals'
+import BigAdvert from '../../Components/HomePage/BigAdvert/BigAdvert'
+import Categories from '../../Components/HomePage/Categories/Categories'
+import ComputerAccessories from '../../Components/HomePage/ComputerAssessories/ComputerAccessories'
+import Featuredproducts from '../../Components/HomePage/FeaturedProducts/Featuredproducts'
+import { Flashsale } from '../../Components/HomePage/FlashSale/Flashsale'
+import Footer from '../../Components/HomePage/Footer/Footer'
+import Guarantee from '../../Components/HomePage/Guarantee/Guarantee'
+import Header from '../../Components/HomePage/Header/Header'
+import Landingpage from '../../Components/HomePage/LandingPage/Landingpage'
+import { News } from '../../Components/HomePage/News/News'
+import Newsletter from '../../Components/HomePage/Newsletter/Newsletter'
+import Shopwithcat from '../../Components/HomePage/ShopWithCat/Shopwithcat'
 
-import TwoPartAdvert from '../../Components/TwoPartAdvert/TwoPartAdvert'
+import TwoPartAdvert from '../../Components/HomePage/TwoPartAdvert/TwoPartAdvert'
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
     <Categories/>
     <Landingpage/> 
     <Guarantee/>
-     <Bestdeals/>
+    <Bestdeals/>
     <Shopwithcat/>
     <Featuredproducts/>
     <TwoPartAdvert/>

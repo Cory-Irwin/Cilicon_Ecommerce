@@ -1,15 +1,15 @@
 import React from "react";
-import Footer from "../../Components/Footer/Footer";
-import Categories from "../../Components/Categories/Categories";
-import Header from "../../Components/Header/Header";
-import BlackFriday from "../../Components/BlackFriday/BlackFriday";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import Penguin1 from "../../assets/PenguinCrew/penguin2.jpg";
 
 import Icon1 from "../../assets/DashboardPage/icon1.svg";
 import Icon2 from "../../assets/DashboardPage/icon2.svg";
 import Icon3 from "../../assets/DashboardPage/icon3.svg";
 import BestProductCards from "../../Components/ProductCards/BestProductCards";
-import DashboardList from "../../Components/DashboardList/dashboardList";
+import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
 
 const dashboardPage = () => {
   return (
