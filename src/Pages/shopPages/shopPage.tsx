@@ -14,6 +14,9 @@ import Charger from "../../assets/misc/charger.png";
 import MainItem from "../../assets/ShopPage/drone.svg";
 import Shopping from "../../assets/bestdeals/ShoppingCartSimple.svg";
 import ArrowRight from "../../assets/LandingPage/ArrowRight.svg";
+import ArrowBigLeft from "../../assets/shopwithcat/ArrowLeft.svg";
+import ArrowRight2 from "../../assets/shopwithcat/ArrowRight.svg";
+import MagGlass from "../../assets/ShopPage/MagnifyingGlass.svg";
 
 const ShopPage = () => {
   return (
@@ -133,55 +136,139 @@ const ShopPage = () => {
                 </div>
               </div>
               <ul>
-                <li>All Price</li>
-                <li>Under $20</li>
-                <li>$25 to $100</li>
-                <li>$100 to $300</li>
-                <li>$300 to $500</li>
-                <li>$500 to $1000</li>
-                <li>$1000 to $10,000</li>
+                <li>
+                  {" "}
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">All Price</span>
+                  </label>{" "}
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">Under $20</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">$25 to $100</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">$100 to $300</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">$300 to $500</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">$500 to $1000</span>
+                  </label>
+                </li>
+                <li>
+                  <label className="inline-flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="3"
+                      className="accent-blue-600 w-4 h-4"
+                    />
+                    <span className="text-gray-800">$1000 to $10,000</span>
+                  </label>
+                </li>
               </ul>
             </div>
             <div>
-              <h1>POPULAR BRANDS</h1>
-              <div>
-                <ul>
-                  <li>Apple</li>
-                  <li>Microsoft</li>
-                  <li>Dell</li>
-                  <li>Symphony</li>
-                  <li>Sony</li>
-                  <li>LG</li>
-                  <li>One Plus</li>
-                  <li>Google</li>
-                  <li>Samsung</li>
-                  <li>HP</li>
-                  <li>Xiaomi</li>
-                  <li>Panasonic</li>
-                  <li>Intel</li>
+              <h1 className="text-2xl mt-5 font-bold">Popular Brands</h1>
+              <div className="">
+                <ul className="grid grid-cols-2 gap-2">
+                  {[
+                    "Apple",
+                    "Microsoft",
+                    "Dell",
+                    "Symphony",
+                    "Sony",
+                    "LG",
+                    "One Plus",
+                    "Google",
+                    "Samsung",
+                    "HP",
+                    "Xiaomi",
+                    "Panasonic",
+                    "Intel",
+                  ].map((brand, index) => (
+                    <li key={index}>
+                      <label className="inline-flex items-center space-x-2">
+                        <input
+                          type="checkbox"
+                          value={brand}
+                          className="w-5 h-5 accent-blue-600 rounded border-gray-300"
+                        />
+                        <span className="text-gray-800">{brand}</span>
+                      </label>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <h1>POPULAR TAGS</h1>
+              <h1 className="text-2xl font-bold mt-5">Popular Tags</h1>
               <div className="flex  flex-wrap gap-2">
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   iPhone
                 </span>
                 <span className="border-2 border-gray-200 px-3 py-1 rounded">
                   TV
                 </span>
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   Game
                 </span>
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   Asus Laptops
                 </span>
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   Macbook
                 </span>
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   SSD
                 </span>
-                <span className="border-2 border-gray-200 px-3 py-1 rounded">
+                <span className="border-2 hover:bg-gray-200 border-gray-200 px-3 py-1 rounded">
                   Graphics Card
                 </span>
               </div>
@@ -247,18 +334,31 @@ const ShopPage = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="flex p-2 flex-row gap-24 justify-between">
-              <div className="bg-amber-50 ">
-                <h1>Search</h1>
+          <div className="">
+            <div className="flex py-2 flex-row gap-24 justify-between">
+              <div className=" flex relative flex-row gap-6">
+                <input
+                  type="text"
+                  placeholder="Search brands..."
+                  className="w-80 px-4 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <div className="absolute right-5 top-3 h-15 w-auto">
+                  <img src={MagGlass} alt="" />
+                </div>
               </div>
-              <div className="flex flex-row gap-6">
-                <h1>Sort by</h1>
-                <h1>Most Popular</h1>
+              <div className="flex flex-row text-center items-center gap-6">
+                <h1 className="">Sort by:</h1>{" "}
+                <select className="w-full md:w-60 px-4 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Sort by</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="name-asc">Name: A-Z</option>
+                  <option value="name-desc">Name: Z-A</option>
+                </select>
               </div>
             </div>
             <div>
-              <div className="flex bg-gray-200 flex-row p-2 gap-24 justify-between">
+              <div className="flex bg-gray-200 flex-row p-2 gap-10 justify-between">
                 <div className=" flex flex-row gap-4 ">
                   <div>
                     <h1>Active Filters:</h1>
@@ -270,8 +370,9 @@ const ShopPage = () => {
                     <h1>5 Star Rating</h1>
                   </div>
                 </div>
-                <div className="flex flex-row gap-6">
-                  <h1>5000 results found</h1>
+                <div className="flex gap-1 flex-row ">
+                  <h1 className="font-extrabold">5000</h1>{" "}
+                  <h1>results found</h1>
                 </div>
               </div>
               <div className="flex flex-row justify-between gap-y-6 flex-wrap">
@@ -439,26 +540,32 @@ const ShopPage = () => {
               </div>
             </div>
             <div className="flex justify-center  py-10  gap-6 flex-row">
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="bg-green-900 rounded-4xl h-12 w-12 flex items-center justify-center">
+                <img src={ArrowBigLeft} alt="" className="w-7 h-7" />
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 1
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 2
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 3
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 4
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 5
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 6
               </div>
-              <div className="border-2 rounded-full p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 7
+              </div>
+              <div className="bg-green-900 rounded-4xl h-12 w-12 flex items-center justify-center">
+                <img src={ArrowRight2} alt="" className="w-7 h-7" />
               </div>
             </div>
           </div>

@@ -7,8 +7,6 @@ type CatProductCardsProps = {
   imageurl: string;
   price: number;
   name: string;
-
-
   reviewStars?: number;      
   reviewCount?: number;
 };

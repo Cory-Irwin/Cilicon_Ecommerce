@@ -12,9 +12,9 @@ import grey2 from "../../../assets/misc/grey02.svg";
 import payment from "../../../assets/misc/Payment Method.svg";
 import airpod from "../../../assets/misc/airpods.webp";
 
-const mainProduct = {
+type mainProduct = {
   name: "2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray",
-  image: Imac,
+  image: string,
   price: 1600,
   originalPrice: 1999,
   discount: "21% Off",
@@ -22,57 +22,58 @@ const mainProduct = {
   brand: "Apple",
   Category: "Electronic Devices",
   rating: "⭐⭐⭐⭐⭐ 4.7 Star Rating (21,000 User feedback)",
+  reviewStars?: number;   
   sku: "A264671",
 };
 
-const InduvidualProductCard = () => {
-  const [product] = useState(mainProduct);
+const InduvidualProductCard = (props: mainProduct) => {
+  
   return (
     <div className="mx-auto max-w-screen-xl my-10 px-4">
       <div className="grid grid-cols-10 grid-rows-2 gap-4">
         {/* Left Side - Image */}
         <div className="col-span-5 h-75 flex justify-center items-center shadow-md">
-          <img src={product.image} className="h-150 w-150" alt={product.name} />
+          <img src={props.image} className="h-150 w-150" alt={props.name} />
         </div>
 
         {/* Right Side - Product Info */}
         <div className="col-span-5 h-175 col-start-6 row-span-2 shadow-md  p-4">
-          <h1>{product.rating}</h1>
+          <h1>{props.rating}</h1>
 
-          <h1 className="text-2xl text-black ">{product.name}</h1>
+          <h1 className="text-2xl text-black ">{props.name}</h1>
 
           {/* SKU & Availability on the same row */}
           <div className="flex justify-between items-center my-1">
             <div className="flex gap-2">
               <p className="text-gray-500">Sku:</p>
-              <p className="text-black">{product.sku}</p>
+              <p className="text-black">{props.sku}</p>
             </div>
             <div className="flex gap-2">
               <p className="text-gray-500">Availability:</p>
-              <p className="text-green-300">{product.Availability}</p>
+              <p className="text-green-300">{props.Availability}</p>
             </div>
           </div>
 
           <div className="flex justify-between items-center my-1">
             <div className="flex gap-2">
               <p className="text-gray-500">Brand:</p>
-              <p className="text-black">{product.brand}</p>
+              <p className="text-black">{props.brand}</p>
             </div>
             <div className="flex gap-2">
               <p className="text-gray-500">Category:</p>
               <p className="text-black">
-                <p>{product.Category}</p>
+                <p>{props.Category}</p>
               </p>
             </div>
           </div>
 
           <div className=" flex gap-2 items-center my-4">
-            <h1 className="text-green-600 text-2xl">${product.price}</h1>
-            <h1>${product.originalPrice}</h1>
-            <div className="bg-yellow-500 p-1">{product.discount}</div>
+            <h1 className="text-green-600 text-2xl">${props.price}</h1>
+            <h1>${props.originalPrice}</h1>
+            <div className="bg-yellow-500 p-1">{props.discount}</div>
           </div>
 
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-px my-8 bg-gray-200 border-2 dark:bg-gray-700" />
 
           <div className="flex  justify-between items-center my-1">
             <p>Color</p>
@@ -164,23 +165,23 @@ const InduvidualProductCard = () => {
         {/* Additional Boxes in Row 2 */}
         <div className="col-start-5 h-25 row-start-2 ">
           {" "}
-          <img src={product.image} className="h-50 w-50" alt="MacBook Pro" />
+          <img src={props.image} className="h-50 w-50" alt="MacBook Pro" />
         </div>
         <div className="col-start-4 h-25 row-start-2 ">
           {" "}
-          <img src={product.image} className="h-50 w-50" alt="MacBook Pro" />
+          <img src={props.image} className="h-50 w-50" alt="MacBook Pro" />
         </div>
         <div className="col-start-3 h-25 row-start-2 ">
           {" "}
-          <img src={product.image} className="h-50 w-50" alt="MacBook Pro" />
+          <img src={props.image} className="h-50 w-50" alt="MacBook Pro" />
         </div>
         <div className="col-start-2 h-25 row-start-2 ">
           {" "}
-          <img src={product.image} className="h-50 w-50" alt="MacBook Pro" />
+          <img src={props.image} className="h-50 w-50" alt="MacBook Pro" />
         </div>
         <div className="col-start-1 h-25 row-start-2 ">
           {" "}
-          <img src={product.image} className="h-50 w-50" alt="MacBook Pro" />
+          <img src={props.image} className="h-50 w-50" alt="MacBook Pro" />
         </div>
       </div>
 
