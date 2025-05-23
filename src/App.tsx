@@ -7,8 +7,8 @@ import BillingPage from './Pages/shopPages/billingPage';
 import ShopPage from './Pages/shopPages/shopPage';
 import OrderSuccess from './Pages/shopPages/successfullyOrderedPage';
 import TrackOrder from './Pages/shopPages/trackOrderPage';
-import TrackOrderProgress from './Pages/shopPages/trackOrderProgressPage';
-import ComparePage from './Pages/shopPages/comparePage';
+import TrackOrderProgress from './Pages/shopPages/TrackOrderProgressPage/trackOrderProgressPage';
+import ComparePage from './Pages/shopPages/ComparePage/comparePage';
 import WishListPage from './Pages/shopPages/wishlistPage';
 import SignInPage from './Pages/signInPages/signInPage';
 import ForgotPasswordPage from './Pages/signInPages/forgotPasswordPage'

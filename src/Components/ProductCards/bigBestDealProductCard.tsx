@@ -2,10 +2,9 @@ import React from "react";
 import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
 import Star from "../../assets/bigBestDealProductCard/Star.svg";
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";
-import Eyes from '../../assets/bestdeals/Eye.svg'
-import Shopping from '../../assets/bestdeals/ShoppingCartSimple.svg'
-import StarRating from '../../Components/RatingStars/fiveStarRating'
-
+import Eyes from "../../assets/bestdeals/Eye.svg";
+import Shopping from "../../assets/bestdeals/ShoppingCartSimple.svg";
+import StarRating from "../../Components/RatingStars/fiveStarRating";
 
 type CatProductCards = {
   imageurl: string;
@@ -36,7 +35,7 @@ const bigBestDealProductCard = (props: any) => {
 
       <div className="flex flex-row ">
         <div className="flex p-2 flex-row gap-2">
-        <StarRating rating={5}/>
+          <StarRating rating={5} />
           <p className="text-gray-400">({props.reviewCount})</p>
         </div>
         <div className=""></div>
@@ -49,8 +48,12 @@ const bigBestDealProductCard = (props: any) => {
       </div>
 
       <div className="flex p-2 gap-2 flex-row">
-        <h1 className="text-green-900 text-2xl font-semibold">${props.price}</h1>
-        <h1 className="text-gray-300 line-through text-2xl font-bold">${props.discount}</h1>
+        <h1 className="text-green-900 text-2xl font-semibold">
+          ${props.price}
+        </h1>
+        <h1 className="text-gray-300 line-through text-2xl font-bold">
+          ${props.discount}
+        </h1>
       </div>
 
       <div className="p-2">
@@ -60,26 +63,24 @@ const bigBestDealProductCard = (props: any) => {
         </p>
       </div>
 
-       <div className="my-12 ">
-          <div className=" flex items-center   gap-4  justify-center">
-            <div className="bg-yellow-400 p-4 hover:bg-yellow-200  ">
-              <img src={Heart} alt="" />
-            </div>
-            <div className="bg-gray-200 hover:bg-gray-300 p-4 h-14  ">
-              <button>
-                <div className="flex flex-row gap-1">
-              
-              <img src={Shopping} alt="" />
-              <h1>ADD TO CART</h1>
+      <div className="my-12 ">
+        <div className=" flex items-center   gap-4  justify-center">
+          <div className="bg-yellow-400 p-4 hover:bg-yellow-200  ">
+            <img src={Heart} alt="" />
+          </div>
+          <div className="bg-gray-200 hover:bg-gray-300 p-4 h-14  ">
+            <button>
+              <div className="flex flex-row gap-1">
+                <img src={Shopping} alt="" />
+                <h1>ADD TO CART</h1>
               </div>
-              </button>
-            </div>
-            <div className="bg-yellow-400 hover:bg-yellow-200 p-4 flex ">
-              <img src={Eyes} alt="" />
-            </div>
-           {" "}
+            </button>
+          </div>
+          <div className="bg-yellow-400 hover:bg-yellow-200 p-4 flex ">
+            <img src={Eyes} alt="" />
           </div>{" "}
-        </div>
+        </div>{" "}
+      </div>
     </div>
   );
 };
