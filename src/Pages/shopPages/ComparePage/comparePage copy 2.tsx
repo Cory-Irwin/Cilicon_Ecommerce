@@ -58,14 +58,14 @@ const ComparePage = () => {
                 }
                 reviewStars={2}
                 reviewCount={245}
-                price={undefined}
+                price={1299.00}
                 number={undefined}
-                soldBy={""}
-                brandName={""}
-                modelName={""}
+                soldBy={"Apple"}
+                brandName={"IMac"}
+                modelName={"Imac 2025"}
                 stockStatus={false}
-                size={""}
-                weight={""}
+                size={"23x4x12"}
+                weight={"14KG"}
                 emptySize={""}
                 emptyWeight={""}
               />
@@ -79,14 +79,14 @@ const ComparePage = () => {
                 }
                 reviewStars={2}
                 reviewCount={245}
-                price={undefined}
+                price={1299.00}
                 number={undefined}
-                soldBy={""}
-                brandName={""}
-                modelName={""}
+                soldBy={"Apple"}
+                brandName={"IMac"}
+                modelName={"Imac 2025"}
                 stockStatus={false}
-                size={""}
-                weight={""}
+                size={"23x4x12"}
+                weight={"14KG"}
                 emptySize={""}
                 emptyWeight={""}
               />
@@ -100,14 +100,14 @@ const ComparePage = () => {
                 }
                 reviewStars={2}
                 reviewCount={245}
-                price={undefined}
+                price={1299.00}
                 number={undefined}
-                soldBy={""}
-                brandName={""}
-                modelName={""}
+                soldBy={"Apple"}
+                brandName={"IMac"}
+                modelName={"Imac 2025"}
                 stockStatus={false}
-                size={""}
-                weight={""}
+                size={"23x4x12"}
+                weight={"14KG"}
                 emptySize={""}
                 emptyWeight={""}
               />

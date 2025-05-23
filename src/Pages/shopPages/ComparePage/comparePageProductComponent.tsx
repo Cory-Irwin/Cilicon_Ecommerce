@@ -16,7 +16,7 @@ type comparePageProductComponentProps = {
   soldBy?: string;
   brandName?: string;
   modelName?: string;
-  stockStatus?: boolean;
+  stockStatus?: string;
   size?: string;
   weight?: string;
   emptyFeedback?: string;
@@ -34,7 +34,7 @@ const comparePageProductComponent = (
 ) => {
   return (
     <>
-      <div className="border-2 border-gray-200 ">
+      <div className=" ">
         <img src={props.imgValue} alt="" />
         <div className="mt-10 p-6 ">
           <h1 className="text-2xl">{props.productTitle}</h1>
@@ -55,18 +55,21 @@ const comparePageProductComponent = (
           </div>
         </div>{" "}
         <div className="mt-4">
-          <div className="bg-gray-100 p-2">
+         <div className="h-15"> <div className="bg-gray-100 p-2">
             {" "}
             <StarRating rating={props.reviewStars || 0} />
           </div>
-          <div className="p-2">{props.price}</div>
-          <div className="bg-gray-100 p-2">{props.soldBy}</div>
-          <div className="p-2">{props.brandName}</div>
-          <div className="bg-gray-100 p-2">{props.modelName}</div>
-          <div className="p-2">{props.stockStatus}</div>
-          <div className="bg-gray-100 p-2">{props.size}</div>
-          <div className="p-2">{props.weight}</div>
-        </div>
+          
+           
+          <div className="p-2  ">{props.price}</div>
+          <div className=" bg-gray-100 p-2">{props.soldBy}</div>
+          <div className=" p-2">{props.brandName}</div>
+          <div className=" bg-gray-100 p-2">{props.modelName}</div>
+          <div className=" bg-gray-100 p-2">{props.stockStatus}</div>
+          <div className=" p-2">{props.size}</div>
+         
+          <div className="p-2  bg-gray-100">{props.weight}</div>
+       </div> </div>
       </div>{" "}
     </>
   );
