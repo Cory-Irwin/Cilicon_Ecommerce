@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/homePages/homePage';
 import ProductPage from './Pages/shopPages/productPage';
 import './index.css';
-import CartPage from './Pages/shopPages/cartPage';
+import CartPage from './Pages/shopPages/CartPage/cartPage';
 import BillingPage from './Pages/shopPages/billingPage';
 import ShopPage from './Pages/shopPages/shopPage';
 import OrderSuccess from './Pages/shopPages/successfullyOrderedPage';
 import TrackOrder from './Pages/shopPages/trackOrderPage';
 import TrackOrderProgress from './Pages/shopPages/TrackOrderProgressPage/trackOrderProgressPage';
 import ComparePage from './Pages/shopPages/ComparePage/comparePage';
-import WishListPage from './Pages/shopPages/wishlistPage';
+import WishListPage from './Pages/shopPages/WishListPage/wishlistPage copy';
 import SignInPage from './Pages/signInPages/signInPage';
 import ForgotPasswordPage from './Pages/signInPages/forgotPasswordPage'
 import ResetPasswordPage from './Pages/signInPages/resetPasswordPage'
@@ -41,7 +41,7 @@ function App() {
         <Route path='/TrackOrderPage' element={<TrackOrder/>}/>
         <Route path='/TrackOrderProgressPage' element={<TrackOrderProgress/>}/>
         <Route path='/comparePage' element={<ComparePage/>}/>
-        <Route path='/wishlistPage' element={<WishListPage/>}/>
+        <Route path='/WishListPage' element={<WishListPage/>}/>
         <Route path='/signInPage' element={<SignInPage/>}/>
         <Route path='/forgotPasswordPage' element={<ForgotPasswordPage/>}/>
         <Route path='/resetPasswordPage' element={<ResetPasswordPage/>}/>

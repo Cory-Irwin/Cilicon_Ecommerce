@@ -37,7 +37,7 @@ const ComparePage = () => {
               soldBy={"Apple"}
               brandName={"IMac"}
               modelName={"Imac 2025"}
-              stockStatus={"false"}
+              stockStatus={"In Stock"}
               size={"23x4x12"}
               weight={"14KG"}
               emptySize={""}
@@ -57,7 +57,7 @@ const ComparePage = () => {
               soldBy={"Apple"}
               brandName={"IMac"}
               modelName={"Imac 2025"}
-              stockStatus={"false"}
+              stockStatus={"Out Of Stock"}
               size={"23x4x12"}
               weight={"14KG"}
               emptySize={""}
@@ -77,7 +77,7 @@ const ComparePage = () => {
               soldBy={"Apple"}
               brandName={"IMac"}
               modelName={"Imac 2025"}
-              stockStatus={"false"}
+              stockStatus={"In Stock"}
               size={"23x4x12"}
               weight={"14KG"}
               emptySize={""}

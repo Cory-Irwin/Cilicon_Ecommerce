@@ -37,31 +37,31 @@ const comparePageProductComponent = (
       <div className="my-138">
 
      
-         <div className=" flex w-full">
+         <div className=" flex w-full ">
                 <div className="mt-4 w-full">
-                <div className="h-15 ">
-                  <div className="  p-2">
+                <div className="h-15 text-xl ">
+                  <div className=" bg-gray-100 p-2">
                     <h1>Customer Feedback:</h1>
                   </div>
-                  <div className=" bg-gray-100 p-2">
+                  <div className="  p-2">
                     <h1>Price:</h1>
                   </div>
-                  <div className=" p-2">
+                  <div className=" bg-gray-100 p-2">
                     <h1>Sold By:</h1>
                   </div>
-                  <div className= " bg-gray-100 p-2">
+                  <div className= "  p-2">
                     <h1>Brand:</h1>
                   </div>
-                  <div className=" p-2">
+                  <div className="bg-gray-100 p-2">
                     <h1>Model:</h1>
                   </div>
-                  <div className=" bg-gray-100 p-2">
+                  <div className="  p-2">
                     <h1>Stock Status:</h1>
                   </div>
-                  <div className=" p-2">
+                  <div className=" bg-gray-100 p-2">
                     <h1>Size:</h1>
                   </div>
-                  <div className=" bg-gray-100 p-2">
+                  <div className=" p-2">
                     <h1>Weight:</h1>
                   </div>
                 </div>
