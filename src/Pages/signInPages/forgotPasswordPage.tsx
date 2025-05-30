@@ -10,7 +10,7 @@ const forgotPasswordPage = () => {
                <Header />
              <Categories />
                     <div className="flex flex-col items-center justify-center min-h-[40vh] w-full px-4">
-                        <div className='bg-white  shadow-lg p-8  w-full max-w-md mx-auto'>
+                        <div className='bg-white  shadow-lg p-8 mt-20 mb-20  w-full max-w-md mx-auto'>
                             <div className='text-center '>
                                 <h1 className='text-2xl'>Forgot Password</h1>
                                 <p>Enter the email address or mobile phone number associated with your
@@ -24,12 +24,12 @@ const forgotPasswordPage = () => {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    className="w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-orange-400"
                                 />
                             </div>
 
                             {/* Sign In Button */}
-                            <button className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-orange-600 transition">
+                            <button className="w-full bg-teal-500 text-white py-2  hover:bg-orange-600 transition">
                                 Send Code →
                             </button>
 
@@ -41,7 +41,7 @@ const forgotPasswordPage = () => {
                             </div>
 
                             <hr className='py-2' />
-                            <p>You may contact <a href="" className='text-blue-900'>Customer Serivce</a> for help restoring access to your account</p>
+                            <p>You may contact <a href="" className='text-teal-900'>Customer Serivce</a> for help restoring access to your account</p>
                         </div>
                     </div>
            <Footer />

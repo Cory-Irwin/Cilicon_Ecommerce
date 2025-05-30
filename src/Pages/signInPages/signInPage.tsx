@@ -18,11 +18,11 @@ const SignInPage = () => {
       <Categories />
       
       <div className="flex flex-col items-center justify-center min-h-[40vh] w-full px-4">
-        <div className="bg-white shadow-lg p-8  w-full max-w-md mx-auto">
+        <div className="bg-white shadow-lg p-8 mt-20 mb-20   w-full max-w-md mx-auto">
 
           {/* Sign In & Sign Up Toggle */}
           <div className="flex justify-between border-b pb-3 mb-5">
-            <h2 className="text-lg font-semibold border-b-2 border-orange-500 pb-1">Sign In</h2>
+            <h2 className="text-lg font-semibold border-b-2 border-teal-500 pb-1">Sign In</h2>
             <h2 className="text-lg text-gray-400 cursor-pointer">Sign Up</h2>
           </div>
 
@@ -32,7 +32,7 @@ const SignInPage = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400"
             />
           </div>
 
@@ -42,7 +42,7 @@ const SignInPage = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400"
             />
             <button
               type="button"
@@ -55,11 +55,11 @@ const SignInPage = () => {
 
           {/* Forgot Password */}
           <div className="text-right mb-4">
-            <a href="#" className="text-blue-500 text-sm">Forgot Password?</a>
+            <a href="/forgotpasswordpage" className="text-blue-500 text-sm">Forgot Password?</a>
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition">
+          <button className="w-full bg-teal-500 text-white py-2  hover:bg-teal-600 transition">
             SIGN IN →
           </button>
 
@@ -67,10 +67,10 @@ const SignInPage = () => {
           <div className="my-5 text-center text-gray-400 text-sm">or</div>
 
           {/* Social Logins */}
-          <button className="w-full flex items-center justify-center border py-2 rounded-md mb-3 hover:bg-gray-100 transition">
+          <button className="w-full flex items-center justify-center border py-2  mb-3 hover:bg-gray-100 transition">
             <FcGoogle size={20} className="mr-2" /> Login with Google
           </button>
-          <button className="w-full flex items-center justify-center border py-2 rounded-md hover:bg-gray-100 transition">
+          <button className="w-full flex items-center justify-center border py-2  hover:bg-gray-100 transition">
             <FaApple size={20} className="mr-2" /> Login with Apple
           </button>
         </div>

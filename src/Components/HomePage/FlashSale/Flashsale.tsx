@@ -11,7 +11,7 @@ import Charger from "../../../assets/misc/charger.png";
 
 export const Flashsale = () => {
   return (
-    <div className="mx-auto max-w-screen-xl my-20 px-4">
+    <div className="mx-auto max-w-screen-xl my-20 ">
       <div className="flex flex-row gap-6">
         {/* Column 1 */}
         <div className="flex flex-col gap-6 py-5">
