@@ -198,9 +198,9 @@ const customerSupport = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 grid-rows-1 mt-10 gap-24">
-              <div className="bg-white p-6">
-                <div className="flex flex-row gap-4">
+            <div className="grid grid-cols-2 grid-rows-1  mt-10 gap-24">
+              <div className="bg-white p-6 shadow-lg">
+                <div className="flex flex-row gap-4 ">
                   <div>
                     <img src={icon2} alt="" className="h-auto w-30" />
                   </div>
@@ -221,8 +221,8 @@ const customerSupport = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-6">
-                <div className="flex flex-row gap-4">
+              <div className="bg-white p-6 shadow-lg">
+                <div className="flex flex-row gap-4 ">
                   <div>
                     <img src={icon1} alt="" className="h-auto w-30" />
                   </div>

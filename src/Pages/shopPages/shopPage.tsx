@@ -540,7 +540,7 @@ const ShopPage = () => {
               </div>
             </div>
             <div className="flex justify-center  py-10  gap-6 flex-row">
-              <div className="bg-green-900 rounded-4xl h-12 w-12 flex items-center justify-center">
+              <div className="bg-green-900 rounded-4xl hover:bg-teal-500 h-12 w-12 flex items-center justify-center">
                 <img src={ArrowBigLeft} alt="" className="w-7 h-7" />
               </div>
               <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
@@ -564,7 +564,7 @@ const ShopPage = () => {
               <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
                 7
               </div>
-              <div className="bg-green-900 rounded-4xl h-12 w-12 flex items-center justify-center">
+              <div className="bg-green-900 hover:bg-teal-500 rounded-4xl h-12 w-12 flex items-center justify-center">
                 <img src={ArrowRight2} alt="" className="w-7 h-7" />
               </div>
             </div>

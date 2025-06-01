@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-4 gap-6">
         {/* Logo & Contact */}
         <div>
-          <h2 className="text-lg font-bold">CLICON</h2>
+          <h2 className="text-lg font-bold">AppyCon</h2>
           <p className="mt-2">Customer Support:</p>
           <p className="font-semibold">(629) 555-0129</p>
           <p>
