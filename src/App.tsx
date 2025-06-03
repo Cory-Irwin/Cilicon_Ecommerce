@@ -20,7 +20,7 @@ import ErrorPage from './Pages/signInPages/errorPage';
 import AboutUsPage from './Pages/signInPages/aboutUsPage';
 import CustomerSupportPage from './Pages/signInPages/customerSupportPage';
 import BlogPost from './Pages/signInPages/BlogPost/blogPost'
-import BlogDetail from './Pages/signInPages/blogDetail'
+import BlogDetail from './Pages/signInPages/BlogPost/BlogDetails/blogDetail'
 import DashboardPage from './Pages/dashboardPages/dashboardPage'
 import DashboardOrderHistoryPage from './Pages/dashboardPages/dashboardOrderHistoryPage'
 import DashboardOrderDetailPage from './Pages/dashboardPages/dashboardOrderDetailPage'
