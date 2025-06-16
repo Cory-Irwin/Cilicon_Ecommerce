@@ -32,9 +32,9 @@ const FullProductCards = (props: any) => {
         <div></div>{" "}
         <div className="flex flex-row gap-6">
           {" "}
-          <div className="w-30 h-30 relative bottom-15 bg-gray-400 rounded-full"></div>
-          <div className="w-30 h-30 relative bottom-15 bg-gray-100 rounded-full"></div>
-          <div className="w-30 h-30 relative bottom-15 bg-gray-900 rounded-full"></div>
+          <div className="w-30 h-30 relative bottom-15 bg-gray-400 hover:border-teal-500 hover:border-6 rounded-full"></div>
+          <div className="w-30 h-30 relative bottom-15 bg-gray-100 hover:border-teal-500 hover:border-6 rounded-full"></div>
+          <div className="w-30 h-30 relative bottom-15 bg-gray-900 hover:border-teal-500 hover:border-6 rounded-full"></div>
         </div>
         <div className="p-6 bg-yellow-400 border-6 border-teal-900 hover:bg-yellow-200 w-60 gap-4  justify-center h-20 items-center flex flex-row text-xl text-white ">
           <div className="">

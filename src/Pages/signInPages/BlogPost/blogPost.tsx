@@ -9,6 +9,7 @@ import ArrowRight from "../../../assets/LandingPage/ArrowRight.svg";
 import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
 import ArrowRight2 from "../../../assets/shopwithcat/ArrowRight.svg";
 import MagGlass from "../../../assets/ShopPage/MagnifyingGlass.svg";
+import GalleryComponent from "./BlogDetails/galleryComponent";
 
 
 const blogPost = () => {
@@ -55,16 +56,7 @@ const blogPost = () => {
             </div>
 
             {/* Gallery */}
-            <div>
-              <h2 className="text-lg font-bold mb-2">Gallery</h2>
-              <div className="grid grid-cols-4 gap-2">
-                {[...Array(8)].map((_, i) => (
-                  <div key={i} className="h-16 bg-gray-200">
-                    IMG
-                  </div>
-                ))}
-              </div>
-            </div>
+           <GalleryComponent articleImage1={""} articleImage2={""} articleImage3={""} articleImage4={""} articleImage5={""} articleImage6={""} articleImage7={""} articleImage8={""}/>
           </div>
 
           {/* Blog posts */}

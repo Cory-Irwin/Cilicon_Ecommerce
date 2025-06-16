@@ -4,6 +4,7 @@ import Categories from "../../Components/HomePage/Categories/Categories";
 import Header from "../../Components/HomePage/Header/Header";
 import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import Penguin1 from "../../assets/PenguinCrew/penguin.jpg";
+import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
 const dashboardOrderDetailPage = () => {
   return (
     <>
@@ -13,38 +14,7 @@ const dashboardOrderDetailPage = () => {
 
       <div className="mx-auto max-w-screen-xl my-10 px-4 h-300">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-20">
-          <div className="grid grid-cols-1 grid-rows-10 gap-4 shadow-lg ">
-            <div>
-              <h1>Dashboard</h1>
-            </div>
-            <div>
-              <h1>Order History</h1>
-            </div>
-            <div>
-              <h1>Track Order</h1>
-            </div>
-            <div>
-              <h1>Shopping cart</h1>
-            </div>
-            <div>
-              <h1>Wishlist</h1>
-            </div>
-            <div>
-              <h1>Compare</h1>
-            </div>
-            <div>
-              <h1>Cards & Address</h1>
-            </div>
-            <div>
-              <h1>Browsing History</h1>
-            </div>
-            <div>
-              <h1>Settings</h1>
-            </div>
-            <div>
-              <h1>Log Out</h1>
-            </div>
-          </div>
+       <DashboardList/>
           <div className="border-2 border-gray-200 ">
             <div className="flex justify-between border-2 border-gray-200 p-4">
               <h1>Order details</h1>
