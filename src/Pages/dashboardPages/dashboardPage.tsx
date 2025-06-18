@@ -9,6 +9,9 @@ import DashboardList from "../../Components/HomePage/DashboardList/dashboardList
 import CreditCardComponent from "./creditCardComponent";
 import ArrowTeal from "../../assets/Arrows/TealArrowRight.svg";
 import Smartphone from "../../assets/misc/iphone.png";
+import ArrowRight from "../../assets/LandingPage/ArrowRight.svg";
+import ArrowBigLeft from "../../assets/shopwithcat/ArrowLeft.svg";
+import ArrowRight2 from "../../assets/shopwithcat/ArrowRight.svg";
 
 type OrderStatus = "In Progress" | "Completed" | "Canceled";
 
@@ -69,7 +72,7 @@ const DashboardPage = (props: DashboardPageProps) => {
                 <div className="border-2 border-gray-100 p-2">
                   <h1 className="p-1 px-2 font-semibold">ACCOUNT INFO</h1>
                 </div>
-                <div className="border-2 border-gray-100 p-4 space-y-4">
+                <div className="border-2 border-gray-100 p-4 max-h-70 h-full space-y-4">
                   <div className="flex items-center space-x-4">
                     <img
                       src={props.profilePicture}
@@ -94,7 +97,7 @@ const DashboardPage = (props: DashboardPageProps) => {
                     </p>
                   </div>
 
-                  <button className="border-2 border-blue-200 p-2 hover:text-white hover:bg-teal-900 text-teal-400 font-bold w-full">
+                  <button className="border-2 border-blue-200 flex relative top-6  p-2 hover:text-white hover:bg-teal-900 text-teal-400 font-bold w-full">
                     EDIT ACCOUNT
                   </button>
                 </div>
@@ -105,7 +108,7 @@ const DashboardPage = (props: DashboardPageProps) => {
                 <div className="border-2 border-gray-100 p-2">
                   <h1 className="p-1 px-2 font-semibold">BILLING ADDRESS</h1>
                 </div>
-                <div className="border-2 border-gray-100 p-4 space-y-2">
+                <div className="border-2 max-h-70 h-full border-gray-100 p-4 space-y-2">
                   <h1>Appy Store</h1>
                   <p>{props.billingAddress}</p>
                   <p>Email: {props.billingEmail}</p>
@@ -113,7 +116,7 @@ const DashboardPage = (props: DashboardPageProps) => {
                     Phone: {props.billingPhoneOrigin} {props.billingPhone}
                   </p>
 
-                  <button className="border-2 mt-4 border-blue-200 p-2 hover:text-white hover:bg-teal-900 text-teal-400 font-bold w-full">
+                  <button className="border-2 flex relative top-18 mt-4 border-blue-200 p-2 hover:text-white hover:bg-teal-900 text-teal-400 font-bold w-full">
                     EDIT ADDRESS
                   </button>
                 </div>
@@ -169,7 +172,23 @@ const DashboardPage = (props: DashboardPageProps) => {
                 commaThousand={false}
                 fullName="Appy Store"
               />
+                <CreditCardComponent
+                accountBalance={20000}
+                cardNumber={4205}
+                cardHolderName="Appy Store"
+                commaThousand={false}
+                fullName="Appy Store"
+              />
+                <CreditCardComponent
+                accountBalance={20000}
+                cardNumber={4205}
+                cardHolderName="Appy Store"
+                commaThousand={false}
+                fullName="Appy Store"
+              />
+              
             </div>
+            
 
             {/* Recent Orders Table */}
             <div className="relative overflow-x-auto shadow-md mt-10">
@@ -214,8 +233,18 @@ const DashboardPage = (props: DashboardPageProps) => {
               <button>Add Card</button>
             </div>
 
-            <div className="grid grid-cols-3 grid-rows-2 gap-4">
+            <div className="flex flex-row mt-5 mb-5 justify-between">
               <div className=" gap-4">
+                <ProductCards
+                  reviewStars={4}
+                  reviewCount={672}
+                  imageurl={Smartphone}
+                  title="Samsung Galaxy S21 5G – Phantom Gray"
+                  newPrice={1999.99}
+                  // no originalPrice or discount, so no percentOff
+                />
+              </div>
+                <div className=" gap-4">
                 <ProductCards
                   reviewStars={4}
                   reviewCount={672}
@@ -245,8 +274,35 @@ const DashboardPage = (props: DashboardPageProps) => {
                   // no originalPrice or discount, so no percentOff
                 />
               </div>
-              <div className="col-span-4 row-start-2 text-center">
-                ARROW ARROW
+              
+           
+            </div>   <div className="flex justify-center   gap-6 flex-row">
+              <div className="bg-green-900 rounded-4xl hover:bg-teal-500 h-12 w-12 flex items-center justify-center">
+                <img src={ArrowBigLeft} alt="" className="w-7 h-7" />
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                1
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                2
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                3
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                4
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                5
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                6
+              </div>
+              <div className="border-2 rounded-full hover:bg-gray-200 p-2 w-12 h-12 items-center text-center border-gray-200 flex justify-center">
+                7
+              </div>
+              <div className="bg-green-900 hover:bg-teal-500 rounded-4xl h-12 w-12 flex items-center justify-center">
+                <img src={ArrowRight2} alt="" className="w-7 h-7" />
               </div>
             </div>
           </div>
