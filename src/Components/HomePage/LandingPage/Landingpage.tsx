@@ -79,7 +79,7 @@ const Landingpage = () => {
             {/* Image */}
           </div>
           <div
-            className="absolute top-8 right-4 w-40   font-extrabold text-xl h-15 border-6 border-teal-900 bg-yellow-400 flex items-center 
+            className="absolute top-8 right-4 w-30   text-xl h-10  bg-yellow-400 flex items-center 
               justify-center text-black  z-30 shadow-lg"
           >
             40% OFF
