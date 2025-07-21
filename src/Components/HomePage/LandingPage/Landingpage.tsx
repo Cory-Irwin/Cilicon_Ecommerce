@@ -4,7 +4,23 @@ import Iphone from "../../../assets/misc/iphone.png";
 import Airpods from "../../../assets/misc/airpods.webp";
 import arrow from "../../../assets/LandingPage/ArrowRight.svg";
 
-const Landingpage = () => {
+type landingPageProps = {
+  tagLine: number;
+  mainProductTitle: number;
+  mainProductDescription: string;
+  circlePrice: boolean;
+  fullName: string;
+  summerSalesProductTop: boolean;
+  smallProductTopPercentageOff: boolean;
+  topProductTitle: string;
+  bottomProductTitle: string;
+  bottomProductPrice: number;
+  bottomProductImage: string;
+
+
+};
+
+const Landingpage = (props: landingPageProps) => {
   return (
     <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
       <div className="grid grid-cols-3 grid-rows-[auto,auto] gap-6 w-full">
@@ -12,8 +28,8 @@ const Landingpage = () => {
         <div className="bg-gray-100 rounded-lg  col-span-2 row-span-2 flex justify-between items-center p-6 relative">
           {/* Text Section */}
           <div className="w-1/2">
-            <h1 className="text-blue-500 text-2xl">The Best Place to Play.</h1>
-            <h1 className="text-6xl font-bold mb-2">Xbox Consoles </h1>
+            <h1 className="text-blue-500 text-2xl">{props.mainProductTitle}The Best Place to Play.</h1>
+            <h1 className="text-6xl font-bold mb-2">{props.mainProductDescription}Xbox Consoles </h1>
             <p className=" text-2xl text-gray-700">
               Experience next-gen gaming with Xbox. Powerful performance,
               immersive visuals, and the best games.
