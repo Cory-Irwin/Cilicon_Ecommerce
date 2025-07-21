@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../../Components/HomePage/Header/Header";
 import Categories from "../../../Components/HomePage/Categories/Categories";
-import Headphones from "../../../assets/Misc/headphones.png"
+import Headphones from "../../../assets/misc/headphones.png"
 
 const CartPage = () => {
   const [cart, setCart] = useState([

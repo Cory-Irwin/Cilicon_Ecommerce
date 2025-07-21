@@ -7,7 +7,7 @@ import appleairpods from "../../../assets/misc/airpods.webp";
 import xaomiairpods from "../../../assets/misc/AIRPHONESXAOMI.svg";
 import IMAC from "../../../assets/misc/IMAC.png";
 import WishListPageComponent from "../../../Pages/shopPages/WishListPage/wishListPageComponent";
-import EarBuds from "../../../assets/Misc/airpods.webp";
+import EarBuds from "../../../assets/misc/airpods.webp";
 
 const WishListPage = () => {
   return (

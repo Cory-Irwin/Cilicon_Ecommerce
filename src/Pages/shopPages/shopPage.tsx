@@ -3,7 +3,7 @@ import Header from "../../Components/HomePage/Header/Header";
 import Categories from "../../Components/HomePage/Categories/Categories";
 import Footer from "../../Components/HomePage/Footer/Footer";
 import FeaturedProductCards from "../../Components/ProductCards/FeaturedProductCard";
-import MousePad from "../../assets/Misc/Mousepad.png";
+import MousePad from "../../assets/misc/Mousepad.png";
 import Headphones from "../../assets/misc/headphones.png";
 import Controller from "../../assets/misc/IMAC.png";
 import Smartphone from "../../assets/misc/iphone.png";
