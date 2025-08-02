@@ -22,7 +22,7 @@ const Home = () => {
     <BlackFriday/>
     <Header/>
     <Categories/>
-    <Landingpage/> 
+    <Landingpage /> 
     <Guarantee/>
     <Bestdeals/>
     <Shopwithcat/>
