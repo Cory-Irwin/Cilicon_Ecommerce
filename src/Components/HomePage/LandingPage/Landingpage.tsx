@@ -26,7 +26,7 @@ const Landingpage = (props: landingPageProps) => {
             <div className="grid grid-cols-3 lg:grid-rows-[auto,auto] sm:grid-rows-[1,3] gap-6 w-full">
                 {/* Xbox Section (2x2) */}
                 <div
-                    className="bg-gray-100 rounded-lg  col-span-2 row-span-2 flex justify-between items-center p-6 relative">
+                    className="bg-gray-100 rounded-lg  transition-transform duration-500 hover:scale-105 col-span-2 row-span-2 flex justify-between items-center p-6 relative">
                     {/* Text Section */}
                     <div className="w-1/2">
                         <h1 className="text-blue-500 text-2xl">{props.mainProductTitle}The Best Place to Play.</h1>
@@ -41,7 +41,7 @@ const Landingpage = (props: landingPageProps) => {
                                 <div className="flex items-center flex-row justify-between gap-4">
                                     <div>BUY NOW</div>
                                     <div>
-                                        <img src={arrow} alt="" className="h-10"/>
+                                        <img src={arrow} alt="" className="h-10" />
                                     </div>
                                 </div>
                             </button>
@@ -68,7 +68,7 @@ const Landingpage = (props: landingPageProps) => {
                 </div>
 
                 {/* iPhone Section (Top Right - 1x1) */}
-                <div className="bg-black text-black z-10 overflow-hidden rounded-lg shadow-xl h-[250px]
+                <div className="bg-black text-black z-10 overflow-hidden rounded-lg transition-transform duration-500 hover:scale-105 shadow-xl h-[250px]
         flex flex-col justify-between p-4 relative">
 
                     <div className="flex py-5 z-20 p-2 items-center">
@@ -85,12 +85,12 @@ const Landingpage = (props: landingPageProps) => {
                                 <div className="flex text-lg flex-row items-center gap-4">
                                     {" "}
                                     BUY NOW
-                                    <img src={arrow} alt="" className="h-5"/>
+                                    <img src={arrow} alt="" className="h-5" />
                                 </div>
                             </button>
                             {/* Text */}
                             <div className="relative left-50 bottom-65 z-0">
-                                <img src={Iphone} alt="iPhone" className="w-100 h-auto"/>
+                                <img src={Iphone} alt="iPhone" className="w-100 h-auto" />
                             </div>
                         </div>
 
@@ -106,7 +106,7 @@ const Landingpage = (props: landingPageProps) => {
                 </div>
 
                 <div
-                    className="bg-gray-400 text-white overflow-hidden rounded-lg shadow-xl h-[250px] flex flex-col justify-between p-4 relative">
+                    className="bg-gray-400 text-white overflow-hidden transition-transform duration-500 hover:scale-105 rounded-lg shadow-xl h-[250px] flex flex-col justify-between p-4 relative">
                     {/* Text */}
                     <div className="flex justify-center items-center">
                         <div>
@@ -120,7 +120,7 @@ const Landingpage = (props: landingPageProps) => {
                                 <div className="flex text-lg flex-row items-center  gap-4">
                                     {" "}
                                     BUY NOW
-                                    <img src={arrow} alt="" className="h-5"/>
+                                    <img src={arrow} alt="" className="h-5" />
                                 </div>
                             </button>
                         </div>
@@ -128,7 +128,7 @@ const Landingpage = (props: landingPageProps) => {
                         {/* Price Tag */}
                         {/* Image */}
                         <div className="w-full h-full  flex relative  left-2 top-3 justify-center items-center">
-                            <img src={Airpods} alt="iPhone" className="w-full  h-full "/>
+                            <img src={Airpods} alt="iPhone" className="w-full  h-full " />
                         </div>
                     </div>
 

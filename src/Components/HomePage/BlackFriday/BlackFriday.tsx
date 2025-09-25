@@ -6,7 +6,7 @@ const BlackFriday = () => {
       <div className='max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center
        text-white'>
         {/* Logo Section */}
-        <div className='flex gap-2 items-center '>
+        <div className='flex gap-2 items-center animate-bounce'>
           <h1 className='text-black bg-red-400 text-2xl -rotate-12 px-2 py-1'>Black</h1>
           <h1 className='text-white text-2xl'>Friday</h1>
         </div>
@@ -14,7 +14,7 @@ const BlackFriday = () => {
         {/* Discount Section */}
         <div className='flex gap-2 text-2xl items-center'>
           <h1 className='text-white text-sm'>Up to</h1>
-          <h1 className='text-red-400 text-5xl font-bold'>59%</h1>
+          <h1 className='text-red-400 text-5xl font-bold animate-pulse '>59%</h1>
           <h1 className='text-white text-lg'>OFF</h1>
         </div>
 
