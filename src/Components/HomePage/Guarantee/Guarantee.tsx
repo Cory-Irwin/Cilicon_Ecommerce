@@ -8,7 +8,7 @@ const Guarantee = () => {
   return (
     <div className='relative z-10 bg-white  p-4 text-black max-w-screen-xl mx-auto px-4  flex'>
       <div className='flex flex-row gap-12 border-2 border-solid  border-gray-200 h-30 w-full items-center justify-center'>
-        <div className='bg-white p-1 gap-2 flex justify-between'>
+        <div className='bg-white p-1 gap-5 flex items-center justify-between'>
           <div>
               <img src={Package} alt="" />
             </div> 
@@ -16,11 +16,11 @@ const Guarantee = () => {
             <h1>FAST DELIVERY</h1>
             <p className='text-gray-400'>Delivery in 24/7</p>
             </div>
-           
-        </div> 
-        <div>
-               <img src={Line} alt="" />
+           <div className=''>
+              <img src={Line} alt="" className='relative left-5' />
         </div>
+        </div> 
+     
         <div className='bg-white p-1 gap-5 flex items-center justify-between'>
           <div>
             <img src={Trophy} alt="" />

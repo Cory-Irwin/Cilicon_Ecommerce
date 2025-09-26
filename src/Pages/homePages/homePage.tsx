@@ -13,7 +13,7 @@ import Landingpage from '../../Components/HomePage/LandingPage/Landingpage'
 import { News } from '../../Components/HomePage/News/News'
 import Newsletter from '../../Components/HomePage/Newsletter/Newsletter'
 import Shopwithcat from '../../Components/HomePage/ShopWithCat/Shopwithcat'
-
+import Categories from '../../Components/HomePage/Categories/Categories'
 import TwoPartAdvert from '../../Components/HomePage/TwoPartAdvert/TwoPartAdvert'
 
 const Home = () => {

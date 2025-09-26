@@ -19,7 +19,7 @@ const Shopwithcat = () => {
           <img src={Phone} alt="" className=" h-55 w-auto" />
           <h1>SmartPhones</h1>
           <div className="flex relative bottom-35 right-30">
-          <div className="bg-green-900 rounded-4xl h-15 w-15 flex items-center justify-center">
+          <div className="bg-green-900 rounded-4xl h-15 w-15 flex items-center justify-center ">
             
             <img src={ArrowBigLeft} alt="" className="w-10 h-10"/>
           </div>

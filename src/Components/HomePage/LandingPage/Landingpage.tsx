@@ -3,6 +3,7 @@ import Xbox1 from "../../../assets/misc/xbone.png";
 import Iphone from "../../../assets/misc/iphone.png";
 import Airpods from "../../../assets/misc/airpods.webp";
 import arrow from "../../../assets/LandingPage/ArrowRight.svg";
+import MultiCardCarousel from "./Components/mainProductComponent";
 
 type landingPageProps = {
     tagLine: number;
@@ -22,51 +23,10 @@ type landingPageProps = {
 
 const Landingpage = (props: landingPageProps) => {
     return (
-        <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
-            <div className="grid grid-cols-3 lg:grid-rows-[auto,auto] sm:grid-rows-[1,3] gap-6 w-full">
-                {/* Xbox Section (2x2) */}
-                <div
-                    className="bg-gray-100 rounded-lg  transition-transform duration-500 hover:scale-105 col-span-2 row-span-2 flex justify-between items-center p-6 relative">
-                    {/* Text Section */}
-                    <div className="w-1/2">
-                        <h1 className="text-blue-500 text-2xl">{props.mainProductTitle}The Best Place to Play.</h1>
-                        <h1 className="text-6xl font-bold mb-2">{props.mainProductDescription}Xbox Consoles </h1>
-                        <p className=" text-2xl text-gray-700">
-                            Experience next-gen gaming with Xbox. Powerful performance,
-                            immersive visuals, and the best games.
-                        </p>
-                        <div className="">
-                            <button
-                                className="mt-3 bg-yellow-400 border-6 border-teal-900 cursor-pointer text-black py-6 px-20  font-bold text-3xl shadow-md hover:bg-yellow-200">
-                                <div className="flex items-center flex-row justify-between gap-4">
-                                    <div>BUY NOW</div>
-                                    <div>
-                                        <img src={arrow} alt="" className="h-10" />
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
+        <div className="relative mx-10 z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
+         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-rows-[1,2] md:grid-rows-[1,2] gap-6 w-full">
 
-                    {/* Image Section */}
-                    <div className="w-1/2 h-full flex justify-end items-center relative">
-                        <img
-                            src={Xbox1}
-                            alt="Xbox Console"
-                            className="w-full h-full object-contain"
-                        />
-
-                        {/* Price Tag */}
-                        <div
-                            className="absolute top-2 right-2 w-30 h-30 bg-yellow-400 rounded-full
-                        flex items-center justify-center text-black  border-6 border-teal-900
-                        text-3xl shadow-lg"
-                        >
-                            $299
-                        </div>
-                    </div>
-                </div>
-
+                <MultiCardCarousel />
                 {/* iPhone Section (Top Right - 1x1) */}
                 <div className="bg-black text-black z-10 overflow-hidden rounded-lg transition-transform duration-500 hover:scale-105 shadow-xl h-[250px]
         flex flex-col justify-between p-4 relative">
@@ -81,7 +41,7 @@ const Landingpage = (props: landingPageProps) => {
                             </h1>
 
                             <button className="mt-5 z-20 bg-yellow-400 border-6 cursor-pointer border-teal-900 text-black font-semibold p-3 w-45 items-center
-               justify-center flex   *:shadow-md hover:bg-yellow-200">
+                                justify-center flex   hover:bg-yellow-200">
                                 <div className="flex text-lg flex-row items-center gap-4">
                                     {" "}
                                     BUY NOW
@@ -89,8 +49,8 @@ const Landingpage = (props: landingPageProps) => {
                                 </div>
                             </button>
                             {/* Text */}
-                            <div className="relative left-50 bottom-65 z-0">
-                                <img src={Iphone} alt="iPhone" className="w-100 h-auto" />
+                            <div className="relative left-50 bottom-45 z-10000">
+                                <img src={Iphone} alt="iPhone" className="w-60 h-auto " />
                             </div>
                         </div>
 
@@ -134,6 +94,8 @@ const Landingpage = (props: landingPageProps) => {
 
                 </div>
             </div>
+
+
         </div>
     );
 };
