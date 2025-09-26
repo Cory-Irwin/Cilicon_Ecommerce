@@ -13,7 +13,6 @@ import Landingpage from '../../Components/HomePage/LandingPage/Landingpage'
 import { News } from '../../Components/HomePage/News/News'
 import Newsletter from '../../Components/HomePage/Newsletter/Newsletter'
 import Shopwithcat from '../../Components/HomePage/ShopWithCat/Shopwithcat'
-import Categories from '../../Components/HomePage/Categories/Categories'
 import TwoPartAdvert from '../../Components/HomePage/TwoPartAdvert/TwoPartAdvert'
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
     <BlackFriday/>
     <Header/>
     <Categories/>
-    <Landingpage /> 
+    <Landingpage tagLine={0} mainProductTitle={0} mainProductDescription={''} circlePrice={false} fullName={''} summerSalesProductTop={false} smallProductTopPercentageOff={false} topProductTitle={''} bottomProductTitle={''} bottomProductPrice={0} bottomProductImage={''} /> 
     <Guarantee/>
     <Bestdeals/>
     <Shopwithcat/>

@@ -79,17 +79,13 @@ const XboxCarousel = () => {
                             <img
                                 src={product.image}
                                 alt="Xbox Console"
-                                className="w-full h-full object-contain relative right-415 "
+                                className="w-full h-full object-contain relative right-405 "
                             />
 
                             {/* Price Tag */}
                             <div className="absolute right-425">
                                 <div
-                                    className="absolute bottom-25 right-2 w-20 h-20 bg-yellow-400 rounded-full
-      flex items-center justify-center text-black border-4 border-teal-900
-      text-xl shadow-lg  
-    "
-                                >
+                                    className="absolute bottom-25 right-2 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-black border-4 border-teal-900 text-xl shadow-lg">
                                     {product.price}
                                 </div>
                             </div>

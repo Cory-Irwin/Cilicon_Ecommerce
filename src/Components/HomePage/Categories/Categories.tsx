@@ -41,13 +41,27 @@ const Dropdown = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-full z-100 left-0 mt-2 w-48 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
+                <><div className="absolute top-full z-100 left-0 mt-2 w-72 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
                     <ul className="flex flex-col">
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 1</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 2</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Computer & Laptop</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Computer Accessories</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
                         <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
                     </ul>
-                </div>
+                </div><div className="absolute top-full z-100 left-50 mt-2 h- w-96 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
+                        <ul className="flex flex-col">
+                            <li className="px-4 py-2 hover:bg-gray-100">Category 1</li>
+                            <li className="px-4 py-2 hover:bg-gray-100">Category 2</li>
+                            <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        </ul>
+                    </div></>
             )}
         </div>
     );

@@ -127,12 +127,12 @@ const ComputerAccessories = () => {
                   Experience gaming responsiveness like never before.
                 </p>
                 <div className="flex items-center gap-2 mt-4">
-                  <div className="bg-black font-extrabold text-4xl  text-yellow-400 px-4 py-1">
+                  <div className="bg-gray-600 font-extrabold text-4xl  text-yellow-400 px-4 py-1">
                     $129.99
                   </div>
                 </div>
                 <div className="mt-5 flex items-center gap-2">
-                  <div className="bg-black hover:bg-gray-500   flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                  <div className="bg-black hover:bg-gray-500  rounded-xl cursor-pointer flex w-70 h-15 text-center justify-center items-center px-4 py-2">
                     <h1 className="text-white font-bold   mr-2">SHOP NOW</h1>
                     <img src={ArrowRight} alt="" />
                   </div>
