@@ -48,7 +48,7 @@ const XboxCarousel = () => {
                     transform: `translateX(-${currentIndex * 100}%)`,
                     width: `${products.length * 100}%`, // make room for all slides
                 }}
-            >
+            >//brb
                 {products.map((product, index) => (
                     <div
                         key={index}

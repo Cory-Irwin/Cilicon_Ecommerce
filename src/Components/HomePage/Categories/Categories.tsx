@@ -1,14 +1,67 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import Track from "../../../assets/Categories/MapPinLine.svg";
 import Compare from "../../../assets/Categories/ArrowsCounterClockwise.svg";
 import CustomerSupport from "../../../assets/Categories/Headphones.svg";
 import Help from "../../../assets/Categories/Info.svg";
 import Phone from "../../../assets/Categories/PhoneCall.svg"
+import SmartPhoneMenu from "./menus/SmartPhoneMenu";
+import ComputerLaptopMenu from "./menus/ComputerLaptopMenu";
+
+
+const MenuCategories = [
+    {
+        title: 'Computer & Laptop',
+        menu: <ComputerLaptopMenu />
+    },
+    {
+        title: 'Computer Accessories',
+        menu: <div>Computer Accessories</div>
+    },
+    {
+        title: 'Smart Phone',
+        menu: <SmartPhoneMenu />
+    },
+    {
+        title: 'Headphones',
+        menu: <div>Headphones</div>
+    },
+    {
+        title: 'Mobile Accessories',
+        menu: <div>Mobile Accessories</div>
+    },
+    {
+        title: 'Gaming Console',
+        menu: <div>Gaming Console</div>
+    },
+    {
+        title: 'Camera & Photo',
+        menu: <div>Camera & Photo</div>
+    },
+    {
+        title: 'TV & Home Accessories',
+        menu: <div>TV & Home Accessories</div>
+    },
+    {
+        title: 'Waches & Accessories',
+        menu: <div>Waches & Accessories</div>
+    },
+    {
+        title: 'GPS & Navigation',
+        menu: <div>GPS & Navigation</div>
+    },
+    {
+        title: 'Warable Techology',
+        menu: <div>Warable Techology</div>
+    }
+]
+
 
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
+
+    const [activeMenu, setActiveMenu] = useState<ReactNode | null>(null)
 
     // Close dropdown if click happens outside
     useEffect(() => {
@@ -43,25 +96,24 @@ const Dropdown = () => {
             {isOpen && (
                 <><div className="absolute top-full z-100 left-0 mt-2 w-72 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
                     <ul className="flex flex-col">
-                        <li className="px-4 py-2 hover:bg-gray-100">Computer & Laptop</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Computer Accessories</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
+                        {
+                            MenuCategories.map(cat => 
+                                <li 
+                                    key={cat.title}
+                                    className="px-4 py-2 hover:bg-gray-100"
+                                    onMouseOver={() => setActiveMenu(cat.menu)}
+                                >
+                                    {cat.title}
+                                </li>
+                            )
+                        }
                     </ul>
-                </div><div className="absolute top-full z-100 left-50 mt-2 h- w-96 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
-                        <ul className="flex flex-col">
-                            <li className="px-4 py-2 hover:bg-gray-100">Category 1</li>
-                            <li className="px-4 py-2 hover:bg-gray-100">Category 2</li>
-                            <li className="px-4 py-2 hover:bg-gray-100">Category 3</li>
-                        </ul>
-                    </div></>
+                </div>
+                    <div className="absolute top-full z-100  left-75 mt-2 h-111 w-220  bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
+                        {activeMenu ?? false}
+                    </div>
+
+                </>
             )}
         </div>
     );
