@@ -30,7 +30,7 @@ const Shopwithcat = () => {
   };
 
   return (
-    <div className="mx-auto max-w-screen-xl my-10 flex flex-col items-center">
+    <div className="mx-auto max-w-screen-xl my-10 flex flex-col mt-100 lg:mt-20 items-center">
       <h1 className="text-4xl font-semibold pb-10">Shop with Categories</h1>
 
       <div className="relative w-full">

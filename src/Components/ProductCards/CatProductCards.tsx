@@ -13,8 +13,8 @@ type CatProductCardsProps = {
 
 const CatProductCards = (props: CatProductCardsProps) => {
   return (
-    <div className="relative w-56 h-85">
-      <div className="flex flex-col items-center p-2 justify-center">
+    <div className="relative   h-full text-sm">
+      <div className="flex items-center p-2 justify-center">
         <img
           src={props.imageurl}
           alt={props.name}
@@ -38,8 +38,8 @@ const CatProductCards = (props: CatProductCardsProps) => {
         </h1>
       </div>
 
-      <div className="my-2">
-        <div className="flex items-center gap-4 justify-center">
+      <div className="my-2 flex justify-center">
+        <div className="flex gap-4">
           <div className="bg-yellow-400 hover:bg-yellow-200 p-4">
             <img src={Heart} alt="Favorite" />
           </div>

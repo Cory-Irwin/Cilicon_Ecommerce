@@ -20,9 +20,9 @@ type CatProductCards = {
 
 const bigBestDealProductCard = (props: any) => {
   return (
-    <div className="h-auto flex  flex-col">
+    <div className="lg:h-auto h-auto flex   flex-row lg:flex-col  ">
       <div className="flex flex-col text-center font-bold  left-4 relative">
-        <div className="relative top-15 right-4 ">
+        <div className="relative  right-4 size-auto">
           <img src={props.imageurl} alt="" />
         </div>
         <div className="bg-yellow-400 p-2 w-20 relative bottom-65 ">
@@ -32,13 +32,13 @@ const bigBestDealProductCard = (props: any) => {
           <h1 className="text-white">HOT</h1>
         </div>
       </div>
-
+<div className="flex flex-col ">
       <div className="flex flex-row ">
         <div className="flex p-2 flex-row gap-2">
           <StarRating rating={5} />
           <p className="text-gray-400">({props.reviewCount})</p>
         </div>
-        <div className=""></div>
+
       </div>
 
       <div className="justify-center p-2 flex">
@@ -63,7 +63,7 @@ const bigBestDealProductCard = (props: any) => {
         </p>
       </div>
 
-      <div className="my-12 ">
+      <div className=" py-5 ">
         <div className=" flex items-center   gap-4  justify-center">
           <div className="bg-yellow-400 p-4 hover:bg-yellow-200  ">
             <img src={Heart} alt="" />
@@ -81,6 +81,7 @@ const bigBestDealProductCard = (props: any) => {
           </div>{" "}
         </div>{" "}
       </div>
+    </div>
     </div>
   );
 };

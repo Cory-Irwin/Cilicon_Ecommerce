@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import arrow from "../../../../assets/Categories/CaretDown.svg";
 import Xbox1 from "../../../../assets/misc/xbone.png"
-import Xbox2 from "../../../../assets/misc/xbone.png";
-import Xbox3 from "../../../../assets/misc/xbone.png";
 
 const products = [
     {
@@ -40,15 +38,15 @@ const XboxCarousel = () => {
     }, []);
 
     return (
-        <div className="relative w-full overflow-hidden col-span-2 row-span-2">
+        <div className="relative w-full overflow-hidden col-span-2 row-span-2 rounded-lg">
             {/* Track (this moves left/right) */}
             <div
-                className="flex transition-all duration-700 ease-in-out"
+                className="flex transition-all duration-700 ease-in-out relative w-full h-full"
                 style={{
                     transform: `translateX(-${currentIndex * 100}%)`,
                     width: `${products.length * 100}%`, // make room for all slides
                 }}
-            >//brb
+            >
                 {products.map((product, index) => (
                     <div
                         key={index}
@@ -75,19 +73,17 @@ const XboxCarousel = () => {
 
 
                         {/* Image Section */}
-                        <div className="flex justify-end items-center relative w-88 h-auto">
+                        <div className="relative w-full h-auto">
                             <img
                                 src={product.image}
                                 alt="Xbox Console"
-                                className="w-full h-full object-contain relative right-405 "
+                                className="w-auto h-100 object-contain absolute left-20 -top-40"
                             />
 
                             {/* Price Tag */}
-                            <div className="absolute right-425">
-                                <div
-                                    className="absolute bottom-25 right-2 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-black border-4 border-teal-900 text-xl shadow-lg">
-                                    {product.price}
-                                </div>
+                            <div
+                                className="absolute z-20 w-20 h-20 left-22 -top-36 bg-yellow-400 rounded-full flex items-center justify-center text-black border-4 border-teal-900 text-xl shadow-lg">
+                                {product.price}
                             </div>
                         </div>
 

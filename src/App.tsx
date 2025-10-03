@@ -26,8 +26,9 @@ import DashboardOrderHistoryPage from './Pages/dashboardPages/dashboardOrderHist
 import DashboardOrderDetailPage from './Pages/dashboardPages/dashboardOrderDetailPage'
 import BrowsingHistoryPage from './Pages/dashboardPages/browsingHistoryPage'
 import DashboardSettingsPage from './Pages/dashboardPages/dashboardSettingsPage'
-import Penguin1 from "../../assets/PenguinCrew/penguin2.jpg";
+
 import 'rsuite/dist/rsuite-no-reset.min.css';
+
 function App() {
   return (
     <>
@@ -56,13 +57,13 @@ function App() {
         <Route path='/blogDetail' element={<BlogDetail stack={''} articleTitle={''} title={''}/>}/>
         <Route path='/dashboardPage' element={<DashboardPage  firstName={'Appy'} billingPhone={24059687} lastName={'Store'} addressNumber={12}
           addressName={'Edwards St'} profilePicture={"Penguin1"} mainEmail={'appycilicon@appyland.com'}
-          secondaryEmail={'appy@appland.com'} phoneNumber={413225698} phoneOrigin={0} totalOrders={12} pendingOrders={2} completedOrders={52} billingPhone={42596870587} billingAddress={'142 Appylane Applands'} billingEmail={'appystore@applands.com'} billingPhoneOrigin={'+12'} recentOrders={[]} />}/>
+          secondaryEmail={'appy@appland.com'} phoneNumber={413225698} phoneOrigin={0} totalOrders={12} pendingOrders={2} completedOrders={52} billingAddress={'142 Appylane Applands'} billingEmail={'appystore@applands.com'} billingPhoneOrigin={'+12'} recentOrders={[]} />}/>
         <Route path='/dashboardOrderHistoryPage' element={<DashboardOrderHistoryPage/>}/>
         <Route path='/dashboardOrderDetailPage' element={<DashboardOrderDetailPage/>}/>
         <Route path='/browsingHistoryPage' element={<BrowsingHistoryPage/>}/>
         <Route path='/browsingHistorySettingsPage' element={<DashboardSettingsPage/>}/>
         
-        <Route path=' ' element={<ErrorPage/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
         
       </Routes>
     </Router>
