@@ -1,0 +1,34 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/homePages/homePage';
+import ProductPage from './Pages/shopPages/productPage';
+import './index.css';
+import CartPage from './Pages/shopPages/CartPage/cartPage';
+import BillingPage from './Pages/shopPages/billingPage';
+import ShopPage from './Pages/shopPages/shopPage';
+import OrderSuccess from './Pages/shopPages/successfullyOrderedPage';
+import TrackOrder from './Pages/shopPages/trackOrderPage';
+import TrackOrderProgress from './Pages/shopPages/TrackOrderProgressPage/trackOrderProgressPage';
+import ComparePage from './Pages/shopPages/ComparePage/comparePage';
+import WishListPage from './Pages/shopPages/WishListPage/wishlistPage copy';
+import SignInPage from './Pages/signInPages/signInPage';
+import ForgotPasswordPage from './Pages/signInPages/forgotPasswordPage';
+import ResetPasswordPage from './Pages/signInPages/resetPasswordPage';
+import SignUpPage from './Pages/signInPages/signUpPage';
+import EmailVerifyPage from './Pages/signInPages/emailVerifyPage';
+import FaqPage from './Pages/signInPages/faqPage';
+import ErrorPage from './Pages/signInPages/errorPage';
+import AboutUsPage from './Pages/signInPages/aboutUsPage';
+import CustomerSupportPage from './Pages/signInPages/customerSupportPage';
+import BlogPost from './Pages/signInPages/BlogPost/blogPost';
+import BlogDetail from './Pages/signInPages/BlogPost/BlogDetails/blogDetail';
+import DashboardPage from './Pages/dashboardPages/dashboardPage';
+import DashboardOrderHistoryPage from './Pages/dashboardPages/dashboardOrderHistoryPage';
+import DashboardOrderDetailPage from './Pages/dashboardPages/dashboardOrderDetailPage';
+import BrowsingHistoryPage from './Pages/dashboardPages/browsingHistoryPage';
+import DashboardSettingsPage from './Pages/dashboardPages/dashboardSettingsPage';
+import 'rsuite/dist/rsuite-no-reset.min.css';
+function App() {
+    return (_jsx(_Fragment, { children: _jsx(Router, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/productpage", element: _jsx(ProductPage, {}) }), _jsx(Route, { path: '/CartPage', element: _jsx(CartPage, {}) }), _jsx(Route, { path: '/BillingPage', element: _jsx(BillingPage, {}) }), _jsx(Route, { path: '/SucessfullyOrderedPage', element: _jsx(OrderSuccess, {}) }), _jsx(Route, { path: '/ShopPage', element: _jsx(ShopPage, {}) }), _jsx(Route, { path: '/TrackOrderPage', element: _jsx(TrackOrder, {}) }), _jsx(Route, { path: '/TrackOrderProgressPage', element: _jsx(TrackOrderProgress, {}) }), _jsx(Route, { path: '/comparePage', element: _jsx(ComparePage, {}) }), _jsx(Route, { path: '/WishListPage', element: _jsx(WishListPage, {}) }), _jsx(Route, { path: '/signInPage', element: _jsx(SignInPage, {}) }), _jsx(Route, { path: '/forgotPasswordPage', element: _jsx(ForgotPasswordPage, {}) }), _jsx(Route, { path: '/resetPasswordPage', element: _jsx(ResetPasswordPage, {}) }), _jsx(Route, { path: '/SignUpPage', element: _jsx(SignUpPage, {}) }), _jsx(Route, { path: '/emailVerifyPage', element: _jsx(EmailVerifyPage, {}) }), _jsx(Route, { path: '/faqPage', element: _jsx(FaqPage, {}) }), _jsx(Route, { path: '/errorPage', element: _jsx(ErrorPage, {}) }), _jsx(Route, { path: '/aboutUsPage', element: _jsx(AboutUsPage, {}) }), _jsx(Route, { path: '/customerSupportPage', element: _jsx(CustomerSupportPage, {}) }), _jsx(Route, { path: '/blogPost', element: _jsx(BlogPost, {}) }), _jsx(Route, { path: '/blogDetail', element: _jsx(BlogDetail, { stack: '', articleTitle: '', title: '' }) }), _jsx(Route, { path: '/dashboardPage', element: _jsx(DashboardPage, { firstName: 'Appy', billingPhone: 24059687, lastName: 'Store', addressNumber: 12, addressName: 'Edwards St', profilePicture: "Penguin1", mainEmail: 'appycilicon@appyland.com', secondaryEmail: 'appy@appland.com', phoneNumber: 413225698, phoneOrigin: 0, totalOrders: 12, pendingOrders: 2, completedOrders: 52, billingAddress: '142 Appylane Applands', billingEmail: 'appystore@applands.com', billingPhoneOrigin: '+12', recentOrders: [] }) }), _jsx(Route, { path: '/dashboardOrderHistoryPage', element: _jsx(DashboardOrderHistoryPage, {}) }), _jsx(Route, { path: '/dashboardOrderDetailPage', element: _jsx(DashboardOrderDetailPage, {}) }), _jsx(Route, { path: '/browsingHistoryPage', element: _jsx(BrowsingHistoryPage, {}) }), _jsx(Route, { path: '/browsingHistorySettingsPage', element: _jsx(DashboardSettingsPage, {}) }), _jsx(Route, { path: '*', element: _jsx(ErrorPage, {}) })] }) }) }));
+}
+export default App;

@@ -1,0 +1,20 @@
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+import Bestdeals from '../../Components/HomePage/BestDeals/Bestdeals';
+import BigAdvert from '../../Components/HomePage/BigAdvert/BigAdvert';
+import Categories from '../../Components/HomePage/Categories/Categories';
+import ComputerAccessories from '../../Components/HomePage/ComputerAssessories/ComputerAccessories';
+import Featuredproducts from '../../Components/HomePage/FeaturedProducts/Featuredproducts';
+import { Flashsale } from '../../Components/HomePage/FlashSale/Flashsale';
+import Footer from '../../Components/HomePage/Footer/Footer';
+import Guarantee from '../../Components/HomePage/Guarantee/Guarantee';
+import Header from '../../Components/HomePage/Header/Header';
+import Landingpage from '../../Components/HomePage/LandingPage/Landingpage';
+import { News } from '../../Components/HomePage/News/News';
+import Newsletter from '../../Components/HomePage/Newsletter/Newsletter';
+import Shopwithcat from '../../Components/HomePage/ShopWithCat/Shopwithcat';
+import TwoPartAdvert from '../../Components/HomePage/TwoPartAdvert/TwoPartAdvert';
+const Home = () => {
+    return (_jsxs(_Fragment, { children: [_jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsx(Landingpage, { tagLine: 0, mainProductTitle: 0, mainProductDescription: '', circlePrice: false, fullName: '', summerSalesProductTop: false, smallProductTopPercentageOff: false, topProductTitle: '', bottomProductTitle: '', bottomProductPrice: 0, bottomProductImage: '' }), _jsx(Guarantee, {}), _jsx(Bestdeals, {}), _jsx(Shopwithcat, {}), _jsx(Featuredproducts, {}), _jsx(TwoPartAdvert, {}), _jsx(ComputerAccessories, {}), _jsx(Flashsale, {}), _jsx(BigAdvert, {}), _jsx(News, {}), _jsx(Newsletter, {}), _jsx(Footer, {})] }));
+};
+export default Home;

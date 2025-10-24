@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Information from "../../assets/TrackOrderPage/Info.svg";
+const TrackOrder = () => {
+    return (_jsxs(_Fragment, { children: [_jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsxs("div", { className: "mx-auto max-w-screen-md my-10 px-4 ", children: [_jsx("h1", { className: "text-2xl font-semibold mb-4", children: "Track Your Order" }), _jsx("p", { className: "text-gray-600 mb-6", children: "To track your order please enter your order ID in the input field below and press the Track Order button. This was given to you on your receipt and in the confirmation email you should have received." }), _jsxs("div", { className: "flex flex-row gap-6 ", children: [" ", _jsxs("div", { className: "flex flex-col", children: [_jsx("div", { children: _jsx("h1", { children: "Order ID" }) }), _jsx("div", { children: _jsx("input", { type: "text", placeholder: "Enter Order Number", className: "border border-gray-200 p-2  py-2 w-100 " }) })] }), _jsxs("div", { className: "flex flex-col", children: [_jsx("div", { children: _jsx("h1", { children: "Billing Email" }) }), _jsx("div", { children: _jsx("input", { type: "text", placeholder: "Enter Order Number", className: "border border-gray-200 py-2 p-2 w-100 " }) })] })] }), " ", _jsxs("div", { className: "py-5", children: [_jsx("div", { children: _jsx("img", { src: "", alt: "" }) }), _jsxs("div", { className: "flex gap-2  flex-row", children: [_jsx("div", { children: _jsx("img", { src: Information, alt: "" }) }), _jsx("div", { children: _jsx("h1", { children: "Order ID that we sended to your in your email address." }) })] })] }), _jsx("button", { className: "bg-teal-900 hover:bg-teal-400 text-white px-6 py-2 ", children: "Track Order" })] }), _jsx(Footer, {})] }));
+};
+export default TrackOrder;

@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Footer from '../../Components/HomePage/Footer/Footer';
+import Categories from '../../Components/HomePage/Categories/Categories';
+import Header from '../../Components/HomePage/Header/Header';
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+const forgotPasswordPage = () => {
+    return (_jsxs(_Fragment, { children: [_jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsx("div", { className: "flex flex-col items-center justify-center min-h-[40vh] w-full px-4", children: _jsxs("div", { className: 'bg-white  shadow-lg p-8 mt-20 mb-20  w-full max-w-md mx-auto', children: [_jsxs("div", { className: 'text-center ', children: [_jsx("h1", { className: 'text-2xl', children: "Forgot Password" }), _jsx("p", { children: "Enter the email address or mobile phone number associated with your Clicon account." })] }), _jsxs("div", { className: "mb-4", children: [_jsx("label", { className: "block text-gray-600 mb-1", children: "Email Address" }), _jsx("input", { type: "email", placeholder: "Enter your email", className: "w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-orange-400" })] }), _jsx("button", { className: "w-full bg-teal-500 text-white py-2  hover:bg-orange-600 transition", children: "Send Code \u2192" }), _jsxs("div", { className: 'justify-between py-2', children: [_jsxs("p", { className: 'py-2', children: ["Already have account? ", _jsx("a", { href: "", children: "Sign In" })] }), _jsxs("p", { className: 'py-2', children: ["Don't Have account? ", _jsx("a", { href: "", children: "Sign Up" })] })] }), _jsx("hr", { className: 'py-2' }), _jsxs("p", { children: ["You may contact ", _jsx("a", { href: "", className: 'text-teal-900', children: "Customer Serivce" }), " for help restoring access to your account"] })] }) }), _jsx(Footer, {})] }));
+};
+export default forgotPasswordPage;

@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ArrowRight from "../../assets/shopwithcat/ArrowRight.svg";
+const HalfProductCard = ({ imageurl, name, description }) => {
+    return (_jsxs("div", { className: "flex flex-col md:flex-row items-center justify-between p-10  shadow-lg rounded-lg h-90", children: [_jsxs("div", { className: "text-left max-w-md ", children: [_jsx("div", { className: "bg-yellow-500  px-4 py-1 inline-block", children: _jsx("h2", { className: "text-lg text-black font-semibold", children: "INTRODUCING NEW" }) }), _jsx("h1", { className: "text-4xl mt-3", children: name }), _jsx("p", { className: " text-white mt-2", children: description }), _jsx("button", { className: "mt-4 bg-gray-500  px-5 w-50 h-15 py-2 rounded-lg font-extrabold hover:bg-gray-300", children: _jsxs("div", { className: 'flex flex-row gap-8', children: [_jsx("h1", { children: "SHOP NOW" }), _jsx("img", { src: ArrowRight, alt: "" })] }) })] }), _jsx("div", { className: "mt-6 md:mt-0 justify-center flex items-center", children: _jsx("img", { src: imageurl, alt: name, className: "h-150 p-2  relative left-5 bottom-10  w-150  object-contain" }) })] }));
+};
+export default HalfProductCard;

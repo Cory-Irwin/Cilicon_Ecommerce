@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+const comparePageProductComponent = (props) => {
+    return (_jsx(_Fragment, { children: _jsxs("div", { className: "my-138", children: [_jsx("div", { className: " flex w-full ", children: _jsx("div", { className: "mt-4 w-full", children: _jsxs("div", { className: "h-15 text-xl ", children: [_jsx("div", { className: " bg-gray-100 p-2", children: _jsx("h1", { children: "Customer Feedback:" }) }), _jsx("div", { className: "  p-2", children: _jsx("h1", { children: "Price:" }) }), _jsx("div", { className: " bg-gray-100 p-2", children: _jsx("h1", { children: "Sold By:" }) }), _jsx("div", { className: "  p-2", children: _jsx("h1", { children: "Brand:" }) }), _jsx("div", { className: "bg-gray-100 p-2", children: _jsx("h1", { children: "Model:" }) }), _jsx("div", { className: "  p-2", children: _jsx("h1", { children: "Stock Status:" }) }), _jsx("div", { className: " bg-gray-100 p-2", children: _jsx("h1", { children: "Size:" }) }), _jsx("div", { className: " p-2", children: _jsx("h1", { children: "Weight:" }) })] }) }) }), " "] }) }));
+};
+export default comparePageProductComponent;

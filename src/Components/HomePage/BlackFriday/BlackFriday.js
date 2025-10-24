@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import arrow from "../../../assets/LandingPage/ArrowRight.svg";
+const BlackFriday = () => {
+    return (_jsx("section", { className: 'w-full bg-black  top-0 left-0 z-50', children: _jsxs("div", { className: 'max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center\n       text-white', children: [_jsxs("div", { className: 'flex gap-2 items-center animate-bounce', children: [_jsx("h1", { className: 'text-black bg-red-400 text-2xl -rotate-12 px-2 py-1', children: "Black" }), _jsx("h1", { className: 'text-white text-2xl', children: "Friday" })] }), _jsxs("div", { className: 'flex gap-2 text-2xl items-center', children: [_jsx("h1", { className: 'text-white text-sm', children: "Up to" }), _jsx("h1", { className: 'text-red-400 text-5xl font-bold animate-pulse ', children: "59%" }), _jsx("h1", { className: 'text-white text-lg', children: "OFF" })] }), _jsx("a", { href: "/shop", className: 'cursor-pointer ', "aria-label": "Shop now", children: _jsxs("div", { className: 'bg-red-400 px-6 p-2 flex gap-2 flex-row', children: [_jsx("h1", { className: 'text-2xl font-bold text-black ', children: "SHOP NOW " }), _jsx("img", { src: arrow, alt: "" })] }) })] }) }));
+};
+export default BlackFriday;

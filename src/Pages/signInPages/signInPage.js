@@ -1,0 +1,14 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { useState } from 'react';
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+import { Eye, EyeOff } from 'lucide-react';
+import Footer from '../../Components/HomePage/Footer/Footer';
+import Categories from '../../Components/HomePage/Categories/Categories';
+import Header from '../../Components/HomePage/Header/Header';
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+const SignInPage = () => {
+    const [showPassword, setShowPassword] = useState(false);
+    return (_jsxs(_Fragment, { children: [_jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsx("div", { className: "flex flex-col items-center justify-center min-h-[40vh] w-full px-4", children: _jsxs("div", { className: "bg-white shadow-lg p-8 mt-20 mb-20   w-full max-w-md mx-auto", children: [_jsxs("div", { className: "flex justify-between border-b pb-3 mb-5", children: [_jsx("h2", { className: "text-lg font-semibold border-b-2 border-teal-500 pb-1", children: "Sign In" }), _jsx("h2", { className: "text-lg text-gray-400 cursor-pointer", children: "Sign Up" })] }), _jsxs("div", { className: "mb-4", children: [_jsx("label", { className: "block text-gray-600 mb-1", children: "Email Address" }), _jsx("input", { type: "email", placeholder: "Enter your email", className: "w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400" })] }), _jsxs("div", { className: "mb-4 relative", children: [_jsx("label", { className: "block text-gray-600 mb-1", children: "Password" }), _jsx("input", { type: showPassword ? "text" : "password", placeholder: "Enter your password", className: "w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400" }), _jsx("button", { type: "button", className: "absolute right-3 top-9 text-gray-500", onClick: () => setShowPassword(!showPassword), children: showPassword ? _jsx(EyeOff, { size: 20 }) : _jsx(Eye, { size: 20 }) })] }), _jsx("div", { className: "text-right mb-4", children: _jsx("a", { href: "/forgotpasswordpage", className: "text-blue-500 text-sm", children: "Forgot Password?" }) }), _jsx("button", { className: "w-full bg-teal-500 text-white py-2  hover:bg-teal-600 transition", children: "SIGN IN \u2192" }), _jsx("div", { className: "my-5 text-center text-gray-400 text-sm", children: "or" }), _jsxs("button", { className: "w-full flex items-center justify-center border py-2  mb-3 hover:bg-gray-100 transition", children: [_jsx(FcGoogle, { size: 20, className: "mr-2" }), " Login with Google"] }), _jsxs("button", { className: "w-full flex items-center justify-center border py-2  hover:bg-gray-100 transition", children: [_jsx(FaApple, { size: 20, className: "mr-2" }), " Login with Apple"] })] }) }), _jsx(Footer, {})] }));
+};
+export default SignInPage;

@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Footer from '../../Components/HomePage/Footer/Footer';
+import Categories from '../../Components/HomePage/Categories/Categories';
+import Header from '../../Components/HomePage/Header/Header';
+import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday';
+const ResetPasswordPage = () => {
+    return (_jsxs(_Fragment, { children: [_jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsx("div", { className: "flex flex-col items-center justify-center min-h-[40vh] w-full px-4", children: _jsxs("div", { className: 'bg-white   shadow-lg p-8 mt-20 mb-20 w-full max-w-md mx-auto', children: [_jsxs("div", { className: 'text-center mb-5 ', children: [_jsx("h1", { className: 'text-2xl mb-5 font-bold', children: "Reset Password" }), _jsx("p", { children: "Enter the email address or mobile phone number associated with your Clicon account." })] }), _jsxs("div", { className: "mb-4", children: [_jsx("label", { className: "block text-gray-600 mb-2 font-bold", children: "Password" }), _jsx("input", { type: "password", placeholder: "Enter your Password", className: "w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400" })] }), _jsxs("div", { className: "mb-4", children: [_jsx("label", { className: "block text-gray-600 mb-2 font-bold", children: "Confirm Password" }), _jsx("input", { type: "password", placeholder: "Re-enter Password", className: "w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400" })] }), _jsx("button", { className: "w-full bg-teal-900 text-white py-2 h-10 hover:bg-teal-600 transition", children: "Reset Password \u2192" }), _jsx("hr", { className: 'py-2' })] }) }), _jsx(Footer, {})] }));
+};
+export default ResetPasswordPage;

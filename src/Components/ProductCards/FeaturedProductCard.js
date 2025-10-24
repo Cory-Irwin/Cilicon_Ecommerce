@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import StarRating from "../../Components/RatingStars/fiveStarRating";
+import DiscountBadge from "../../Components/ProductCards/ProductBoxes/yellowPercentBox";
+const FeaturedProductCards = (props) => {
+    return (_jsx(_Fragment, { children: _jsxs("div", { className: "border-2 relative min-w-60 flex-row   border-gray-100  h-full", children: [_jsx("div", { className: "items-center flex flex-col p-2 justify-center", children: _jsx("div", { children: _jsx("img", { src: props.imageurl, alt: "", className: "h-40 max-w-50 object-contain" }) }) }), _jsxs("div", { className: "flex p-1 px-2 flex-row gap-2", children: [_jsx(StarRating, { rating: props.reviewStars || 0 }), _jsxs("p", { className: "text-gray-400", children: ["(", props.reviewCount, ")"] })] }), _jsx("div", { className: "p-1 px-2", children: _jsx("p", { className: "line-clamp-3", children: props.title }) }), _jsxs("div", { className: "p-1 px-2 absolute bottom-2 left-2 flex flex-row gap-2 \n        items-center", children: [props.originalPrice !== undefined && props.originalPrice > 0 && (_jsxs("h1", { className: "line-through text-xl text-gray-400 font-semibold", children: ["$", props.originalPrice] })), _jsxs("h1", { className: "text-xl text-green-900 font-semibold", children: ["$", props.newPrice] })] }), props.percentOff && (_jsx("div", { className: "absolute top-2 left-2 z-10", children: _jsx(DiscountBadge, { percentOff: props.percentOff }) }))] }) }));
+};
+export default FeaturedProductCards;

@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
+import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
+const dashboardOrderHistoryPage = () => {
+    return (_jsxs(_Fragment, { children: [" ", _jsx(BlackFriday, {}), _jsx(Header, {}), _jsx(Categories, {}), _jsx("div", { className: "mx-auto max-w-screen-xl my-10 px-4", children: _jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-20", children: [_jsx(DashboardList, {}), _jsx("div", { className: "relative overflow-x-auto shadow-md mt-10", children: _jsxs("table", { className: "w-full text-sm text-left", children: [_jsx("thead", { className: "text-xs uppercase bg-gray-50", children: _jsxs("tr", { children: [_jsx("th", { className: "px-6 py-3", children: "Product Name" }), _jsx("th", { className: "px-6 py-3", children: "Color" }), _jsx("th", { className: "px-6 py-3", children: "Category" }), _jsx("th", { className: "px-6 py-3", children: "Price" }), _jsx("th", { className: "px-6 py-3", children: "Status" }), _jsx("th", { className: "px-6 py-3", children: "Actions" })] }) }), _jsx("tbody", { children: props.recentOrders.map((order, index) => (_jsxs("tr", { className: "bg-white border-b", children: [_jsx("td", { className: "px-6 py-4 font-medium text-black whitespace-nowrap", children: order.productName }), _jsx("td", { className: "px-6 py-4", children: order.color }), _jsx("td", { className: "px-6 py-4", children: order.category }), _jsx("td", { className: "px-6 py-4", children: order.price }), _jsx("td", { className: "px-6 py-4", children: order.status }), _jsx("td", { className: "px-6 py-4 text-right", children: _jsx("a", { href: "#", className: "font-medium text-blue-600 hover:underline", children: "Edit" }) })] }, index))) })] }) })] }) }), _jsx(Footer, {})] }));
+};
+export default dashboardOrderHistoryPage;
