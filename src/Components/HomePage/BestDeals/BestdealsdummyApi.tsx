@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import ProductCards from "../../ProductCards/CatProductCards";
 import BigBestDealProductCard from "../../ProductCards/bigBestDealProductCard";
 import { NavLink } from "react-router-dom";

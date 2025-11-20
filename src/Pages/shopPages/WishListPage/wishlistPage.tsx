@@ -1,4 +1,4 @@
-import React from "react";
+
 import Footer from "../../../Components/HomePage/Footer/Footer";
 import BlackFriday from "../../../Components/HomePage/BlackFriday/BlackFriday";
 import Header from "../../../Components/HomePage/Header/Header";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Handshake from "../../../assets/TrackOrderProgress/Handshake.svg";
 import Notebook from "../../../assets/TrackOrderProgress/Notebook.svg";
 import Package from "../../../assets/TrackOrderProgress/Package.svg";

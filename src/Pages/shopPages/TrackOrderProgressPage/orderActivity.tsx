@@ -1,4 +1,4 @@
-import React from "react";
+
 import PaySucceed from "../../../assets/TrackOrderProgress/paysuccessicon.svg";
 import OrderActivityComponent from "../../../Pages/shopPages/TrackOrderProgressPage/orderActivityComponent";
 import DeliveryMan from "../../../assets/TrackOrderProgress/PersonIcon.svg";

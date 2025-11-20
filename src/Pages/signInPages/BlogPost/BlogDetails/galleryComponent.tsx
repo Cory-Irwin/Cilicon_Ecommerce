@@ -1,4 +1,4 @@
-import React from "react";
+
 type latestArticleComponentProp = {
   articleImage1: string;
   articleImage2: string;

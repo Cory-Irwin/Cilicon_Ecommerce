@@ -1,4 +1,3 @@
-import React from 'react'
 type latestArticleComponentProp = {
   articleImage: string;
   articleTitle: string;

@@ -1,4 +1,4 @@
-import React from "react";
+
 import News1 from "../../../assets/news/newsss.svg";
 import News2 from "../../../assets/news/unsplash_6MNmDi1hc_Y.svg";
 import News3 from "../../../assets/news/unsplash_FO7JIlwjOtU.svg";

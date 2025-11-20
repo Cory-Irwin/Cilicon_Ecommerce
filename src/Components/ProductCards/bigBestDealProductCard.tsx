@@ -1,4 +1,4 @@
-import React from "react";
+
 import PS5 from "../../assets/bigBestDealProductCard/Image.svg";
 import Star from "../../assets/bigBestDealProductCard/Star.svg";
 import Heart from "../../assets/bigBestDealProductCard/Heart.svg";

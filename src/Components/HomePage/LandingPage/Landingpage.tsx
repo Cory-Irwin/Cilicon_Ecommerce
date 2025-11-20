@@ -1,4 +1,3 @@
-import React from "react";
 import Xbox1 from "../../../assets/misc/xbone.png";
 import Iphone from "../../../assets/misc/iphone.png";
 import Airpods from "../../../assets/misc/airpods.webp";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Copy from "../../assets/DashboardPage/Copy.svg"
 import VISA from "../../assets/DashboardPage/VISA.svg"
 

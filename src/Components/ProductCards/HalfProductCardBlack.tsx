@@ -1,4 +1,3 @@
-import React from 'react';
 import ArrowRight from "../../assets/shopwithcat/ArrowRight.svg";
 type HalfProductCardProps = {
   imageurl: string;

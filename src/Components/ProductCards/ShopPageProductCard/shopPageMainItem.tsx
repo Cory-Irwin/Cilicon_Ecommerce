@@ -1,4 +1,4 @@
-import React from "react";
+
 import Imac from "../../../assets/ProductPage/Main Image Macbook.svg";
 import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
 import ArrowRight2 from "../../../assets/shopwithcat/ArrowRight.svg";

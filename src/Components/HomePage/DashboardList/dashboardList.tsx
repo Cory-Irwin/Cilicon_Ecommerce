@@ -1,4 +1,3 @@
-import React from 'react'
 import Dashboard from "../../../assets/DashboardPage/Stack.svg"
 import OrderHistory from "../../../assets/DashboardPage/OrderHistory.svg"
 import TrackOrder from "../../../assets/DashboardPage/Shopping.svg"

@@ -1,4 +1,3 @@
-import React from 'react'
 import Package from '../../../assets/Guarentee/Package.svg'
 import Trophy from '../../../assets/Guarentee/Trophy.svg'
 import Card from '../../../assets/Guarentee/CreditCard.svg'

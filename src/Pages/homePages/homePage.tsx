@@ -1,4 +1,3 @@
-import React from 'react'
 import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
 import Bestdeals from '../../Components/HomePage/BestDeals/Bestdeals'
 import BigAdvert from '../../Components/HomePage/BigAdvert/BigAdvert'

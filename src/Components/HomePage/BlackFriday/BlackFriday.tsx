@@ -1,4 +1,3 @@
-import React from 'react';
 import arrow from "../../../assets/LandingPage/ArrowRight.svg";
 const BlackFriday = () => {
   return (

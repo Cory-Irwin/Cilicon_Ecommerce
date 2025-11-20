@@ -1,4 +1,3 @@
-import React from "react";
 import ProductCards from "../../ProductCards/CatProductCards";
 import BigBestDealProductCard from "../../ProductCards/bigBestDealProductCard";
 import Controller from "../../../assets/misc/controller.png";

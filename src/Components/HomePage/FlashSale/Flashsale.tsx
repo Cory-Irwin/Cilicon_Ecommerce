@@ -1,4 +1,3 @@
-import React from "react";
 import Flashcard from "../../../Components/ProductCards/flashcard";
 import Controller from "../../../assets/misc/controller.png";
 import MousePad from "../../../assets/misc/Mousepad.png";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Header from "../../Components/HomePage/Header/Header";
 import Categories from "../../Components/HomePage/Categories/Categories";
 import CashOnDel from "../../assets/BillingPage/CashonDeliver.svg";

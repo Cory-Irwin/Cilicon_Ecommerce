@@ -1,4 +1,3 @@
-import React from 'react';
 import HalfProductCard from '../../ProductCards/HalfProductCard'; 
 import HalfProductCardBlack from '../../ProductCards/HalfProductCardBlack'; 
 import ipodmini from '../../../assets/misc/podmini.svg';

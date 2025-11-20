@@ -1,4 +1,4 @@
-import React from 'react'
+
 import samsung from '../../../assets/misc/iphone.png'
 import keyboard from '../../../assets/misc/keyboard.png'
 import IMAC from '../../../assets/misc/IMAC.png'

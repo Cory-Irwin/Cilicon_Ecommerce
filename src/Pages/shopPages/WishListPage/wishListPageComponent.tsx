@@ -1,4 +1,4 @@
-import React from "react";
+
 type wishListPageComponentProps = {
   imgValue: string;
   itemdescription: string;

@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../../Components/HomePage/Footer/Footer";
 import Categories from "../../Components/HomePage/Categories/Categories";
 import Header from "../../Components/HomePage/Header/Header";
@@ -37,7 +36,7 @@ const errorPage = () => {
           <button className="bg-teal-900 hover:bg-teal-400 text-xl p-10  text-white px-12 py-6 ">
             <div className="flex flex-row text-center justify-center items-center  gap-2">
               <div><img src={Home} className="h-12 w-auto top-1 relative" alt="" /></div>
-              <div><NavLink to={"/"}><a href=""><h1 className="text-3xl">GO TO HOME</h1></a><NavLink/></NavLink></div>
+              <div><NavLink to={"/"}><a href=""><h1 className="text-3xl">GO TO HOME</h1></a></NavLink></div>
             </div>
           </button>
         </div></div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Sponsors from "../../../assets/news/Company Logo.svg";
 const Newsletter = () => {
   return (
