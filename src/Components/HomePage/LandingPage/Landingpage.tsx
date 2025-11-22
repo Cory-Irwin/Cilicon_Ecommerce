@@ -1,26 +1,25 @@
-import Xbox1 from "../../../assets/misc/xbone.png";
 import Iphone from "../../../assets/misc/iphone.png";
 import Airpods from "../../../assets/misc/airpods.webp";
 import arrow from "../../../assets/LandingPage/ArrowRight.svg";
 import MultiCardCarousel from "./Components/mainProductComponent";
 
-type landingPageProps = {
-    tagLine: number;
-    mainProductTitle: number;
-    mainProductDescription: string;
-    circlePrice: boolean;
-    fullName: string;
-    summerSalesProductTop: boolean;
-    smallProductTopPercentageOff: boolean;
-    topProductTitle: string;
-    bottomProductTitle: string;
-    bottomProductPrice: number;
-    bottomProductImage: string;
+// type landingPageProps = {
+//     tagLine: number;
+//     mainProductTitle: number;
+//     mainProductDescription: string;
+//     circlePrice: boolean;
+//     fullName: string;
+//     summerSalesProductTop: boolean;
+//     smallProductTopPercentageOff: boolean;
+//     topProductTitle: string;
+//     bottomProductTitle: string;
+//     bottomProductPrice: number;
+//     bottomProductImage: string;
 
 
-};
+// };
 
-const Landingpage = (props: landingPageProps) => {
+const Landingpage = () => {
     return (
         <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
          <div className="w-full grid grid-cols-1 lg:grid-cols-[70%_30%] gap-4">

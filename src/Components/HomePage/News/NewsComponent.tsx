@@ -2,15 +2,7 @@ import ArrowRight from "../../../assets/LandingPage/ArrowRight.svg";
 import Profile from "../../../assets/news/UserCircle.svg";
 import Calender from "../../../assets/news/CalendarBlank.svg";
 import Comments from "../../../assets/news/ChatCircleDots.svg";
-type FullProductCards = {
-  imgurl: string;
 
-  name: string;
-  date: string;
-  comments: number;
-  title: string;
-  description: string;
-};
 
 const NewsComponent = (props: any) => {
   return (

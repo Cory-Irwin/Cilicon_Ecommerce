@@ -1,6 +1,6 @@
-import Imac from "../../../assets/ProductPage/Main Image Macbook.svg";
-import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
-import ArrowRight2 from "../../../assets/shopwithcat/ArrowRight.svg";
+// import Imac from "../../../assets/ProductPage/Main Image Macbook.svg";
+// import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
+// import ArrowRight2 from "../../../assets/shopwithcat/ArrowRight.svg";
 import ShopDescription from "../../ProductCards/ShopPageProductCard/shopPageitem"
 import ShopMainItem from "../../ProductCards/ShopPageProductCard/shopPageMainItem"
 

@@ -28,7 +28,7 @@ const errorPage = () => {
             <button className="bg-teal-900 hover:bg-teal-400 text-xl p-10  text-white px-12 py-6 ">
               <div className="flex text-center justify-center items-center  flex-row gap-2">
                 <img src={WhiteArrow} className="h-10 w-auto" alt="" />
-               <div><NavLink to={"/"}><a href=""><h1 className="text-3xl">GO BACK</h1></a><NavLink/></NavLink></div>
+               <div><NavLink to={"/"}><a href=""><h1 className="text-3xl">GO BACK</h1></a></NavLink></div>
               </div>
             </button>
           

@@ -1,6 +1,4 @@
-import { useState } from "react";
 
-import Imac from "../../../assets/misc/macbookpro.png";
 import Heart from "../../../assets/misc/heartlove.svg";
 import Arrow from "../../../assets/misc/ArrowsClockwise.svg";
 import CopyCat from "../../../assets/misc/copycat.svg";

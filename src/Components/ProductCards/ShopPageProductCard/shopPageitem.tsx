@@ -1,20 +1,13 @@
 
-import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
 
-import Imac from "../../../assets/misc/macbookpro.png";
 import Heart from "../../../assets/misc/heartlove.svg";
 import Arrow from "../../../assets/misc/ArrowsClockwise.svg";
 import CopyCat from "../../../assets/misc/copycat.svg";
 import Facebook from "../../../assets/misc/Facebook.svg";
 import twitter from "../../../assets/misc/Twitter.svg";
 import pintrest from "../../../assets/misc/Pinterest.svg";
-import grey1 from "../../../assets/misc/grey01.svg";
-import grey2 from "../../../assets/misc/grey02.svg";
 import payment from "../../../assets/misc/Payment Method.svg";
-import airpod from "../../../assets/misc/airpods.webp";
 import StarRating from "../../../Components/RatingStars/fiveStarRating";
-import ArrowRight from "../../../assets/shopwithcat/ArrowRight.svg";
-import ArrowRight2 from "../../../assets/LandingPage/ArrowRight.svg";
 import CartIcon from "../../../assets/ProductPage/ShoppingCartSimple.svg";
 type mainProduct = {
   name: string;
