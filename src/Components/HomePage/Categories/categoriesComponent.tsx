@@ -28,10 +28,10 @@ export default function CategoriesDropdown() {
       {open && (
         <div className="absolute mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-10">
           <ul className="py-1">
-            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Technology</li>
-            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Business</li>
-            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Health</li>
-            <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Education</li>
+            <li className="px-4 py-2 cursor-pointer">Technology</li>
+            <li className="px-4 py-2 cursor-pointer">Business</li>
+            <li className="px-4 py-2 cursor-pointer">Health</li>
+            <li className="px-4 py-2 cursor-pointer">Education</li>
           </ul>
         </div>
       )}

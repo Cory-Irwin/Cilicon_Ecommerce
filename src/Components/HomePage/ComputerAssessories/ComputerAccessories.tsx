@@ -8,13 +8,13 @@ import Mice from "../../../assets/misc/Mice.png";
 import Ultrawide from "../../../assets/misc/ultrawide.png";
 import Keyboard from "../../../assets/misc/keyboard.png";
 import Charger from "../../../assets/misc/charger.png";
-import FeaturedProductCards from "../../ProductCards/FeaturedProductCard";
+import FeaturedProductCards from "../../ProductCards/computerAccessoriesCards";
 
 const ComputerAccessories = () => {
   return (
     <div className="mx-auto max-w-screen-xl my-20 mb-100 lg:mb-2 px-4">
       <div className="flex flex-col lg:flex-row-reverse justify-between">
-        <div className="flex flex-col gap-6 lg:w-1/5">
+        <div className="flex flex-col gap-6 lg:w-1/4">
           {/*Adverts*/}
           <div className=" bg-linear-to-r from-black to-teal-900 p-4 rounded">
             <div className="flex flex-col items-center  text-black text-center">
@@ -29,9 +29,9 @@ const ComputerAccessories = () => {
                 <div className="bg-gray-600 font-extrabold text-4xl  text-yellow-400 px-4 py-1">
                   $129.99
                 </div>
-              </div>ig
+              </div>
               <div className="mt-5 flex items-center gap-2">
-                <div className="bg-black hover:bg-gray-500  rounded-xl cursor-pointer flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                <div className="bg-black hover:bg-gray-500  cursor-pointer flex  text-center justify-center items-center px-4 py-2">
                   <h1 className="text-white font-bold   mr-2">SHOP NOW</h1>
                   <img src={ArrowRight} alt="" />
                 </div>
@@ -46,7 +46,7 @@ const ComputerAccessories = () => {
             <p className="text-lg">
               Only for smartphone products at selected retailers.
             </p>
-            <div className="mt-2 flex items-center gap-2">
+            <div className="mt-2 flex justify-center items-center gap-2">
               <div className="bg-white hover:bg-gray-200 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
                 <h1 className="text-black font-bold mr-2">SHOP NOW</h1>
                 <img src={ArrowRight2} alt="" />
@@ -55,7 +55,7 @@ const ComputerAccessories = () => {
 
           </div>
         </div>
-        <div className="flex flex-col lg:w-4/5 lg:h-1/2 ">
+        <div className="flex flex-col lg:w-3/4  ">
           <div className="flex items-center gap-12 py-4 bg-white">
             <h1 className="text-3xl font-bold">Computer Accessories</h1>
             <div className="flex text-center justify-center items-center gap-4 text-sm">
@@ -74,7 +74,7 @@ const ComputerAccessories = () => {
           </div>
           <div className="flex justify-center  lg:gap-6 ">
             <div className="flex flex-wrap ">
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -85,7 +85,7 @@ const ComputerAccessories = () => {
                   percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
                 />
               </div>
-              <div className="w-1/2 lg:w-1/4 h-1/3 ">
+              <div className= "">
                 <FeaturedProductCards
                   reviewStars={4}
                   reviewCount={4}
@@ -96,7 +96,7 @@ const ComputerAccessories = () => {
                   percentOff={Math.round(((1299.99 - 999.99) / 1299.99) * 100)} // ~23% off
                 />
               </div>
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
 
                 <FeaturedProductCards
                   reviewStars={5}
@@ -107,7 +107,7 @@ const ComputerAccessories = () => {
                   newPrice={299.99}
                   percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
                 /></div>
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
 
                 <FeaturedProductCards
                   reviewStars={4}
@@ -118,7 +118,7 @@ const ComputerAccessories = () => {
                 // no originalPrice or discount, so no percentOff
                 />
               </div>
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
 
 
                 <FeaturedProductCards
@@ -129,7 +129,7 @@ const ComputerAccessories = () => {
                   newPrice={19.99}
                 /></div>
 
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={982}
@@ -137,7 +137,7 @@ const ComputerAccessories = () => {
                   title="Razer Huntsman Elite Gaming Keyboard – RGB"
                   newPrice={199.99}
                 /></div>
-              <div className="w-1/2 lg:w-1/4  h-1/3">
+              <div className="">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -145,7 +145,7 @@ const ComputerAccessories = () => {
                   title="Logitech G902 Lightspeed Wireless Gaming Mouse"
                   newPrice={249.99}
                 /></div>
-              <div className="w-1/2 lg:w-1/4 h-1/3 ">
+              <div className="">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={16}

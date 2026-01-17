@@ -1,4 +1,5 @@
 import ArrowRight from "../../../assets/shopwithcat/ArrowRight.svg";
+
 import ArrowRight2 from "../../../assets/LandingPage/ArrowRight.svg";
 import MousePad from "../../../assets/misc/Mousepad.png";
 import Headphones from "../../../assets/misc/headphones.png";

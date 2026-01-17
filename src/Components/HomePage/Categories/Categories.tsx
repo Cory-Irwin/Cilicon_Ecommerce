@@ -94,7 +94,7 @@ const Dropdown = () => {
             </button>
 
             {isOpen && (
-                <><div className="absolute top-full z-100 left-0 mt-2 w-72 bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
+                <><div className="absolute top-full z-100 left-0 mt-2 w-72 bg-white border shadow-md rounded  cursor-pointer ">
                     <ul className="flex flex-col">
                         {
                             MenuCategories.map(cat => 
@@ -109,7 +109,7 @@ const Dropdown = () => {
                         }
                     </ul>
                 </div>
-                    <div className="absolute top-full z-100  left-75 mt-2 h-111 w-220  bg-white border shadow-md rounded hover:text-gray-300 cursor-pointer ">
+                    <div className="absolute top-full z-100  left-75 mt-2 h-111 w-220  bg-white border shadow-md rounded  cursor-pointer ">
                         {activeMenu ?? false}
                     </div>
 
