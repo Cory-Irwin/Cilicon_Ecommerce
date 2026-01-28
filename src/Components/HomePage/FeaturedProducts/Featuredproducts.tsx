@@ -15,14 +15,14 @@ const Featuredproducts = () => {
   return (
     <>
       <div className="mx-auto max-w-screen-xl my-20 px-4 h-auto">
-        <div className="">
+      
           <div className="w-full  flex flex-col lg:flex-row  ">
             {/*promotional item */}
 
-            <div className="bg-teal-900  gap-6 flex flex-1 p-6 lg:justify-center ">
-              <div className="lg:min-w-75 justify-between  lg:items-center flex flex-col w-1/2 ">
+            <div className="bg-teal-900   gap-6 flex flex-1 p-4 lg:text-center lg:justify-center lg:flex-col ">
+              <div className=" justify-between lg:w-65  lg:justify-start lg:gap-6  lg:items-center flex flex-col w-1/2 ">
                 
-                <h1 className="text-white  font-bold text-5xl lg:text-4xl">Computers & Accessories</h1>
+                <h1 className="text-white  font-bold text-5xl  lg:text-xl">Computers & Accessories</h1>
                 <h2 className="text-2xl text-white">32% Discount</h2>
                 <p className=" text-yellow-300 font-bold  text-2xl">For all electronic products</p>
                 <div className="flex flex-row gap-2  ">
@@ -42,8 +42,8 @@ const Featuredproducts = () => {
                   <img src={arrow} alt="" className="w-10 " />
                 </div>
               </div>
-              <div className="w-1/2">
-                <img src={ComputerAccessories} className=" my-10" alt="" />
+              <div className="w-1/2 lg:w-65">
+                <img src={ComputerAccessories} className="l my-10" alt="" />
               </div>
             </div>
 
@@ -162,7 +162,7 @@ const Featuredproducts = () => {
               </div>
             </div>
           </div>
-        </div>
+       
       
     </>
   );
