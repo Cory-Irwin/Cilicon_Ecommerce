@@ -47,7 +47,7 @@ export default function SmartPhoneMenu() {
                     /></div>
                 </div>
             </div>
-            <div className="  h-full">
+            <div className="h-full">
                 <div className="p-4">
                     <CategoriesMainAdvertCard />
                 </div> </div>

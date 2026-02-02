@@ -1,7 +1,7 @@
 
 const categoriesMainAdvertCard = () => {
   return (
-    <div className='flex justify-center text-center flex-col'>
+    <div className='flex justify-center bg-amber-200 h-105 text-center flex-col'>
       <img src="" alt="" />
       <h1>21% discount</h1>
       <h1>Escape the noise, It's time to hear the magic with Xiaomi Earbuds.</h1>
