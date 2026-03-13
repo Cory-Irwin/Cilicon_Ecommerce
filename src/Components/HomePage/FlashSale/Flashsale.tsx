@@ -1,5 +1,5 @@
 import React from "react";
-import Flashcard from "../../../Components/ProductCards/flashcard";
+import Flashcard from "../../ProductCards/flashcardFlashSale";
 import Controller from "../../../assets/misc/controller.png";
 import MousePad from "../../../assets/misc/Mousepad.png";
 import Headphones from "../../../assets/misc/headphones.png";
