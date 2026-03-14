@@ -1,6 +1,21 @@
 import CategoriesMainAdvertCard from "../categoriesMainAdvertCard";
 
-export default function ComputerLaptopMenu() {
+type FeaturedProductsDropDownProps = {
+  name: string;
+  price: number;
+  originalPrice: number;
+  discount: number;
+  Availability: string;
+  brand: string;
+  Category: string;
+  reviewStars?: number;
+  ratingStars?: number;
+  sku: string;
+  feedback: number;
+  reviewCount: number;
+};
+
+export default function FeaturedProductsMenu(props: FeaturedProductsDropDownProps) {
     return (
         <div className="flex justify-between">
             <div className="">

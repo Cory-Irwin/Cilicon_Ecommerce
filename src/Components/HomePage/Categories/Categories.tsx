@@ -11,7 +11,7 @@ import ComputerLaptopMenu from "./menus/ComputerLaptopMenu";
 const MenuCategories = [
   {
     title: "Computer & Laptop",
-    menu: <ComputerLaptopMenu />,
+    menu: <ComputerLaptopMenu name={""} price={0} originalPrice={0} discount={0} Availability={""} brand={""} Category={""} sku={""} feedback={0} reviewCount={0} />,
   },
   {
     title: "Computer Accessories",

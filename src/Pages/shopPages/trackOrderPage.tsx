@@ -62,8 +62,9 @@ const TrackOrder = () => {
           Track Order
         </button>
       </div>
-
+      
       <Footer />
+    
     </>
   );
 };
