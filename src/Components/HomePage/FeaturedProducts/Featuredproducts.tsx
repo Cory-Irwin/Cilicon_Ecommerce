@@ -15,33 +15,35 @@ const Featuredproducts = () => {
   return (
     <>
       <div className="mx-auto max-w-screen-xl my-20 px-4 h-auto">
-        <div className="w-full  flex flex-col lg:flex-row  ">
+        <div className="w-full  flex flex-col lg:flex-row">
           {/*promotional item */}
 
-          <div className="bg-[#f3de6d] gap-2 flex justify-between flex-1 lg:text-center lg:flex-col">
-            <div className="flex flex-col">
-              <h1 className="text-yellow-300  font-bold text-5xl  lg:text-sm ">
+          <div className="bg-[#f3de6d]   gap-2 flex justify-between flex-1 lg:text-center lg:flex-col">
+            <div className="flex  flex-col p-4 lg:p-2">
+              <h1 className="text-orange-700 pt-5  font-bold text-5xl  lg:text-sm ">
                 Computers & Accessories
               </h1>
-              <h2 className="text-3xl pt-2 font-bold text-white">32% Discount</h2>
-              <p className=" text-yellow-300 pt-2 font-bold  text-2xl lg:text-sm">
+              <h2 className="text-3xl font-bold pt-4 text-black">32% Discount</h2>
+              <p className=" text-black pt-4 font-bold  text-2xl lg:text-sm">
                 For all electronic products
               </p>
-              <div className="flex flex-row gap-2  justify-center ">
-                <div className="text-white flex justify-center items-center">
-                  <h1>OFFER ENDS IN:</h1>
+              <div className="flex flex-row gap-2 pt-4  lg:justify-center ">
+                <div className="text-black text-sm flex justify-center items-center">
+                  <h1>Offer ends:</h1>
                 </div>
-                <div className="bg-white p-1  font-semibold text-black ">
-                  <p>10:45:12</p>
+                <div className="bg-white p-2 text-sm  font-semibold text-black ">
+                  <p>END OF CHRISTMAS</p>
                 </div>
               </div>
+              <div className="p-8">
               <div
-                className="  mt-2 p-4 text-1xl  text-center gap-4 items-center flex flex-row
+                className="   p-6 lg:p-4 lg:w-45 text-1xl  text-center gap-4 items-center flex flex-row
                  bg-black text-white justify-center  hover:invert font-extrabold"
               >
                 {" "}
                 <h1>SHOP NOW</h1>
-                <img src={arrow} alt="" className="w-10 " />
+                <img src={arrow} alt="" className="w-7 " />
+              </div>
               </div>
             </div>
             <div className="w-1/2  lg:w-65">
@@ -73,8 +75,8 @@ const Featuredproducts = () => {
             </div>
 
             {/*Products */}
-            <div className="grid lg:grid-cols-4 sm:grid-cols-2  ">
-              <div className=" ">
+            <div className="grid lg:grid-cols-4  sm:grid-cols-2  ">
+              <div className=" border-gray-200  border-r-2 border-t-2 border-l-2 border-b-2 ">
                 <ProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -85,7 +87,7 @@ const Featuredproducts = () => {
                   percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
                 />
               </div>
-              <div className=" ">
+              <div className="border-gray-200  border-b-2 border-r-2 border-t-2 ">
                 <ProductCards
                   reviewStars={4}
                   reviewCount={4}
@@ -96,7 +98,7 @@ const Featuredproducts = () => {
                   percentOff={Math.round(((1299.99 - 999.99) / 1299.99) * 100)} // ~23% off
                 />
               </div>
-              <div className="  ">
+              <div className=" border-gray-200 border-2 border-t-2   border-b-2 ">
                 <ProductCards
                   reviewStars={5}
                   reviewCount={52}
@@ -107,7 +109,7 @@ const Featuredproducts = () => {
                   percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
                 />
               </div>
-              <div className=" ">
+              <div className="border-gray-200 border-r-2 border-t-2  border-b-2 ">
                 <ProductCards
                   reviewStars={4}
                   reviewCount={672}
@@ -118,7 +120,7 @@ const Featuredproducts = () => {
                 />
               </div>
 
-              <div className="">
+              <div className="border-gray-200  border-b-2  border-r-2">
                 <ProductCards
                   reviewStars={4}
                   reviewCount={733}
@@ -127,7 +129,7 @@ const Featuredproducts = () => {
                   newPrice={19.99}
                 />
               </div>
-              <div className="">
+              <div className="border-gray-200  border-r-2 border-b-2">
                 <ProductCards
                   reviewStars={5}
                   reviewCount={982}
@@ -136,7 +138,7 @@ const Featuredproducts = () => {
                   newPrice={199.99}
                 />
               </div>
-              <div className=" ">
+              <div className="border-gray-200  border-b-2 border-r-2  ">
                 <ProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -145,7 +147,7 @@ const Featuredproducts = () => {
                   newPrice={249.99}
                 />
               </div>
-              <div className="">
+              <div className="border-gray-200  border-r-2 border-b-2">
                 <ProductCards
                   reviewStars={5}
                   reviewCount={16}

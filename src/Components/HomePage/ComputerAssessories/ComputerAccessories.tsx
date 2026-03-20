@@ -8,13 +8,14 @@ import Mice from "../../../assets/misc/Mice.png";
 import Ultrawide from "../../../assets/misc/ultrawide.png";
 import Keyboard from "../../../assets/misc/keyboard.png";
 import Charger from "../../../assets/misc/charger.png";
+              <h1>Laptop</h1>
 import FeaturedProductCards from "../../ProductCards/computerAccessoriesCards";
 
 const ComputerAccessories = () => {
   return (
-    <div className="mx-auto max-w-screen-xl my-20 mb-100 lg:mb-2 px-4">
+    <div className="mx-auto max-w-screen-xl my-20 mb-20 lg:mb-2 px-4">
       <div className="flex flex-col lg:flex-row-reverse justify-between">
-        <div className="flex flex-col gap-6 lg:w-1/4">
+      <div className="flex flex-col gap-6 lg:w-1/4">
           {/*Adverts*/}
           <div className=" bg-linear-to-r from-black to-teal-900 p-4 rounded">
             <div className="flex flex-col items-center  text-black text-center">
@@ -73,8 +74,8 @@ const ComputerAccessories = () => {
             </div>
           </div>
           <div className="flex justify-center  lg:gap-6 ">
-            <div className="flex flex-wrap ">
-              <div className="">
+            <div className="flex flex-wrap justify-between ">
+              <div className="border-gray-200 border-t-2 border-r-2 border-l-2 ">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -85,7 +86,7 @@ const ComputerAccessories = () => {
                   percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
                 />
               </div>
-              <div className= "">
+              <div className= "border-gray-200 border-t-2 border-r-2 border-l-2 border-b-2">
                 <FeaturedProductCards
                   reviewStars={4}
                   reviewCount={4}
@@ -96,7 +97,7 @@ const ComputerAccessories = () => {
                   percentOff={Math.round(((1299.99 - 999.99) / 1299.99) * 100)} // ~23% off
                 />
               </div>
-              <div className="">
+              <div className="border-gray-200 border-r-2 border-b-2 border-l-2">
 
                 <FeaturedProductCards
                   reviewStars={5}
@@ -107,7 +108,7 @@ const ComputerAccessories = () => {
                   newPrice={299.99}
                   percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
                 /></div>
-              <div className="">
+              <div className="border-gray-200  border-r-2 border-b-2 border-l-2">
 
                 <FeaturedProductCards
                   reviewStars={4}
@@ -118,7 +119,7 @@ const ComputerAccessories = () => {
                 // no originalPrice or discount, so no percentOff
                 />
               </div>
-              <div className="">
+              <div className="border-gray-200 border-r-2 border-b-2 border-l-2">
 
 
                 <FeaturedProductCards
@@ -129,7 +130,7 @@ const ComputerAccessories = () => {
                   newPrice={19.99}
                 /></div>
 
-              <div className="">
+              <div className="border-gray-200 border-r-2 border-b-2 border-l-2">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={982}
@@ -137,7 +138,7 @@ const ComputerAccessories = () => {
                   title="Razer Huntsman Elite Gaming Keyboard – RGB"
                   newPrice={199.99}
                 /></div>
-              <div className="">
+              <div className="border-gray-200 border-r-2 border-b-2 border-l-2">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={426}
@@ -145,7 +146,7 @@ const ComputerAccessories = () => {
                   title="Logitech G902 Lightspeed Wireless Gaming Mouse"
                   newPrice={249.99}
                 /></div>
-              <div className="">
+              <div className="border-gray-200 border-b-2 border-r-2 border-l-2">
                 <FeaturedProductCards
                   reviewStars={5}
                   reviewCount={16}
