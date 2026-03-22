@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Assessories from "../../../assets/misc/computeraccessories.png";
 import Desktop from "../../../assets/misc/extendgamingpc.png";
 import Phone from "../../../assets/misc/catphones.png";

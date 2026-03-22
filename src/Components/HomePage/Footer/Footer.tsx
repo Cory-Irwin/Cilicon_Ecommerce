@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 relative flex bottom-0 ">
-      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-4 gap-6">
+    <footer className="bg-gray-900 text-white py-10  ">
+      <div className="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-4 grid-cols-2  gap-6">
         {/* Logo & Contact */}
         <div>
           <h2 className="text-lg font-bold">AppyCon</h2>

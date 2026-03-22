@@ -19,7 +19,7 @@ const blogPost = () => {
       <Header />
       <Categories />
       <div className="mx-auto max-w-screen-xl h-auto my-10 px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6">
+        <div className="grid grid-cols-1 flex-rows lg:grid-cols-[300px_1fr] gap-6">
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Category Section */}
@@ -112,10 +112,6 @@ const blogPost = () => {
               </div>
               
             </div>
-            
-              
-         
-           
             <div className="flex flex-col">
               <div className="flex flex-row gap-6  mb-6 justify-between">
                 <BlogPostComponent
@@ -173,7 +169,8 @@ const blogPost = () => {
                 />
               </div>
               
-            </div><div className="flex justify-center  py-10  gap-6 flex-row">
+            </div>
+            <div className="flex justify-center  py-10  gap-6 flex-row">
               <div className="bg-green-900 rounded-4xl h-12 w-12 flex items-center justify-center">
                 <img src={ArrowBigLeft} alt="" className="w-7 h-7" />
               </div>

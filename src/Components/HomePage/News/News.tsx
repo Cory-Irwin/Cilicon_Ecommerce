@@ -3,6 +3,7 @@ import News1 from "../../../assets/news/newsss.svg";
 import News2 from "../../../assets/news/unsplash_6MNmDi1hc_Y.svg";
 import News3 from "../../../assets/news/unsplash_FO7JIlwjOtU.svg";
 import NewsComponent from "../News/NewsComponent";
+import BlogPostComponent from "../../../Pages/signInPages/BlogPost/blogPostComponent";
 
 const newsData = [
   {
@@ -44,12 +45,13 @@ This update has a direct benefit for customers: faster refunds, more accurate or
 export const News = () => {
   return (
     <section className="bg-gray-200 py-20 px-4">
-      <div className="mx-auto max-w-screen-xl">
-        <div className="flex flex-col md:flex-row gap-10">
-          {newsData.map((item, index) => (
-            <NewsComponent key={index} {...item} />
-          ))}
-        </div>
+      <div className="text-center font-bold flex text-5xl justify-center pb-10">
+        <h1>Latest News</h1>
+      </div>
+      <div className="mx-auto max-w-screen-xl flex-col lg:flex-row flex items-center gap-6">
+        <BlogPostComponent imgurl={News1} name={"Adrian"} date={"12/2/2026"} comments={200} title={"Site-Wide Cart Upgrade Cuts Abandoned Orders by 27% in First Week"} description={"After months of customer feedback and UX testing, ShopDropper has rolled out its biggest cart update yet — and the numbers are already speaking"}/>
+        <BlogPostComponent imgurl={News2} name={"Adrian"} date={"12/2/2026"} comments={10} title={"Night Mode Activated: ShopDropper Introduces After-Hours Shopping Theme + Bonus Perks"} description={"Before, an incorrectly scanned item might sit for days,” explained CTO Marla Singh. “Now we’re catching those issues in real-time, before the box is even sealed.”"}/>
+        <BlogPostComponent imgurl={News3}  name={"Adrian"} date={"12/2/2026"} comments={400} title={"Warehouse AI Update Slashes Return Times, Increases Package Accuracy"} description={"In a surprise UX update aimed at night owls and low-light users, ShopDropper has launched an official Night Mode interface — a sleek, eye-comfort"}/>
       </div>
     </section>
   );
