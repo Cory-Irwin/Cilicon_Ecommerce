@@ -39,7 +39,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full bg-teal-900 text-white z-40">
+    <header className="w-full bg-teal-900  text-white mt-0 z-40">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex flex-col gap-4">
         {/* Top Bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-6">
