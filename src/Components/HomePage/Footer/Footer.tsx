@@ -6,15 +6,15 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-4 grid-cols-2  gap-6">
         {/* Logo & Contact */}
         <div>
-          <h2 className="text-lg font-bold">AppyCon</h2>
+          <h2 className="text-lg font-bold">TechCon</h2>
           <p className="mt-2">Customer Support:</p>
-          <p className="font-semibold">(629) 555-0129</p>
+          <p className="font-semibold"> (000) 000-0000</p>
           <p>
-            4517 Washington Ave.
+            45 example place.
             <br />
-            Manchester, Kentucky 39495
+            Place Location Country
           </p>
-          <p className="mt-2">info@kinbo.com</p>
+          <p className="mt-2">info@admin.com</p>
         </div>
 
         {/* Top Category */}
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center mt-6 text-gray-400">
-        Kinbo eCommerce Template © 2021. Design by Templatecookie
+        Copyright Example 2025
       </div>
     </footer>
   );

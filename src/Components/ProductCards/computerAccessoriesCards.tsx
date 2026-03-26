@@ -17,7 +17,7 @@ type FeaturedProductCardsProps = {
 const FeaturedProductCards = (props: FeaturedProductCardsProps) => {
   return (
     <>
-      <div className="border-2 relative flex-1 flex-row sm:w-114 lg:w-57   border-gray-100  h-80">
+      <div className="border-2 relative flex-1 flex-row ">
         <div className="items-center flex flex-col p-2 justify-center">
           <div>
             <img

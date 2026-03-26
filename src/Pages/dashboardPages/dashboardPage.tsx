@@ -109,7 +109,7 @@ const DashboardPage = (props: DashboardPageProps) => {
                   <h1 className="p-1 px-2 font-semibold">BILLING ADDRESS</h1>
                 </div>
                 <div className="border-2 max-h-70 h-full border-gray-100 p-4 space-y-2">
-                  <h1>Appy Store</h1>
+                  <h1>Tech Store</h1>
                   <p>{props.billingAddress}</p>
                   <p>Email: {props.billingEmail}</p>
                   <p>
@@ -168,23 +168,23 @@ const DashboardPage = (props: DashboardPageProps) => {
               <CreditCardComponent
                 accountBalance={20000}
                 cardNumber={4205}
-                cardHolderName="Appy Store"
+                cardHolderName="Tech Store"
                 commaThousand={false}
-                fullName="Appy Store"
+                fullName="Tech Store"
               />
                 <CreditCardComponent
                 accountBalance={20000}
                 cardNumber={4205}
-                cardHolderName="Appy Store"
+                cardHolderName="Tech Store"
                 commaThousand={false}
-                fullName="Appy Store"
+                fullName="Tech Store"
               />
                 <CreditCardComponent
                 accountBalance={20000}
                 cardNumber={4205}
-                cardHolderName="Appy Store"
+                cardHolderName="Tech Store"
                 commaThousand={false}
-                fullName="Appy Store"
+                fullName="Tech Store"
               />
               
             </div>

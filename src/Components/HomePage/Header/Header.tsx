@@ -11,6 +11,7 @@ import Youtube from "../../../assets/Header/Youtube.svg";
 import Instagram from "../../../assets/Header/Instagram.svg";
 import { Link } from "react-router-dom";
 import Glass from "../../../assets/ShopPage/MagnifyingGlass.svg"
+import BlackFriday from "../BlackFriday/BlackFriday";
 
 const Header = () => {
   const [languageOpen, setLanguageOpen] = useState(false);
@@ -40,9 +41,11 @@ const Header = () => {
 
   return (
     <header className="w-full bg-teal-900  text-white mt-0 z-40">
+      <BlackFriday/>
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex flex-col gap-4">
         {/* Top Bar */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-6">
+        
+          <div className="flex flex-col sm:flex-row justify-between mb-5 items-center gap-2 sm:gap-6">
           {/* Left */}
           <p className="text-sm sm:text-base text-center sm:text-left">
             Welcome to Tech Online eCommerce store
@@ -81,7 +84,7 @@ const Header = () => {
                       key={lang}
                       onClick={() => {
                         setSelectedLanguage(lang);
-                        setLanguageOpen(false);99999
+                        setLanguageOpen(false); 99999
                       }}
                       className="cursor-pointer hover:bg-gray-100 px-2 py-1"
                     >
@@ -127,7 +130,7 @@ const Header = () => {
             <img src={Logo} alt="Logo" className="w-32 sm:w-40" />
           </Link>
           {/* Search Bar */}
-          <div className="w-full flex justify-between sm:max-w-lg bg-white">
+          <div className="w-full flex justify-between  sm:max-w-lg bg-white">
             <input
               type="text"
               placeholder="Search..."

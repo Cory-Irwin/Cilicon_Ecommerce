@@ -150,7 +150,7 @@ const customerSupport = () => {
               />
             </div>
             <div className="text-center flex items-center justify-items-center">
-              <h1 className="">Sell On AppyCon</h1>
+              <h1 className="">Sell On TechCon</h1>
             </div>
           </div>
         </div>
@@ -233,7 +233,7 @@ const customerSupport = () => {
                       Talk with use now
                     </p>
                     <div>
-                      <p className="mt-2 text-3xl font-semibold">Support@appycon.com</p>
+                      <p className="mt-2 text-3xl font-semibold">Support@Techcon.com</p>
                     </div>
                     <div className="flex flex-row gap-2 relative">
                       <button className="bg-teal-500 mt-2 text-white p-4 w-60 hover:bg-teal-900 text-xl"><div className="flex flex-row gap-6 items-center justify-center text-center"><div>CALL NOW</div><div><img src={Arrow} alt=""  /></div></div></button>

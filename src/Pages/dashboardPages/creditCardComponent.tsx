@@ -47,5 +47,5 @@ export default creditCardComponent;
 //
 //   <div>
 //     <h1>Visa</h1>
-//     <h1>Appy Store</h1>
+//     <h1>Tech Store</h1>
 //   </div>

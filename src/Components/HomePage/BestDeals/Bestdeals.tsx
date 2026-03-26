@@ -31,108 +31,108 @@ const Bestdeals = () => {
           </div>
         </div>
         <div className="lg:flex">
-        <div className=" w-full h-auto lg:w-1/3 lg:border-l-2 lg:border-b-2 lg:border-t-2 border-2 border-gray-200 ">
-          {" "}
-          <BigBestDealProductCard reviewStars="4" discount="649.99" reviewCount={426}
-            imageurl={PS5}
-            name="Xbox One Controller"
-            description="no"
-            price={599.99} percentageOff="26"
-          />
-        </div>
-
-        <div className="flex flex-col w-full border-2 border-gray-200">
-          <div className="flex-row flex flex-wrap">
-            <div className="w-1/2 border-gray-200 border-r-2 border-b-2 lg:w-1/4">
-              <div className=" ">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={234}
-                  imageurl={MousePad}
-                  name="Logitech G840 XL Gaming Mouse Pad"
-                  price={39.99}
-                />
-              </div>
-            </div>
-            <div className="w-1/2 border-gray-200 border-r-2 border-b-2 lg:w-1/4">
-              <div className="  ">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={1183}
-                  imageurl={Controller}
-                  name="Xbox Wireless Controller – Carbon Black"
-                  price={64.99}
-                />
-              </div>
-            </div>
-            <div className="w-1/2 border-gray-200 border-r-2 border-b-2 lg:w-1/4">
-              <div className="  ">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={958}
-                  imageurl={Headphones}
-                  name="SteelSeries Arctis 7 Wireless Gaming Headset"
-                  price={149.99}
-                />
-              </div>
-            </div><div className =" border-gray-200 border-b-2 w-1/2 lg:w-1/4">
-              <div className="  ">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={3201}
-                  imageurl={Smartphone}
-                  name="iPhone 14 Pro – 128GB Deep Purple Edition"
-                  price={999.99}
-                />
-              </div>
-            </div>
-
-            <div className="w-1/2 lg:w-1/4 border-gray-200 border-r-2 ">
-              <div className=" border-gray-200">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={341}
-                  imageurl={Charger}
-                  name="Anker 737 GaNPrime 120W Charger Version"
-                  price={89.99}
-                />
-              </div>
-            </div>
-            <div className="w-1/2 lg:w-1/4 border-gray-200 border-r-2 ">
-              <div className=" border-gray-200">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={872}
-                  imageurl={Keyboard}
-                  name="Keychron K6 Wireless Mechanical Keyboard"
-
-                  price={89.99}
-                />
-              </div></div>
-            <div className="w-1/2 lg:w-1/4 border-gray-200 border-r-2 ">
-              <div className=" border-gray-200">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={1264}
-                  imageurl={Mice}
-                  name="Logitech G502 Hero Wired Gaming Mouse"
-
-                  price={49.99}
-                />
-              </div>
-            </div>   <div className="w-1/2 lg:w-1/4 border-gray-200 ">
-              <div className="border-gray-200">
-                <ProductCards
-                  reviewStars={5}
-                  reviewCount={413}
-                  imageurl={Ultrawide}
-                  name="Samsung Odyssey G9 49” Curved Ultrawide Monitor"
-
-                  price={1399.99}
-                />
-              </div></div>
+          <div className=" w-full h-auto lg:w-1/3 lg:border-l-2 lg:border-b-2 lg:border-t-2 border-gray-200 ">
+            {" "}
+            <BigBestDealProductCard reviewStars="4" discount="649.99" reviewCount={426}
+              imageurl={PS5}
+              name="Xbox One Controller"
+              description="no"
+              price={599.99} percentageOff="26"
+            />
           </div>
-        </div>
+
+          <div className="flex flex-col w-full border-2 border-gray-200">
+            <div className="grid-cols-2 grid-rows-4 lg:grid-rows-2 lg:grid-cols-4 grid flex-wrap">
+              <div className=" border-gray-200 border-r-2 border-b-2 ">
+                <div className=" ">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={234}
+                    imageurl={MousePad}
+                    name="Logitech G840 XL Gaming Mouse Pad"
+                    price={39.99}
+                  />
+                </div>
+              </div>
+              <div className=" border-gray-200 lg:hidden:border-r-2 border-b-2 ">
+                <div className="  ">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={1183}
+                    imageurl={Controller}
+                    name="Xbox Wireless Controller – Carbon Black"
+                    price={64.99}
+                  />
+                </div>
+              </div>
+              <div className=" border-gray-200 border-r-2 lg:border-l-2 border-b-2 ">
+                <div className="  ">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={958}
+                    imageurl={Headphones}
+                    name="SteelSeries Arctis 7 Wireless Gaming Headset"
+                    price={149.99}
+                  />
+                </div>
+              </div><div className=" border-gray-200 border-b-2 ">
+                <div className="  ">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={3201}
+                    imageurl={Smartphone}
+                    name="iPhone 14 Pro – 128GB Deep Purple Edition"
+                    price={999.99}
+                  />
+                </div>
+              </div>
+
+              <div className=" border-gray-200 border-b-2 border-r-2 ">
+                <div className=" border-gray-200">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={341}
+                    imageurl={Charger}
+                    name="Anker 737 GaNPrime 120W Charger Version"
+                    price={89.99}
+                  />
+                </div>
+              </div>
+              <div className=" border-gray-200 border-b-2  ">
+                <div className=" border-gray-200">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={872}
+                    imageurl={Keyboard}
+                    name="Keychron K6 Wireless Mechanical Keyboard"
+
+                    price={89.99}
+                  />
+                </div></div>
+              <div className=" border-gray-200 lg:border-l-2 border-r-2 lg:border-b-2 ">
+                <div className=" border-gray-200">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={1264}
+                    imageurl={Mice}
+                    name="Logitech G502 Hero Wired Gaming Mouse"
+
+                    price={49.99}
+                  />
+                </div>
+              </div>   <div className=" border-gray-200 lg:border-b-2 ">
+                <div className="border-gray-200">
+                  <ProductCards
+                    reviewStars={5}
+                    reviewCount={413}
+                    imageurl={Ultrawide}
+                    name="Samsung Odyssey G9 49” Curved Ultrawide Monitor"
+
+                    price={1399.99}
+                  />
+                </div></div>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -30,10 +30,10 @@ const aboutUsPage = () => {
               <h1 className="">WHO WE ARE</h1>
             </div>
             <h1 className="text-4xl font-bold mt-5">
-              AppyCon - Largest Electronics retail shop in the world
+              TechCon - Largest Electronics retail shop in the world
             </h1>
             <p className="mt-5 text-xl">
-              At appys shop, you will recieve the best possible support when
+              At Techs shop, you will recieve the best possible support when
               finding electronic items. You will be able to order and track all
               products at their fastest possible shipping.
             </p>
@@ -77,7 +77,7 @@ const aboutUsPage = () => {
                   <img src={Penguin1} alt="" className="w-auto h-25" />
                 </div>
                 <div className="flex justify-center flex-col ">
-                  <h1 className="font-bold text-sm">Appy Store</h1>
+                  <h1 className="font-bold text-sm">Tech Store</h1>
                   <h1 className=" text-gray-600 text-sm">Category Manager</h1>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const aboutUsPage = () => {
                   <img src={Penguin2} alt="" className="w-auto h-25" />
                 </div>
                 <div className="flex justify-center flex-col ">
-                  <h1 className="font-bold text-sm">Appy Store</h1>
+                  <h1 className="font-bold text-sm">Tech Store</h1>
                   <h1 className=" text-gray-600 text-sm">Category Manager</h1>
                 </div>
               </div>
@@ -99,7 +99,7 @@ const aboutUsPage = () => {
                   <img src={Penguin3} alt="" className="w-auto h-25" />
                 </div>
                 <div className="flex justify-center flex-col ">
-                  <h1 className="font-bold text-sm">Appy Store</h1>
+                  <h1 className="font-bold text-sm">Tech Store</h1>
                   <h1 className=" text-gray-600 text-sm">Category Manager</h1>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const aboutUsPage = () => {
                   <img src={Penguin4} alt="" className="w-auto h-25" />
                 </div>
                 <div className="flex justify-center flex-col ">
-                  <h1 className="font-bold text-sm">Appy Store</h1>
+                  <h1 className="font-bold text-sm">Tech Store</h1>
                   <h1 className=" text-gray-600 text-sm">Category Manager</h1>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const aboutUsPage = () => {
                 <img src={Penguin5} alt="" className="w-auto h-25" />
               </div>
               <div className="flex justify-center flex-col ">
-                <h1 className="font-bold text-sm">Appy Store</h1>
+                <h1 className="font-bold text-sm">Tech Store</h1>
                 <h1 className=" text-gray-600 text-sm">Category Manager</h1>
               </div>
             </div>
@@ -135,7 +135,7 @@ const aboutUsPage = () => {
                 <img src={Penguin6} alt="" className="w-auto h-25" />
               </div>
               <div className="flex justify-center flex-col ">
-                <h1 className="font-bold text-sm">Appy Store</h1>
+                <h1 className="font-bold text-sm">Tech Store</h1>
                 <h1 className=" text-gray-600 text-sm">Category Manager</h1>
               </div>
             </div>
@@ -146,7 +146,7 @@ const aboutUsPage = () => {
                 <img src={Penguin7} alt="" className="w-auto h-25" />
               </div>
               <div className="flex justify-center flex-col ">
-                <h1 className="font-bold text-sm">Appy Store</h1>
+                <h1 className="font-bold text-sm">Tech Store</h1>
                 <h1 className=" text-gray-600 text-sm">Category Manager</h1>
               </div>
             </div>
@@ -157,7 +157,7 @@ const aboutUsPage = () => {
                 <img src={Penguin8} alt="" className="w-auto h-25" />
               </div>
               <div className="flex justify-center flex-col ">
-                <h1 className="font-bold text-sm">Appy Store</h1>
+                <h1 className="font-bold text-sm">Tech Store</h1>
                 <h1 className=" text-gray-600 text-sm">Category Manager</h1>
               </div>
             </div>

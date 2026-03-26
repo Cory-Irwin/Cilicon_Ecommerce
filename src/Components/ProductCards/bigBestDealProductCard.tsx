@@ -20,16 +20,17 @@ type CatProductCards = {
 
 const bigBestDealProductCard = (props: any) => {
   return (
-    <div className="lg:h-auto h-auto flex   flex-row lg:flex-col  ">
-      <div className="flex flex-col text-center font-bold  left-4 relative">
-        <div className="relative  right-4 size-auto">
-          <img src={props.imageurl} alt="" />
-        </div>
-        <div className="bg-yellow-400 p-2 w-20 relative bottom-65 ">
+    <div className="lg:h-auto h-auto flex border-gray-200 border-t-2 border-l-2 border-r-2  flex-row lg:flex-col  ">
+      <div className="flex flex-col text-center font-bold  gap-3 p-4 relative">
+        
+        <div className="bg-yellow-400 p-2 w-20  bottom-65 ">
           <h1>{props.percentageOff}% Off </h1>
         </div>
-        <div className="bg-red-500  w-15 flex flex-col p-2   relative bottom-62">
-          <h1 className="text-white">HOT</h1>
+        <div className="bg-red-500  w-15 flex flex-col  p-2 bottom-62">
+          <h1 className="text-white text-sm">HOT</h1>
+        </div>
+        <div className=" size-auto">
+          <img src={props.imageurl} alt="" />
         </div>
       </div>
 <div className="flex flex-col ">
@@ -64,13 +65,13 @@ const bigBestDealProductCard = (props: any) => {
       </div>
 
       <div className=" py-5 ">
-        <div className=" flex items-center   gap-4  justify-center">
+        <div className=" flex items-center gap-4 justify-center">
           <div className="bg-yellow-400 p-4 hover:bg-yellow-200  ">
             <img src={Heart} alt="" />
           </div>
           <div className="bg-gray-200 hover:bg-gray-300 p-4 h-14  ">
             <button>
-              <div className="flex flex-row gap-1">
+              <div className="flex text-sm  flex-row gap-1">
                 <img src={Shopping} alt="" />
                 <h1>ADD TO CART</h1>
               </div>

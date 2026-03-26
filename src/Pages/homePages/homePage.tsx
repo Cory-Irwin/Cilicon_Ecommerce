@@ -18,7 +18,7 @@ import TwoPartAdvert from '../../Components/HomePage/TwoPartAdvert/TwoPartAdvert
 const Home = () => {
   return (
     <>
-    <BlackFriday/>
+    {/* <BlackFriday/> */}
     <Header/>
     <Categories/>
     <Landingpage tagLine={0} mainProductTitle={0} mainProductDescription={''} circlePrice={false} fullName={''} summerSalesProductTop={false} smallProductTopPercentageOff={false} topProductTitle={''} bottomProductTitle={''} bottomProductPrice={0} bottomProductImage={''} /> 

@@ -9,7 +9,7 @@ const Newsletter = () => {
             Subscribe to our newsletter
           </h1>
           <h1 className="text-md lg:text-2xl mt-5 text-gray-300 w-150 ">
-            Our newspaper is a fantastic way of keeping up to date on what Appy
+            Our newspaper is a fantastic way of keeping up to date on what Tech
             Ecommerce is up to. Enter your email to recieve updated about latest blog posts, product
             updates, sales and more...
           </h1>

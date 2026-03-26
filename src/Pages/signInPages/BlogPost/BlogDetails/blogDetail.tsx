@@ -28,7 +28,7 @@ const articleDetail = (props: articleDetailProps) => {
       <Categories />
       <BlogDetailComponent imgurl={""} comments={0}
       title={"New developments for the RTX 5090 Graphics card"} description={""} 
-      stack={"Electronics"} person={"Appy Store"} calenderDay={23} calenderMonth={"Sep"}
+      stack={"Electronics"} person={"Tech Store"} calenderDay={23} calenderMonth={"Sep"}
        calenderYear={2025} messages={425} introParagraph={"Nividia continues to expand its reach when it comes to ai data centers. One questions if this will impact the consumer long term and where their intentions lie."} 
        quote={"Nividia continues to expand its reach when it comes to ai data centers. One questions if this will impact the consumer long term and where their intentions lie."} secondParagraph={"Nividia continues to expand its reach when it comes to ai data centers. One questions if this will impact the consumer long term and where their intentions lie."} image1={""} image2={""} firstParagraph={"Nividia continues to expand its reach when it comes to ai data centers. One questions if this will impact the consumer long term and where their intentions lie."}/>
 

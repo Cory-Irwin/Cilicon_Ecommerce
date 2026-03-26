@@ -59,7 +59,7 @@ const XboxCarousel = () => {
                             <p className="text-2xl text-gray-700">{product.text}</p>
 
                             <button
-                                className="mt-3 bg-yellow-400 border-6 border-teal-900 cursor-pointer 
+                                className="mt-3 bg-yellow-400 rounded-sm cursor-pointer 
                   text-black py-6 px-20 font-bold text-3xl shadow-md hover:bg-yellow-200"
                             >
                                 <div className="flex items-center flex-row justify-between gap-4">
@@ -82,7 +82,7 @@ const XboxCarousel = () => {
 
                             {/* Price Tag */}
                             <div
-                                className="absolute z-20 w-20 h-20 left-22 -top-36 bg-yellow-400 rounded-full flex items-center justify-center text-black border-4 border-teal-900 text-xl shadow-lg">
+                                className="absolute z-20 w-25 border-2 h-25 left-22 -top-36 bg-yellow-400 rounded-full flex items-center justify-center text-black  text-xl shadow-lg">
                                 {product.price}
                             </div>
                         </div>

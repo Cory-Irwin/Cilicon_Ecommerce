@@ -112,7 +112,7 @@ const faqPage = () => {
               Can't find your answer? Ask for Support.
             </h2>
             <p className="mb-6 text-gray-800">
-              Our friendly team is happy to help. Send us your question and
+              Our friendly team is hTech to help. Send us your question and
               we’ll get back to you within 2 business days.
             </p>
 

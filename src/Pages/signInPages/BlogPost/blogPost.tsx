@@ -88,7 +88,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}
@@ -100,7 +100,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}
@@ -117,7 +117,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}
@@ -129,7 +129,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}
@@ -146,7 +146,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}
@@ -158,7 +158,7 @@ const blogPost = () => {
                 <BlogPostComponent
                   imgurl={LatestBlog}
                   name={
-                    "Appy Store"
+                    "Tech Store"
                   }
                   date={"12"}
                   comments={220}

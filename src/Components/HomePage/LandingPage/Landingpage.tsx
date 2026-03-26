@@ -6,102 +6,95 @@ import arrow from "../../../assets/LandingPage/ArrowRight.svg";
 import MultiCardCarousel from "./Components/mainProductComponent";
 
 type landingPageProps = {
-    tagLine: number;
-    mainProductTitle: number;
-    mainProductDescription: string;
-    circlePrice: boolean;
-    fullName: string;
-    summerSalesProductTop: boolean;
-    smallProductTopPercentageOff: boolean;
-    topProductTitle: string;
-    bottomProductTitle: string;
-    bottomProductPrice: number;
-    bottomProductImage: string;
-
-
+  tagLine: number;
+  mainProductTitle: number;
+  mainProductDescription: string;
+  circlePrice: boolean;
+  fullName: string;
+  summerSalesProductTop: boolean;
+  smallProductTopPercentageOff: boolean;
+  topProductTitle: string;
+  bottomProductTitle: string;
+  bottomProductPrice: number;
+  bottomProductImage: string;
 };
 
 const Landingpage = (props: landingPageProps) => {
-    return (
-        <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
-         <div className="w-full grid grid-cols-1 lg:grid-cols-[70%_30%] gap-4">
-
-                <div>
-                    <MultiCardCarousel />
-                </div>
-                <div className="flex flex-row gap-2 lg:flex-col h-auto lg:h-132 w-full">
-                    {/* iPhone Section (Top Right - 1x1) */}
-                    <div className="bg-black text-black z-10 overflow-hidden rounded-lg transition-transform duration-500 hover:scale-105 shadow-xl h-[250px]
-            flex flex-col justify-between p-4 relative flex-1 w-full">
-
-                        <div className="flex py-5 z-20 p-2 items-center">
-                            <div>
-                                <h1 className="text-2xl text-yellow-500 font-semibold">
-                                    Summer Sales
-                                </h1>
-                                <h1 className="text-3xl  word-break font-bold text-white">
-                                    Apple iPhone <h1>16 256GB</h1>
-                                </h1>
-
-                                <button className="mt-5 z-20 bg-yellow-400 border-6 cursor-pointer border-teal-900 text-black font-semibold p-3 w-45 items-center
-                                    justify-center flex   hover:bg-yellow-200">
-                                    <div className="flex text-lg flex-row items-center gap-4">
-                                        {" "}
-                                        BUY NOW
-                                        <img src={arrow} alt="" className="h-5" />
-                                    </div>
-                                </button>
-                                {/* Text */}
-                                <div className="relative left-50 bottom-45 z-10000">
-                                    <img src={Iphone} alt="iPhone" className="w-60 h-auto " />
-                                </div>
-                            </div>
-
-                            {/* Price Tag */}
-                            {/* Image */}
-                        </div>
-                        <div
-                            className="absolute top-8 right-4 w-30   text-xl h-10  bg-yellow-400 flex items-center
-                justify-center text-black  z-30 shadow-lg"
-                        >
-                            40% OFF
-                        </div>
-                    </div>
-
-                    <div
-                        className="flex-1 w-full bg-gray-400 text-white overflow-hidden transition-transform duration-500 hover:scale-105 rounded-lg shadow-xl h-[250px] flex flex-col justify-between p-4 relative">
-                        {/* Text */}
-                        <div className="flex justify-center items-center">
-                            <div>
-                                <h1 className=" text-3xl font-bold ">Apple Airpods Pro</h1>
-                                <div className="text-2xl text-yellow-200 my-2">
-                                    $399.99
-                                </div>
-
-                                <button className="mt-5 z-20 bg-yellow-400 border-6 cursor-pointer border-teal-900 text-black font-semibold p-3 w-45 items-center
-                justify-center flex  font-boldshadow-md hover:bg-yellow-200">
-                                    <div className="flex text-lg flex-row items-center  gap-4">
-                                        {" "}
-                                        BUY NOW
-                                        <img src={arrow} alt="" className="h-5" />
-                                    </div>
-                                </button>
-                            </div>
-
-                            {/* Price Tag */}
-                            {/* Image */}
-                            <div className="w-full h-full  flex relative  left-2 top-3 justify-center items-center">
-                                <img src={Airpods} alt="iPhone" className="w-full  h-full " />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
+  return (
+    <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-[69%_30%] gap-4">
+        <div>
+          <MultiCardCarousel />
         </div>
-    );
+        <div className="flex flex-row gap-2 lg:flex-col h-auto lg:h-132 w-full">
+          {/* iPhone Section (Top Right - 1x1) */}
+          <div className="bg-black text-black z-10 overflow-hidden rounded-lg transition-transform 
+            duration-500 hover:scale-105 shadow-xl h-[250px] flex flex-col justify-between p-4 relative flex-1 w-full">
+            <div className="flex py-5 z-20 p-2 items-center">
+              <div>
+                <h1 className="text-2xl text-yellow-500 font-semibold">
+                  Summer Sales
+                </h1>
+                <h1 className="text-3xl  word-break font-bold text-white">
+                  Apple iPhone <h1>16 256GB</h1>
+                </h1>
+
+                <button className="mt-5 z-20 bg-yellow-400  cursor-pointer text-black
+                   font-semibold p-3 w-45 items-center justify-center flex hover:bg-yellow-200">
+                  <div className="flex text-lg flex-row items-center gap-4">
+                    {" "}
+                    BUY NOW
+                    <img src={arrow} alt="" className="h-5" />
+                  </div>
+                </button>
+                {/* Text */}
+                <div className="relative left-50 bottom-45 z-10000">
+                  <img src={Iphone} alt="iPhone" className="w-60 h-auto " />
+                </div>
+              </div>
+              {/* Price Tag */}
+              {/* Image */}
+            </div>
+            <div className="absolute top-8 right-4 w-30 rounded-sm  text-lg  h-10  bg-yellow-400 flex items-center
+                justify-center text-black  z-30 shadow-lg">
+              40% OFF
+            </div>
+          </div>
+
+          <div
+            className="flex-1 w-full bg-gray-400 text-white overflow-hidden transition-transform
+           duration-500 hover:scale-105 rounded-lg shadow-xl h-[250px] flex flex-col justify-between p-4 relative"
+          >
+            {/* Text */}
+            <div className="flex justify-center items-center">
+              <div>
+                <h1 className=" text-3xl font-bold ">Apple Airpods Pro</h1>
+                <div className="text-2xl text-yellow-200 my-2">$399 AUD</div>
+
+                <button
+                  className="mt-5 z-20 bg-yellow-400 rounded-sm cursor-pointer  text-black
+                  \ font-semibold p-3 w-45 items-center
+                justify-center flex  font-boldshadow-md hover:bg-yellow-200"
+                >
+                  <div className="flex text-lg flex-row items-center  gap-4">
+                    {" "}
+                    BUY NOW
+                    <img src={arrow} alt="" className="h-5" />
+                  </div>
+                </button>
+              </div>
+
+              {/* Price Tag */}
+              {/* Image */}
+              <div className="w-full h-full  flex relative  left-2 top-3 justify-center items-center">
+                <img src={Airpods} alt="iPhone" className="w-full  h-full " />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Landingpage;

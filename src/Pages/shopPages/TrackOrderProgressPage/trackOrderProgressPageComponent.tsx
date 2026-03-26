@@ -48,7 +48,7 @@ const TrackOrder = (props: TrackOrderProps) => {
           orderExpectedMonth={0}
           orderExpectedYear={0}
           productState={
-            " Your order has been delivered. Thank you for shopping at Appycon!"
+            " Your order has been delivered. Thank you for shopping at Techcon!"
           }
         />
       </div>

@@ -7,13 +7,13 @@ type CatProductCardsProps = {
   imageurl: string;
   price: number;
   name: string;
-  reviewStars?: number;      
+  reviewStars?: number;
   reviewCount?: number;
 };
 
 const CatProductCards = (props: CatProductCardsProps) => {
   return (
-    <div className="relative   h-full text-sm">
+    <div className="relative w-auto p-4 text-sm">
       <div className="flex items-center p-2 justify-center">
         <img
           src={props.imageurl}
@@ -29,7 +29,6 @@ const CatProductCards = (props: CatProductCardsProps) => {
 
       <div className="p-1 px-2">
         <p className="line-clamp-3">{props.name}</p>
-    
       </div>
 
       <div className="p-1 px-2">

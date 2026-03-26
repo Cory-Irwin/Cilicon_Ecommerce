@@ -190,7 +190,7 @@ const blogDetailComponent = (props: blogPostComponentProp) => {
           <h1 className="text-2xl font-semibold mb-5">Comments</h1>
           <div>
             <CommentDetail
-              name={"Appy Store"}
+              name={"Tech Store"}
               imgurl={Penguin}
               dateDay={21}
               dateMonth={"Dec"}
@@ -200,7 +200,7 @@ const blogDetailComponent = (props: blogPostComponentProp) => {
               }
             />
             <CommentDetail
-              name={"Appy Store"}
+              name={"Tech Store"}
               imgurl={Penguin}
               dateDay={21}
               dateMonth={"Dec"}
@@ -210,7 +210,7 @@ const blogDetailComponent = (props: blogPostComponentProp) => {
               }
             />
             <CommentDetail
-              name={"Appy Store"}
+              name={"Tech Store"}
               imgurl={Penguin}
               dateDay={21}
               dateMonth={"Dec"}
@@ -220,7 +220,7 @@ const blogDetailComponent = (props: blogPostComponentProp) => {
               }
             />
             <CommentDetail
-              name={"Appy Store"}
+              name={"Tech Store"}
               imgurl={Penguin}
               dateDay={21}
               dateMonth={"Dec"}
@@ -230,7 +230,7 @@ const blogDetailComponent = (props: blogPostComponentProp) => {
               }
             />
             <CommentDetail
-              name={"Appy Store"}
+              name={"Tech Store"}
               imgurl={Penguin}
               dateDay={21}
               dateMonth={"Dec"}
