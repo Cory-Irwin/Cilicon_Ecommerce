@@ -10,11 +10,11 @@ export const Flashsale = () => {
   return (
     <div className="mx-auto max-w-screen-xl my-20 p-4">
       <div className="grid grid-col-1 grid-rows-1 lg:grid-cols-4 lg:grid-rows-[30%_1f_1fr_1fr] gap-4">
-        <div className="grid-cols-1 grid grid-rows-[30%_1fr_1fr_1fr">
+        <div className="grid-cols-1 grid ">
         <div className="">
             <h1 className=" ">FLASH SALE TODAY</h1>
           </div>
-           <div className=" col-span-2 lg:col-start-1 lg:row-start-2">
+           <div className=" col-span-2  lg:col-start-1 lg:row-start-2">
             <Flashcard
               imageurl={Ultrawide}
               name='Samsung Odyssey G9 49" Curved Monitor'
@@ -22,7 +22,7 @@ export const Flashsale = () => {
               price={1099.99}
             />
           </div>
-          <div className="col-span-2 lg:col-start-1 lg:row-start-3">
+          <div className="col-span-2  lg:col-start-1 lg:row-start-3">
             <Flashcard
               imageurl={Ultrawide}
               name='Samsung Odyssey G9 49" Curved Monitor'
@@ -30,7 +30,7 @@ export const Flashsale = () => {
               price={1099.99}
             />
           </div>
-          <div className="col-span-2 lg:col-start-1 lg:row-start-4">
+          <div className="col-span-2  lg:col-start-1 lg:row-start-4">
             <Flashcard
               imageurl={Mice}
               name="Logitech G Pro X Superlight"
