@@ -11,10 +11,10 @@ type FlashcardProps = {
 
 const Flashcard = (props: FlashcardProps) => {
   return (
-    <div className="flex p-2 border-2 w-115 lg:w-75 gap-2 border-gray-200 hover:border-gray-400  items-center">
+    <div className="flex p-2 border-2 gap-2 border-gray-200 hover:border-gray-400  items-center">
         <div className="flex-end">
         <img src={props.imageurl} alt="" className="h-20 w-20 object-contain" />
-      </div><div className="text-left max-w-[10rem]">
+      </div><div className="text-left ">
        {" "}
         <h1
           className="text-base font-semibold truncate overflow-hidden  whitespace-nowrap"

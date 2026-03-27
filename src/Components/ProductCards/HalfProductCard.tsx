@@ -15,7 +15,7 @@ const HalfProductCard: React.FC<HalfProductCardProps> = ({
     <div className="flex flex-row   justify-between p-10    shadow-lg rounded-lg h-90">
       {/* Left Side: Text Content */}
       <div className="text-left z-20 max-w-1/2 ">
-        <div className="bg-blue-500 px-4 ">
+        <div className="bg-blue-500  px-4 py-1 inline-block ">
           <h2 className="text-lg font-semibold text-white">INTRODUCING NEW</h2>
         </div>
         <h1 className="text-3xl mt-3">{name}</h1>

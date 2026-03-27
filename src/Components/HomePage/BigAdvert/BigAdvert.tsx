@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import macbookpro from "../../../assets/misc/icon-1.svg";
 import FullProductCards from "../../ProductCards/FullProductCard";
 const BigAdvert = () => {
