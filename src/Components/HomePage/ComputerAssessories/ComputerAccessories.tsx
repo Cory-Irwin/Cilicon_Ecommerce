@@ -13,33 +13,27 @@ import FeaturedProductCards from "../../ProductCards/computerAccessoriesCards";
 
 const ComputerAccessories = () => {
   return (
-
-
- <div className="mx-auto  max-w-screen-xl lg:mb-2 px-4">
-      
-    <div className="grid lg:grid-cols-3 lg:grid-rows-1  ">
-        <div className="lg:col-span-2 lg:row-start-1 ">
-              <div className="flex gap-12 py-4 bg-white">
-           <h1 className="text-xl  font-bold">Computer Accessories</h1>
-           <div className="flex text-center justify-center items-center gap-4 text-sm">
-            <h1>All Products</h1>
-             <h1>Smart Phone</h1>
-             <h1>Laptop</h1>
-             <h1>Headphones</h1>
-             <h1>TV</h1>
-            <div className="flex justify-between gap-2">
-               <h1 className="font-semibold text-blue-600">
-                 Browse All Products
-               </h1>
-               <img src={ArrowRight} alt="" />
-             </div>
-           </div>
-         </div>
-        </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2">
-          <div className="grid grid-rows-2 grid-cols-2 lg:grid-rows-2 lg:grid-cols-4">
-             <div className="border-2 border-gray-200">
-               <FeaturedProductCards
+    <div className="mx-auto  max-w-screen-xl lg:mb-2  px-4">
+      <div className="grid grid-rows-1 grid-cols-1  lg:grid-rows-[20%_1fr] lg:grid-cols-[3fr_1fr]">
+        <div className="flex flex-col  text-sm">
+          <div className="flex items-center   flex-col lg:flex-row flex-1 ">
+            <div className="lg:w-1/3">
+              <h1 className="text-2xl font-bold">Computer Accessories</h1>
+            </div>
+            <div className="flex flex-1  justify-end gap-6">
+              <h1>All Products</h1>
+              <h1>Smart Phone</h1>
+              <h1>Laptop</h1>
+              <h1>Headphones</h1>
+              <h1>TV</h1>
+              <h1 className="font-semibold text-blue-600">
+                Browse All Products
+              </h1>
+              <img src={ArrowRight} alt="" />
+            </div>
+          </div>
+        <div className="lg:grid lg:grid-cols-4  fill lg:grid-rows-2  gap-2 pr-4">
+              <FeaturedProductCards
                 reviewStars={5}
                 reviewCount={426}
                 imageurl={MousePad}
@@ -48,8 +42,6 @@ const ComputerAccessories = () => {
                 newPrice={89.99}
                 percentOff={Math.round(((129.99 - 89.99) / 129.99) * 100)} // ~31% off
               />
-            </div>
-            <div className="border-r-2 border-t-2 border-b-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={4}
                 reviewCount={4}
@@ -59,8 +51,6 @@ const ComputerAccessories = () => {
                 newPrice={999.99}
                 percentOff={Math.round(((1299.99 - 999.99) / 1299.99) * 100)} // ~23% off
               />
-            </div>
-            <div className="border-r-2 border-t-2 border-b-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={5}
                 reviewCount={52}
@@ -70,8 +60,6 @@ const ComputerAccessories = () => {
                 newPrice={299.99}
                 percentOff={Math.round(((349.99 - 299.99) / 349.99) * 100)} // ~14% off
               />
-            </div>
-            <div className="border-r-2 border-t-2 border-b-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={4}
                 reviewCount={672}
@@ -80,8 +68,6 @@ const ComputerAccessories = () => {
                 newPrice={1999.99}
                 // no originalPrice or discount, so no percentOff
               />
-            </div>
-            <div className="border-b-2 border-l-2 border-r-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={4}
                 reviewCount={733}
@@ -89,8 +75,6 @@ const ComputerAccessories = () => {
                 title="Anker PowerPort III 65W USB-C Fast Charger"
                 newPrice={19.99}
               />
-            </div>
-            <div className="border-b-2  border-r-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={5}
                 reviewCount={982}
@@ -98,8 +82,6 @@ const ComputerAccessories = () => {
                 title="Razer Huntsman Elite Gaming Keyboard – RGB"
                 newPrice={199.99}
               />
-            </div>
-            <div className="border-b-2  border-r-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={5}
                 reviewCount={426}
@@ -107,8 +89,6 @@ const ComputerAccessories = () => {
                 title="Logitech G902 Lightspeed Wireless Gaming Mouse"
                 newPrice={249.99}
               />
-            </div>
-            <div className="border-b-2  border-r-2 border-gray-200">
               <FeaturedProductCards
                 reviewStars={5}
                 reviewCount={16}
@@ -116,55 +96,52 @@ const ComputerAccessories = () => {
                 title="Odyssey G9 Gaming Monitor – QHD 240Hz Curved Display"
                 newPrice={1799.99}
               />{" "}
+        </div>
+        </div>
+
+        <div>
+          <div className="flex  flex-col gap-6">
+            <div className=" bg-linear-to-r from-black to-teal-900 p-4 rounded">
+              <div className="flex flex-col items-center  text-black text-center">
+                <img src={Mice} alt="" className="h-22 w-auto" />
+                <h1 className="text-3xl text-white font-bold">
+                  Logitech G502 Gaming Mice
+                </h1>
+                <p className="text-lg mt-2 text-white">
+                  Experience gaming responsiveness like never before.
+                </p>
+                <div className="flex items-center gap-2 mt-4">
+                  <div className="bg-gray-600 font-extrabold text-4xl  text-yellow-400 px-4 py-1">
+                    $129.99
+                  </div>
+                </div>
+                <div className="mt-5 flex items-center gap-2">
+                  <div className="bg-black hover:bg-gray-500  cursor-pointer flex  text-center justify-center items-center px-4 py-2">
+                    <h1 className="text-white font-bold   mr-2">SHOP NOW</h1>
+                    <img src={ArrowRight} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-orange-700 p-4 rounded text-white text-center">
+              <div className="bg-yellow-400  text-black  py-1 px-3 w-fit mx-auto font-bold mb-4">
+                SUMMER SALES
+              </div>
+              <h1 className="text-3xl font-bold mb-2">40% Discount</h1>
+              <p className="text-lg">
+                Only for smartphone products at selected retailers.
+              </p>
+              <div className="mt-2 flex justify-center items-center gap-2">
+                <div className="bg-white hover:bg-gray-200 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
+                  <h1 className="text-black font-bold mr-2">SHOP NOW</h1>
+                  <img src={ArrowRight2} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="lg:row-span-2 lg:col-start-3 lg:row-start-1">
-           <div>
-             {/* Advert 1 */}
-            <div className=" bg-linear-to-r from-black to-teal-900 p-4 rounded">
-               <div className="flex flex-col items-center  text-black text-center">
-                <img src={Mice} alt="" className="h-40 w-auto" />
-                <h1 className="text-4xl text-white font-bold">
-                   Logitech G502 Gaming Mice
-                 </h1>
-                 <p className="text-lg mt-2 text-white">
-                   Experience gaming responsiveness like never before.
-                 </p>
-                <div className="flex items-center gap-2 mt-4">
-                   <div className="bg-gray-600 font-extrabold text-4xl  text-yellow-400 px-4 py-1">
-                    $129.99
-                   </div>
-                 </div>
-                <div className="mt-5 flex items-center gap-2">
-                   <div className="bg-black hover:bg-gray-500  cursor-pointer flex  text-center justify-center items-center px-4 py-2">
-                    <h1 className="text-white font-bold   mr-2">SHOP NOW</h1>
-                    <img src={ArrowRight} alt="" />
-                   </div>
-                 </div>
-              </div>
-            </div>
-             {/* Advert 2 */}
-             <div className="bg-orange-700 p-4 rounded text-white text-center">
-               <div className="bg-yellow-400  text-black  py-1 px-3 w-fit mx-auto font-bold mb-4">
-                SUMMER SALES
-              </div>
-               <h1 className="text-3xl font-bold mb-2">40% Discount</h1>
-              <p className="text-lg">
-                 Only for smartphone products at selected retailers.
-               </p>
-               <div className="mt-2 flex justify-center items-center gap-2">
-                 <div className="bg-white hover:bg-gray-200 flex w-70 h-15 text-center justify-center items-center px-4 py-2">
-                   <h1 className="text-black font-bold mr-2">SHOP NOW</h1>
-                   <img src={ArrowRight2} alt="" />
-                 </div>
-               </div>
-             </div>      
-        </div>
+      </div>
     </div>
-    </div>
-    </div>
-        
   );
 };
 

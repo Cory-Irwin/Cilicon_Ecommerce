@@ -11,7 +11,7 @@ type FlashcardProps = {
 
 const Flashcard = (props: FlashcardProps) => {
   return (
-    <div className="flex lg:justify-between p-2 border-2  gap-2
+    <div className="flex  lg:justify-between p-2 border-2  gap-2
       border-gray-200 hover:border-gray-400  items-center">
       <div className="">
         <img src={props.imageurl} alt="" className="h-20 w-20" />
