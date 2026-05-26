@@ -1,38 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
-import { Eye, EyeOff } from 'lucide-react';
-
-import Footer from '../../Components/HomePage/Footer/Footer'
-import Categories from '../../Components/HomePage/Categories/Categories'
-import Header from '../../Components/HomePage/Header/Header'
-import BlackFriday from '../../Components/HomePage/BlackFriday/BlackFriday'
+import { Eye, EyeOff } from "lucide-react";
+import { login } from "../../features/products/api/api";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 
 const SignInPage = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  async function handleLogin() {
+    try {
+      const data = await login(username, password);
 
+      console.log(data);
+
+      localStorage.setItem("token", data.token);
+
+      alert("Logged in!");
+    } catch (err) {
+      console.error(err);
+
+      alert("Login failed");
+    }
+  }
   return (
     <>
       <BlackFriday />
       <Header />
       <Categories />
-      
+
       <div className="flex flex-col items-center justify-center min-h-[40vh] w-full px-4">
         <div className="bg-white shadow-lg p-8 mt-20 mb-20   w-full max-w-md mx-auto">
-
           {/* Sign In & Sign Up Toggle */}
           <div className="flex justify-between border-b pb-3 mb-5">
-            <h2 className="text-lg font-semibold border-b-2 border-teal-500 pb-1">Sign In</h2>
+            <h2 className="text-lg font-semibold border-b-2 border-teal-500 pb-1">
+              Sign In
+            </h2>
             <h2 className="text-lg text-gray-400 cursor-pointer">Sign Up</h2>
           </div>
 
-          {/* Email Input */} 
+          {/* Email Input */}
           <div className="mb-4">
             <label className="block text-gray-600 mb-1">Email Address</label>
             <input
               type="email"
-              placeholder="Enter your email"
-              className="w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400"
+              placeholder="Enter your username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
 
@@ -42,7 +60,9 @@ const SignInPage = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className="w-full px-3 py-2 border  focus:outline-none focus:ring-2 focus:ring-teal-400"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-3 py-2 border focus:outline-none focus:ring-2 focus:ring-teal-400"
             />
             <button
               type="button"
@@ -55,11 +75,16 @@ const SignInPage = () => {
 
           {/* Forgot Password */}
           <div className="text-right mb-4">
-            <a href="/forgotpasswordpage" className="text-blue-500 text-sm">Forgot Password?</a>
+            <a href="/forgotpasswordpage" className="text-blue-500 text-sm">
+              Forgot Password?
+            </a>
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-teal-500 text-white py-2  hover:bg-teal-600 transition">
+          <button
+            onClick={handleLogin}
+            className="w-full bg-teal-500 text-white py-2 hover:bg-teal-600 transition"
+          >
             SIGN IN →
           </button>
 
@@ -75,8 +100,8 @@ const SignInPage = () => {
           </button>
         </div>
       </div>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 };

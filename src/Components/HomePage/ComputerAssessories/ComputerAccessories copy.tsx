@@ -9,7 +9,7 @@ import Mice from "../../../assets/misc/Mice.png";
 import Ultrawide from "../../../assets/misc/ultrawide.png";
 import Keyboard from "../../../assets/misc/keyboard.png";
 import Charger from "../../../assets/misc/charger.png";
-import FeaturedProductCards from "../../ProductCards/FeaturedProductCard";
+import FeaturedProductCards from "../../../features/components/FeaturedProductCard";
 
 const ComputerAccessories = () => {
   return (

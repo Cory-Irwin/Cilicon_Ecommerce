@@ -1,14 +1,14 @@
 import React from "react";
-import Footer from "../../../../Components/HomePage/Footer/Footer";
-import Categories from "../../../../Components/HomePage/Categories/Categories";
-import Header from "../../../../Components/HomePage/Header/Header";
-import BlackFriday from "../../../../Components/HomePage/BlackFriday/BlackFriday";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import BannerPhoto from "../../../../assets/BlogDetail/bigbannerimage.svg";
 import Stack from "../../../../assets/BlogDetails/Stack.svg"
 import Person from "../../../../assets/BlogDetails/UserCircle.svg"
 import Calender from "../../../../assets/BlogDetails/CalendarBlank.svg"
 import Messages from "../../../../assets/BlogDetails/ChatCircleDots.svg"
-import BlogDetailComponent from "./blogDetailComponent";
+import BlogDetailComponent from "../../Pages/signInPages/BlogPost/BlogDetails/blogDetailComponent";
 
 
 

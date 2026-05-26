@@ -4,7 +4,7 @@ import Categories from "../../Components/HomePage/Categories/Categories";
 import Header from "../../Components/HomePage/Header/Header";
 import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import Icon1 from "../../assets/DashboardPage/icon1.svg";
-import ProductCards from "../../Components/ProductCards/FeaturedProductCard";
+import ProductCards from "../../features/components/FeaturedProductCard";
 import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
 import CreditCardComponent from "./creditCardComponent";
 import ArrowTeal from "../../assets/Arrows/TealArrowRight.svg";
@@ -46,14 +46,12 @@ type DashboardPageProps = {
 const DashboardPage = (props: DashboardPageProps) => {
   return (
     <>
-      <BlackFriday />
       <Header />
       <Categories />
 
       <div className="mx-auto max-w-screen-xl my-10 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-20">
           <DashboardList />
-
           <div>
             <div className="mb-5">
               <h1 className="text-2xl font-bold mb-5">
@@ -172,23 +170,21 @@ const DashboardPage = (props: DashboardPageProps) => {
                 commaThousand={false}
                 fullName="Tech Store"
               />
-                <CreditCardComponent
+              <CreditCardComponent
                 accountBalance={20000}
                 cardNumber={4205}
                 cardHolderName="Tech Store"
                 commaThousand={false}
                 fullName="Tech Store"
               />
-                <CreditCardComponent
+              <CreditCardComponent
                 accountBalance={20000}
                 cardNumber={4205}
                 cardHolderName="Tech Store"
                 commaThousand={false}
                 fullName="Tech Store"
               />
-              
             </div>
-            
 
             {/* Recent Orders Table */}
             <div className="relative overflow-x-auto shadow-md mt-10">
@@ -244,16 +240,6 @@ const DashboardPage = (props: DashboardPageProps) => {
                   // no originalPrice or discount, so no percentOff
                 />
               </div>
-                <div className=" gap-4">
-                <ProductCards
-                  reviewStars={4}
-                  reviewCount={672}
-                  imageurl={Smartphone}
-                  title="Samsung Galaxy S21 5G – Phantom Gray"
-                  newPrice={1999.99}
-                  // no originalPrice or discount, so no percentOff
-                />
-              </div>
               <div className=" gap-4">
                 <ProductCards
                   reviewStars={4}
@@ -274,9 +260,19 @@ const DashboardPage = (props: DashboardPageProps) => {
                   // no originalPrice or discount, so no percentOff
                 />
               </div>
-              
-           
-            </div>   <div className="flex justify-center   gap-6 flex-row">
+              <div className=" gap-4">
+                <ProductCards
+                  reviewStars={4}
+                  reviewCount={672}
+                  imageurl={Smartphone}
+                  title="Samsung Galaxy S21 5G – Phantom Gray"
+                  newPrice={1999.99}
+                  // no originalPrice or discount, so no percentOff
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-center   gap-6 flex-row">
               <div className="bg-green-900 rounded-4xl hover:bg-teal-500 h-12 w-12 flex items-center justify-center">
                 <img src={ArrowBigLeft} alt="" className="w-7 h-7" />
               </div>

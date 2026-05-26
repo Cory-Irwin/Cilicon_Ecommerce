@@ -1,6 +1,6 @@
 // import React from "react";
 import macbookpro from "../../../assets/misc/icon-1.svg";
-import FullProductCards from "../../ProductCards/FullProductCard";
+import FullProductCards from "../../../features/components/FullProductCard";
 const BigAdvert = () => {
   return (
     <div className="mx-auto max-w-screen-xl my-20 px-4">

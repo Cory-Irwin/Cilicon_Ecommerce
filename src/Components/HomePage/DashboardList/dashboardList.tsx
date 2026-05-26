@@ -9,13 +9,16 @@ import Browsing from "../../../assets/DashboardPage/Browsing.svg"
 import Settings from "../../../assets/DashboardPage/Setting.svg"
 import Shopping from "../../../assets/DashboardPage/Shopping.svg"
 import LogOut from "../../../assets/DashboardPage/LogOut.svg"
+import { NavLink } from 'react-router-dom'
 const dashboardList = () => {
   return (
     <div className="">
     <div className="grid grid-cols-1 grid-rows-10 py-5 gap-4 shadow-lg  ">
       <div className='flex flex-row gap-2 p-2 px-5  hover:bg-teal-900 hover:text-white'>
         <img src={Dashboard} alt="" />
+        <NavLink to={''}>
         <h1>Dashboard</h1>
+        </NavLink>
       </div>
       <div className='flex flex-row gap-2 p-2 px-5  hover:bg-teal-900 hover:text-white'>
          <img src={OrderHistory} alt="" />
@@ -64,4 +67,4 @@ const dashboardList = () => {
   )
 }
 
-export default dashboardList
+export default dashboardList;

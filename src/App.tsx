@@ -1,41 +1,43 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/homePages/homePage';
-import ProductPage from './Pages/shopPages/productPage';
+import Home from './pages/home/homePage.tsx';
+/*import ProductPage from './pages/shop/productPage.tsx';
 import './index.css';
 import CartPage from './Pages/shopPages/CartPage/cartPage';
-import BillingPage from './Pages/shopPages/billingPage';
-import ShopPage from './Pages/shopPages/shopPage';
-import OrderSuccess from './Pages/shopPages/successfullyOrderedPage';
-import TrackOrder from './Pages/shopPages/trackOrderPage';
+import BillingPage from './pages/shop/billingPage.tsx';
+import ShopPage from './pages/shop/shopPage.tsx';
+import OrderSuccess from './pages/shop/successfullyOrderedPage.tsx';
+import TrackOrder from './pages/shop/trackOrderPage.tsx';
 import TrackOrderProgress from './Pages/shopPages/TrackOrderProgressPage/trackOrderProgressPage';
 import ComparePage from './Pages/shopPages/ComparePage/comparePage';
 import WishListPage from './Pages/shopPages/WishListPage/wishlistPage copy';
-import SignInPage from './Pages/signInPages/signInPage';
-import ForgotPasswordPage from './Pages/signInPages/forgotPasswordPage'
-import ResetPasswordPage from './Pages/signInPages/resetPasswordPage'
-import SignUpPage from './Pages/signInPages/signUpPage';
-import EmailVerifyPage from './Pages/signInPages/emailVerifyPage';
+import SignInPage from './pages/auth/signInPage.tsx';
+import ForgotPasswordPage from './pages/auth/forgotPasswordPage.tsx'
+import ResetPasswordPage from './pages/auth/resetPasswordPage.tsx'
+import SignUpPage from './pages/auth/signUpPage.tsx';
+import EmailVerifyPage from './pages/auth/emailVerifyPage.tsx';
 import FaqPage from './Pages/signInPages/faqPage';
-import ErrorPage from './Pages/signInPages/errorPage';
+import ErrorPage from './pages/error/errorPage.tsx';
 import AboutUsPage from './Pages/signInPages/aboutUsPage';
 import CustomerSupportPage from './Pages/signInPages/customerSupportPage';
-import BlogPost from './Pages/signInPages/BlogPost/blogPost'
-import BlogDetail from './Pages/signInPages/BlogPost/BlogDetails/blogDetail'
+import BlogPost from './pages/blog/blogPost.tsx'
+import BlogDetail from './pages/blog/blogDetail.tsx'
 import DashboardPage from './Pages/dashboardPages/dashboardPage'
-import DashboardOrderHistoryPage from './Pages/dashboardPages/dashboardOrderHistoryPage'
-import DashboardOrderDetailPage from './Pages/dashboardPages/dashboardOrderDetailPage'
+import DashboardOrderHistoryPage from './pages/dashboard/dashboardOrderHistoryPage.tsx'
+import DashboardOrderDetailPage from './pages/dashboard/dashboardOrderDetailPage.tsx'
 import BrowsingHistoryPage from './Pages/dashboardPages/browsingHistoryPage'
-import DashboardSettingsPage from './Pages/dashboardPages/dashboardSettingsPage'
+import DashboardSettingsPage from './pages/dashboard/dashboardSettingsPage.tsx'
 
 import 'rsuite/dist/rsuite-no-reset.min.css';
-
+import TasksPage from "./pages/dashboard/tasksPage.tsx";
+*/
 function App() {
   return (
     <>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/productpage" element={<ProductPage />} />
+        
+        {/* <Route path="/productpage" element={<ProductPage />} />
         <Route path='/CartPage' element={<CartPage/>}/>
         <Route path='/BillingPage' element={<BillingPage/>}/>
         <Route path='/SucessfullyOrderedPage' element={<OrderSuccess/>}/>
@@ -62,9 +64,9 @@ function App() {
         <Route path='/dashboardOrderDetailPage' element={<DashboardOrderDetailPage/>}/>
         <Route path='/browsingHistoryPage' element={<BrowsingHistoryPage/>}/>
         <Route path='/browsingHistorySettingsPage' element={<DashboardSettingsPage/>}/>
-        
+        <Route path="/tasksPage" element={<TasksPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
-        
+         */}
       </Routes>
     </Router>
     </>

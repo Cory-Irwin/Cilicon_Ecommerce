@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Components/HomePage/Header/Header";
 import Categories from "../../Components/HomePage/Categories/Categories";
 import Footer from "../../Components/HomePage/Footer/Footer";
-import FeaturedProductCards from "../../Components/ProductCards/FeaturedProductCard";
+import FeaturedProductCards from "../../features/components/FeaturedProductCard";
 import MousePad from "../../assets/misc/Mousepad.png";
 import Headphones from "../../assets/misc/headphones.png";
 import Controller from "../../assets/misc/IMAC.png";

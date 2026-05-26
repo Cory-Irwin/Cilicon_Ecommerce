@@ -5,7 +5,7 @@ import Header from "../../Components/HomePage/Header/Header";
 import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import DashboardList from "../../Components/HomePage/DashboardList/dashboardList";
 import { Toggle } from "rsuite";
-import BestProductCards from "../../Components/ProductCards/BestProductCards";
+import BestProductCards from "../../features/components/BestProductCards";
 
 const browsingHistory = () => {
   return (

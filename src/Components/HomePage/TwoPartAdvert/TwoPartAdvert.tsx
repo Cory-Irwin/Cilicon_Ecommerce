@@ -1,5 +1,5 @@
 import React from "react";
-import HalfProductCard from "../../ProductCards/HalfProductCard";
+import HalfProductCard from "../../../features/components/HalfProductCard";
 import HalfProductCardBlack from "../../ProductCards/HalfProductCardBlack";
 import ipodmini from "../../../assets/misc/podmini.svg";
 import Iphone from "../../../assets/misc/iphone.png";

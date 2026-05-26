@@ -1,15 +1,15 @@
 import React from "react";
-import Footer from "../../../Components/HomePage/Footer/Footer";
-import Categories from "../../../Components/HomePage/Categories/Categories";
-import Header from "../../../Components/HomePage/Header/Header";
-import BlackFriday from "../../../Components/HomePage/BlackFriday/BlackFriday";
+import Footer from "../../Components/HomePage/Footer/Footer";
+import Categories from "../../Components/HomePage/Categories/Categories";
+import Header from "../../Components/HomePage/Header/Header";
+import BlackFriday from "../../Components/HomePage/BlackFriday/BlackFriday";
 import LatestBlog from "../../../assets/BlogPost/lastestblogsvg.svg";
-import BlogPostComponent from "./blogPostComponent";
+import BlogPostComponent from "../../Pages/signInPages/BlogPost/blogPostComponent";
 import ArrowRight from "../../../assets/LandingPage/ArrowRight.svg";
 import ArrowBigLeft from "../../../assets/shopwithcat/ArrowLeft.svg";
 import ArrowRight2 from "../../../assets/shopwithcat/ArrowRight.svg";
 import MagGlass from "../../../assets/ShopPage/MagnifyingGlass.svg";
-import GalleryComponent from "./BlogDetails/galleryComponent";
+import GalleryComponent from "../../Pages/signInPages/BlogPost/BlogDetails/galleryComponent";
 
 
 const blogPost = () => {

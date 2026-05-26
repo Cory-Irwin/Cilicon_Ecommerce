@@ -1,7 +1,7 @@
 
 import Controller from "../../../assets/misc/IMAC.png";
 import ComputerAccessories from "../../../assets/FeaturedProducts/computeracceosires.png";
-import ProductCards from "../../../Components/ProductCards/FeaturedProductCard";
+import ProductCards from "../../../features/components/FeaturedProductCard";
 import arrow from "../../../assets/shopwithcat/ArrowRight.svg";
 import arrow2 from "../../../assets/computeraccessories/ArrowRight.svg";
 import MousePad from "../../../assets/misc/Mousepad.png";
