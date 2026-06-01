@@ -3,7 +3,7 @@ import News1 from "../../../assets/news/newsss.svg";
 import News2 from "../../../assets/news/unsplash_6MNmDi1hc_Y.svg";
 import News3 from "../../../assets/news/unsplash_FO7JIlwjOtU.svg";
 import NewsComponent from "../News/NewsComponent";
-import BlogPostComponent from "../../../Pages/signInPages/BlogPost/blogPostComponent";
+import BlogPostComponent from "../../../PagesOld/signInPages/BlogPost/blogPostComponent";
 
 const newsData = [
   {
