@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/homePage.tsx';
+import TestProductsPage from "../src/pages/Test/TestProductsPage.tsx"
+
 /*import ProductPage from './pages/shop/productPage.tsx';
 import './index.css';
 import CartPage from './Pages/shopPages/CartPage/cartPage';
@@ -26,7 +28,6 @@ import DashboardOrderHistoryPage from './pages/dashboard/dashboardOrderHistoryPa
 import DashboardOrderDetailPage from './pages/dashboard/dashboardOrderDetailPage.tsx'
 import BrowsingHistoryPage from './Pages/dashboardPages/browsingHistoryPage'
 import DashboardSettingsPage from './pages/dashboard/dashboardSettingsPage.tsx'
-
 import 'rsuite/dist/rsuite-no-reset.min.css';
 import TasksPage from "./pages/dashboard/tasksPage.tsx";
 */
@@ -36,7 +37,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        
+        <Route
+            path="/test-products"
+            element={<TestProductsPage />}
+        />
         {/* <Route path="/productpage" element={<ProductPage />} />
         <Route path='/CartPage' element={<CartPage/>}/>
         <Route path='/BillingPage' element={<BillingPage/>}/>

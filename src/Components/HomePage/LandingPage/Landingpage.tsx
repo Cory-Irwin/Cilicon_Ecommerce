@@ -1,10 +1,11 @@
 import React from "react";
 import Xbox1 from "../../../assets/misc/xbone.png";
+import {useProducts} from '.././../../hooks/useProduct.tsx';
 import Iphone from "../../../assets/misc/iphone.png";
 import Airpods from "../../../assets/misc/airpods.webp";
 import arrow from "../../../assets/LandingPage/ArrowRight.svg";
 import MultiCardCarousel from "./Components/mainProductComponent";
-
+/*
 type landingPageProps = {
   tagLine: number;
   mainProductTitle: number;
@@ -18,8 +19,15 @@ type landingPageProps = {
   bottomProductPrice: number;
   bottomProductImage: string;
 };
+*/
 
-const Landingpage = (props: landingPageProps) => {
+//const Landingpage = (props: landingPageProps) => {
+
+const Landingpage = () => {
+  const { products, loading, error } = useProducts();
+  if (loading) return <p>Loading products...</p>;
+  if (error) return <p>Error loading products.</p>;
+
   return (
     <div className="relative z-10 bg-white text-black max-w-screen-xl mx-auto px-4 p-10 mt-0 flex items-center">
       <div className="w-full grid grid-cols-1 lg:grid-cols-[69%_30%] gap-4">
